@@ -1,0 +1,114 @@
+return {
+  fg = "#FFFADE",
+  bg = "#060606",
+
+black           = "#000000",
+black1          = "#21252D",
+monokai_black   = "#000000",
+monokai_black2  = "#3D3D3D",
+monokai_black3  = "#9d9797",
+monokai_black4  = "#141414",
+monokai_black5  = "#090909",
+
+blue            = "#1D918B",
+blue2           = "#47A8A1",
+monokai_blue    = "#CD5AC5",
+hint_blue       = '#4FC1FF',
+ui_blue         = '#264F78',
+dark_blue       = '#223E55',
+light_blue      = '#9CDCFE',
+search_blue     = '#5e81ac',
+
+cyan            = "#00BFA4",
+cyan2           = "#5AD1AA",
+cyan3           = "#00DFFF",
+
+green           = "#44B273",
+green2          = "#50C16E",
+light_green     = '#B5CEA8',
+monokai_green   = "#A6E22E",
+
+orange          = "#E25600",
+orange2         = "#ED722E",
+warning_orange  = '#ff8800',
+search_orange   = '#613214',
+monokai_orange  = "#FFEE99",
+hl_orange       = "#FF4D00",
+
+purple          = "#D16BB7",
+purple2         = "#D68EB2",
+
+red             = "#FC2929",
+red2            = "#FF5050",
+light_red = '#D16969',
+mcolor_red        = "#FF0000",
+mcolor_red1       = "#A00000",
+mcolor_red2       = "#500000",
+error_red = '#F44747',
+
+white           = "#FFFADE",
+white2          = "#CCCCCC",
+mcolor_white      = "#FFFFFF",
+mcolor_white1     = "#8C8C8C",
+mcolor_white2     = "#555555",
+
+hl_yellow       = "#FFFF00",
+yellow_orange   = '#D7BA7D',
+info_yellow = '#FFCC66',
+yellow = '#DCDCAA',
+
+fg_alt          = "#FFEE79",
+hl_bg           = "#090B26",
+
+monokai_pink      = "#F92672",
+
+monokai_rose      = "#FFB2F9",
+comment           = "#5c4d4d",
+
+mcolor_yello      = "#444400",
+mcolor_yello1     = "#3b3b1d",
+
+gray = '#808080',
+dark_gray = '#3e3e3e',
+light_gray = '#c8c9c1',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dark = '#252525',
+accent = '#BBBBBB',
+
+popup_back = '#2D2D30',
+context = '#606060',
+magenta = '#D16D9E',
+cursor_fg = '#515052',
+cursor_bg = '#AEAFAD',
+diff_add = '#587c0c',
+diff_change = '#0c7d9d',
+diff_delete = '#94151b',
+diff_text = '#265478',
+
+line_fg         = "#747578",
+line_bg         = "#0c0c0c",
+
+gutter_bg       = "#282c34",
+non_text        = "#373C45",
+selection_bg    = "#c6c6c6",
+selection_fg    = "#21252D",
+cl_fg           = "#000000",
+cl_bg           = "#178c94",
+vsplit_fg       = "#cccccc",
+vsplit_bg       = "#21252D",
+visual_select_bg     = "#00005d",
+}
