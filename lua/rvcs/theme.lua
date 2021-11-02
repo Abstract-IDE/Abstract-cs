@@ -367,7 +367,7 @@ M.plugins = {
   -----------------------------------------
   --   Nvim-tree: github.com/kyazdani42/nvim-tree.lua
   -----------------------------------------
-  NvimTreeCursorLine    = { bg = colors.bg },
+  NvimTreeCursorLine    = { fg = colors.black, bg = colors.cyan5 },
   NvimTreeExecFile      = { fg = colors.green1 },
   NvimTreeFolderIcon    = { fg = colors.cyan6},
   NvimTreeFolderName    = { fg = colors.cyan6},
@@ -379,7 +379,7 @@ M.plugins = {
   NvimTreeGitStaged     = { fg = colors.diff_add },
   NvimTreeImageFile     = { fg = colors.purple2 },
   NvimTreeIndentMarker  = { fg = colors.gray3 },
-  NvimTreeNormal        = { fg = colors.accent, bg = colors.dark },
+  NvimTreeNormal        = { fg = colors.accent, bg = colors.black2 },
   NvimTreeOpenedFolderName = { fg = colors.cyan6, style = 'italic' },
   NvimTreeRootFolder    = { fg = colors.gray3, style = 'bold' },
   NvimTreeSpecialFile   = { fg = colors.orange2 },
