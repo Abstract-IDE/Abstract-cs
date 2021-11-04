@@ -423,7 +423,7 @@ M.plugins = {
   TSKeyword             = { fg = colors.cyan4},
   TSKeywordFunction     = { fg = colors.cyan6},
   TSKeywordOperator     = { fg = colors.cyan6},
-  TSKeywordReturn       = { fg = colors.purple2 },
+  TSKeywordReturn       = { fg = colors.red1 },
   TSLabel               = { fg = colors.cyan4 },
   TSLiteral             = { fg = colors.yellow4 },
   TSMethod              = { fg = colors.yellow3 },
