@@ -1,6 +1,6 @@
 # roshnivim-cs
 
-colorscheme for (neo)vim written in lua, specially made for [roshnivim ](https://github.com/shaeinst/roshnivim)
+colorscheme for (neo)vim written in lua, specially made for [roshnivim ](https://github.com/shaeinst/roshnivim) Colorscheme with Tree-sitter support.
 
 ## Screenshots
 
