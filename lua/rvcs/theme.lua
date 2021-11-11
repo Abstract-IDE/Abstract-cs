@@ -337,7 +337,7 @@ M.plugins = {
   LspDiagnosticsUnderlineError      = { style = 'underline' },
   LspDiagnosticsUnderlineHint       = { style = 'underline' },
   LspDiagnosticsUnderlineWarning    = { style = 'underline' },
-  LspDiagnosticsVirtualTextWarning  = { fg = colors.orange1 },
+  LspDiagnosticsVirtualTextWarning  = { fg = colors.orange6 },
   LspDiagnosticsWarning             = { fg = colors.orange1 },
   LspReferenceRead                  = { bg = colors.fg_gutter, style = 'bold' },
   LspReferenceText                  = { bg = colors.fg_gutter, style = 'bold' },

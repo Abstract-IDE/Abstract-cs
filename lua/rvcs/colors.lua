@@ -54,6 +54,7 @@ return {
   gray1     = '#3e3e3e',
   gray      = "#21252D",
 
+  orange6   = "#2f2905",
   orange5   = "#FFEE99",
   orange4   = '#613214',
   orange3   = "#ED722E",
