@@ -23,6 +23,7 @@ return {
   vsplit_bg     = "#21252D",
   visual_select_bg = "#00005d",
 
+  red5      = "#5D0000",
   red4      = '#94151b',
   red3      = "#FF5050",
   red2      = '#F44747',
