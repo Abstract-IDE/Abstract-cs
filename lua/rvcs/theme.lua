@@ -270,25 +270,62 @@ M.plugins = {
   -----------------------------------------
   --   Lsp: neovim.io/doc/user/lsp.html
   -----------------------------------------
+  DiagnosticVirtualTextInfo  = { fg = colors.yellow1 },
+  DiagnosticHint        = { fg = colors.blue1 },
+  DiagnosticError       = { fg = colors.red2 },
+  DiagnosticInfo        = { fg = colors.yellow1 },
+  DiagnosticVirtualTextWarn     = { fg = colors.orange6 },
+  DiagnosticWarn        = { fg = colors.orange1 },
+
   DiagnosticFloatingError   = { fg = colors.red2 },
   DiagnosticFloatingHint    = { fg = colors.blue1 },
   DiagnosticFloatingInfo    = { fg = colors.yellow1 },
   DiagnosticFloatingWarn    = { fg = colors.orange1 },
+
   DiagnosticSignError       = { fg = colors.red2 },
   DiagnosticSignHint        = { fg = colors.blue1 },
   DiagnosticSignInfo        = { fg = colors.yellow1 },
   DiagnosticSignWarn        = { fg = colors.orange1 },
+
   DiagnosticUnderlineError  = { style = 'underline' },
   DiagnosticUnderlineHint   = { style = 'underline' },
   DiagnosticUnderlineInfo   = { style = 'underline' },
   DiagnosticUnderlineWarn   = { style = 'underline' },
 
-  LspDiagnosticsDefaultError        = { fg = colors.red },
-  LspDiagnosticsVirtualTextError    = { fg = colors.red },
-  LspDiagnosticsSignError           = { fg = colors.red },
-  LspDiagnosticsDefaultWarning      = { fg = colors.yellow6 },
-  LspDiagnosticsDefaultInformation  = { fg = colors.yellow5 },
-  LspDiagnosticsVirtualTextHint     = { fg = colors.gray2 },
+  DiagnosticVirtualTextError        = { fg = colors.red5 },
+  DiagnosticVirtualTextHint         = { fg = colors.gray1 },
+  -----------------------------------------
+
+
+  -----------------------------------------
+  --   LspDiagnostics:
+  -----------------------------------------
+  LspDiagnosticsDefaultHint         = { fg = colors.blue1 }, -- Deprecated
+  LspDiagnosticsError               = { fg = colors.red2 }, -- Deprecated
+  LspDiagnosticsFloatingError       = { fg = colors.red2 }, -- Deprecated
+  LspDiagnosticsFloatingHint        = { fg = colors.blue1 }, -- Deprecated
+  LspDiagnosticsFloatingInformation = { fg = colors.yellow1 }, -- Deprecated
+  LspDiagnosticsFloatingWarning     = { fg = colors.orange1 }, -- Deprecated
+  LspDiagnosticsHint                = { fg = colors.blue1 }, -- Deprecated
+  LspDiagnosticsInformation         = { fg = colors.yellow1 }, -- Deprecated
+  LspDiagnosticsSignHint            = { fg = colors.blue1 }, -- Deprecated
+  LspDiagnosticsSignInformation     = { fg = colors.yellow1 }, -- Deprecated
+  LspDiagnosticsSignWarning         = { fg = colors.orange1 }, -- Deprecated
+  LspDiagnosticsUnderlineError      = { style = 'underline' }, -- Deprecated
+  LspDiagnosticsUnderlineHint       = { style = 'underline' }, -- Deprecated
+  LspDiagnosticsUnderlineWarning    = { style = 'underline' }, -- Deprecated
+  LspDiagnosticsVirtualTextWarning  = { fg = colors.orange6 }, -- Deprecated
+  LspDiagnosticsWarning             = { fg = colors.orange1 }, -- Deprecated
+  LspReferenceRead                  = { bg = colors.fg_gutter, style = 'bold' }, -- Deprecated
+  LspReferenceText                  = { bg = colors.fg_gutter, style = 'bold' }, -- Deprecated
+  LspReferenceWrite                 = { bg = colors.fg_gutter, style = 'bold' }, -- Deprecated
+  LspDiagnosticsDefaultError        = { fg = colors.red }, -- Deprecated
+  LspDiagnosticsSignError           = { fg = colors.red }, -- Deprecated
+  LspDiagnosticsDefaultWarning      = { fg = colors.yellow6 }, -- Deprecated
+  LspDiagnosticsDefaultInformation  = { fg = colors.yellow5 }, -- Deprecated
+  LspDiagnosticsVirtualTextHint     = { fg = colors.gray2 }, -- Deprecated
+  LspDiagnosticsVirtualTextInformation  = { fg = colors.yellow1 }, -- Deprecated
+  LspDiagnosticsUnderlineInformation    = { style = 'underline' }, -- Deprecated
   -----------------------------------------
 
 
@@ -317,33 +354,6 @@ M.plugins = {
   pythonOperator    =  { fg =  colors.cyan3 },
   pythonStatement   =  { fg =  colors.cyan3 },
   pythonBoolean     =  { fg =  colors.cyan5 },
-  -----------------------------------------
-
-
-  -----------------------------------------
-  --   LspDiagnostics:
-  -----------------------------------------
-  LspDiagnosticsDefaultHint         = { fg = colors.blue1 },
-  LspDiagnosticsError               = { fg = colors.red2 },
-  LspDiagnosticsFloatingError       = { fg = colors.red2 },
-  LspDiagnosticsFloatingHint        = { fg = colors.blue1 },
-  LspDiagnosticsFloatingInformation = { fg = colors.yellow1 },
-  LspDiagnosticsFloatingWarning     = { fg = colors.orange1 },
-  LspDiagnosticsHint                = { fg = colors.blue1 },
-  LspDiagnosticsInformation         = { fg = colors.yellow1 },
-  LspDiagnosticsSignHint            = { fg = colors.blue1 },
-  LspDiagnosticsSignInformation     = { fg = colors.yellow1 },
-  LspDiagnosticsSignWarning         = { fg = colors.orange1 },
-  LspDiagnosticsUnderlineError      = { style = 'underline' },
-  LspDiagnosticsUnderlineHint       = { style = 'underline' },
-  LspDiagnosticsUnderlineWarning    = { style = 'underline' },
-  LspDiagnosticsVirtualTextWarning  = { fg = colors.orange6 },
-  LspDiagnosticsWarning             = { fg = colors.orange1 },
-  LspReferenceRead                  = { bg = colors.fg_gutter, style = 'bold' },
-  LspReferenceText                  = { bg = colors.fg_gutter, style = 'bold' },
-  LspReferenceWrite                 = { bg = colors.fg_gutter, style = 'bold' },
-  LspDiagnosticsVirtualTextInformation  = { fg = colors.yellow1 },
-  LspDiagnosticsUnderlineInformation    = { style = 'underline' },
   -----------------------------------------
 
 
