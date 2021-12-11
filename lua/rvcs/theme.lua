@@ -121,7 +121,7 @@ M.base = {
   TermCursor        = { fg = colors.cursor_fg, bg = colors.cursor_bg },
   TermCursorNC      = { fg = colors.cursor_fg, bg = colors.cursor_bg },
   Title             = { fg = colors.gray7},
-  Todo              = { fg = colors.yellow2, style = 'bold' },
+  Todo              = { fg = colors.yellow6, style = 'bold' },
   Type              = { fg = colors.cyan6},
   Typedef           = { fg = colors.cyan4 },
 
