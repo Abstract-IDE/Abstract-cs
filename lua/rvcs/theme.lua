@@ -104,7 +104,7 @@ M.base = {
   SpellLocal        = { fg = colors.green1, style = 'underline' },
   SpellRare         = { fg = colors.purple2, style = 'underline' },
   Statement         = { fg = colors.red1 },
-  StatusLine        = { fg = colors.cyan5, bg = colors.gray },
+  StatusLine        = { fg = colors.black2, bg = colors.gray6 },
   StatusLineNC      = { fg = colors.gray7, bg = colors.gray},
   StatusLineSeparator = { fg = colors.dark },
   StatusLineTerm    = { fg = colors.cyan5, bg = colors.gray },
