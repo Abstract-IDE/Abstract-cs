@@ -282,10 +282,10 @@ M.plugins = {
   DiagnosticFloatingInfo    = { fg = colors.yellow1 },
   DiagnosticFloatingWarn    = { fg = colors.orange1 },
 
-  DiagnosticSignError       = { fg = colors.red2 },
-  DiagnosticSignHint        = { fg = colors.blue1 },
-  DiagnosticSignInfo        = { fg = colors.yellow1 },
-  DiagnosticSignWarn        = { fg = colors.orange1 },
+  DiagnosticSignError       = { fg = colors.red2, bg = colors.line_bg },
+  DiagnosticSignHint        = { fg = colors.blue1, bg = colors.line_bg },
+  DiagnosticSignInfo        = { fg = colors.yellow1, bg = colors.line_bg },
+  DiagnosticSignWarn        = { fg = colors.orange1, bg = colors.line_bg },
 
   DiagnosticUnderlineError  = { style = 'underline' },
   DiagnosticUnderlineHint   = { style = 'underline' },
