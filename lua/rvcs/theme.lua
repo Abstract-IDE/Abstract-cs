@@ -176,7 +176,7 @@ M.plugins = {
   -----------------------------------------
   --   Buffer:
   -----------------------------------------
-  BufferCurrent         = { fg = colors.fg, bg = colors.bg },
+  BufferCurrent         = { fg = colors.fg, bg = colors.gray },
   BufferCurrentIndex    = { fg = colors.fg, bg = colors.bg },
   BufferCurrentMod      = { fg = colors.yellow1, bg = colors.bg },
   BufferCurrentSign     = { fg = colors.blue1, bg = colors.bg },
@@ -191,6 +191,7 @@ M.plugins = {
   BufferVisibleMod      = { fg = colors.yellow1, bg = colors.bg },
   BufferVisibleSign     = { fg = colors.gray3, bg = colors.bg },
   BufferVisibleTarget   = { fg = colors.red1, bg = colors.bg, style = 'bold' },
+  BufferLineFill        = { fg = colors.fg, bg = colors.gray, style = 'bold' },
   -----------------------------------------
 
 
@@ -405,6 +406,40 @@ M.plugins = {
   TelescopeMatching     = { fg = colors.orange },
   TelescopePromptPrefix = { fg = colors.cyan2 },
   TelescopeSelection    = { fg = colors.white, bg = colors.gray },
+  -----------------------------------------
+
+  -----------------------------------------
+  -- https://github.com/folke/trouble.nvim
+  -----------------------------------------
+  -- TroubleTextInformation = { fg = colors.red, bg = colors.green},
+  TroubleFile = { fg = colors.black, bg = colors.gray6}, -- the source file that has error
+  TroubleFoldIcon = { fg = colors.red, bg = colors.black2 }, -- fold icon color
+  TroubleCount = { fg = colors.red, bg = colors.black2},
+  -- TroubleError = { fg = colors.red, bg = colors.green},
+
+  TroubleTextError = { fg = colors.red3, bg = colors.black2}, -- error info text
+  TroubleNormal = { fg = colors.white, bg = colors.black2}, -- background color of trouble window
+  TroubleLocation = { fg = colors.cyan, bg = colors.black2}, -- location of error
+  TroubleIndent = { fg = colors.white, bg = colors.black2}, -- indent color
+
+  TroubleCode = { fg = colors.yellow5, bg = colors.black2},
+  TroubleSignError = { fg = colors.red, bg = colors.black2}, -- error sign color
+
+  -- TroubleSignWarning       = { fg = colors.red, bg = colors.green},
+  -- TroubleWarning       = { fg = colors.red, bg = colors.green},
+  -- TroublePreview       = { fg = colors.red, bg = colors.green},
+  -- TroubleSignInformation       = { fg = colors.red, bg = colors.green},
+
+  -- TroubleSource = { fg = colors.red, bg = colors.green},
+  -- TroubleSignHint = { fg = colors.red, bg = colors.green},
+  -- TroubleSignOther = { fg = colors.red, bg = colors.green},
+  -- TroubleTextWarning = { fg = colors.red, bg = colors.green},
+  -- TroubleInformation = { fg = colors.red, bg = colors.green},
+  -- TroubleHint = { fg = colors.red, bg = colors.green},
+  -- TroubleTextHint = { fg = colors.red, bg = colors.green},
+  -- TroubleText = { fg = colors.red, bg = colors.green},
+
+
   -----------------------------------------
 
 
