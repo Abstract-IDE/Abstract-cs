@@ -39,6 +39,7 @@ return {
   blue1     = '#4FC1FF',
   blue      = "#0000FF",
 
+  black3	    = "#0f0f0f",
   black2        = "#141414",
   black1        = "#090909",
   black         = "#000000",
