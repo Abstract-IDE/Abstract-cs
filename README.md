@@ -3,10 +3,13 @@
 colorscheme for (neo)vim written in lua, specially made for [roshnivim ](https://github.com/shaeinst/roshnivim) Colorscheme with Tree-sitter support.
 
 ## Screenshots
+   ![screenshot_lua](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim/buff_and_nerdtree.png)
+   ![screenshot_pythonlsp](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim/python_lsp.png)
+   ![screenshot_running_c](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim/running_c.png)
+   ![screenshot_telescode](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim/telescope_as_fuzzy_finder.png)
+   ![screenshot_lua](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim/packer.png)
+   ![screenshot_codeaction](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim/codeaction_in_flutter_app.png)
 
-![bash](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim-cs/bash.png)
-![lua](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim-cs/lua.png)
-![telescope](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim-cs/telescope.png)
 
 ## Plugin Support
 
