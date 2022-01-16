@@ -452,6 +452,7 @@ M.plugins = {
   cmakeKWvariable_watch = { fg = colors.cyan3 },
   cmakeKWproject        = { fg = colors.pink1 },
   cmakeGeneratorExpressions = { fg = colors.purple4 },
+  cmakeVariable         = { fg = colors.cyan3 },
   -----------------------------------------
 
 
