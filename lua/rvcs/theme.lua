@@ -444,6 +444,18 @@ M.plugins = {
 
 
   -----------------------------------------
+  -- MAKE
+  -----------------------------------------
+
+  cmakeCommand          = { fg = colors.white },
+  cmakeArguments        = { fg = colors.cyan6 },
+  cmakeKWvariable_watch = { fg = colors.cyan3 },
+  cmakeKWproject        = { fg = colors.pink1 },
+  cmakeGeneratorExpressions = { fg = colors.purple4 },
+  -----------------------------------------
+
+
+  -----------------------------------------
   -- treesitter:  github.com/nvim-treesitter/nvim-treesitter
   -----------------------------------------
   TSAnnotation          = { fg = colors.yellow3 },
