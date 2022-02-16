@@ -268,7 +268,7 @@ M.plugins = {
 	-----------------------------------------
 	--   Lsp: neovim.io/doc/user/lsp.html
 	-----------------------------------------
-	DiagnosticVirtualTextInfo = {fg = colors.yellow1},
+	DiagnosticVirtualTextInfo = {fg = colors.orange6},
 	DiagnosticHint = {fg = colors.blue1},
 	DiagnosticError = {fg = colors.red2},
 	DiagnosticInfo = {fg = colors.yellow1},
