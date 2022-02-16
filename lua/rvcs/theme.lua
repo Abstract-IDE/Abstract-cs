@@ -453,6 +453,7 @@ M.plugins = {
   cmakeKWproject        = { fg = colors.pink1 },
   cmakeGeneratorExpressions = { fg = colors.purple4 },
   cmakeVariable         = { fg = colors.cyan3 },
+  cmakeKWuse_mangled_mesa = { fg = colors.fg, style = 'italic' },
   -----------------------------------------
 
 
