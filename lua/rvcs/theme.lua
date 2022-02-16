@@ -130,7 +130,7 @@ M.base = {
 	TermCursorNC = {fg = colors.cursor_fg, bg = colors.cursor_bg},
 	Title = {fg = colors.gray7},
 	Todo = {fg = colors.yellow6, style = 'bold'},
-	Type = {fg = colors.cyan6},
+	Type = {fg = colors.cyan6, style="NONE"},
 	Typedef = {fg = colors.cyan4},
 
 	Variable = {fg = colors.cyan3},
@@ -351,6 +351,15 @@ M.plugins = {
 	-----------------------------------------
 
 	-----------------------------------------
+	-- for C/C++ language:
+	-----------------------------------------
+	cppStatement = {fg = colors.purple4},
+	-- cppAccess = {fg="#FC2929"},
+	cBlock = {fg="#FC2929"},
+	-- cppStructure
+	-----------------------------------------
+
+	-----------------------------------------
 	--    Neogit: github.com/TimUntersberger/neogit
 	-----------------------------------------
 	NeogitBranch = {fg = colors.purple3},
@@ -462,15 +471,18 @@ M.plugins = {
 	TSComment = {fg = '#5c4d4d', style = 'italic'},
 	TSOperator = {fg = "#FC2929"},
 	TSConditional = {fg = '#00AF54'},
-	TSKeyword = {fg = "#F92672"},
+	TSKeyword = {fg = "#F92672", style="NONE"},
 	TSException = {fg = "#00DFFF"},
 	TSBoolean = {fg = "#00DFFF"},
 	TSError = {fg = "#FC2929", bg = "#060606", style = 'bold'},
 	TSNumber = {fg = "#c19a6b"},
-	TSType = {fg = '#767FD1'},
+	TSType = {fg = '#767FD1', style="NONE"},
 	TSMethod = {fg = "#8877B1"},
 	TSConstructor = {fg = "#01A0F5"},
 	TSFuncBuiltin = {fg = "#00bfff"},
+
+	TSWarning = {fg = "#FBB13C"},
+	TSNote = {fg = "#FBB13C"},
 
 	TSAnnotation = {fg = "#cc5500"},
 	TSAttribute = {fg = "#e97451"},
@@ -478,7 +490,7 @@ M.plugins = {
 	TSConstBuiltin = {fg = "#bd33a4"},
 	TSConstMacro = {fg = "#702963"},
 	TSConstant = {fg = "#007aa5"},
-	TSField = {fg = "#536872"},
+	TSField = {fg = "#01af96"},
 	TSFloat = {fg = "#5f9ea0"},
 	TSFuncMacro = {fg = "#006b3c"},
 	TSLabel = {fg = "#ed872d"},
@@ -489,7 +501,7 @@ M.plugins = {
 	TSPunctDelimiter = {fg = "#c19a6b"},
 	TSPunctSpecial = {fg = "#78866b"},
 	TSRepeat = {fg = "#ffff99"},
-	TSStringEscape = {fg = "#ffef00"},
+	TSStringEscape = {fg = "#ff0800"},
 	TSStringRegex = {fg = "#ff0800"},
 	TSStrong = {fg = "#e4717a"},
 	TSStructure = {fg = "#00bfff"},
