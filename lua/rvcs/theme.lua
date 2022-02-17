@@ -348,15 +348,50 @@ M.plugins = {
 	pythonOperator = {fg = colors.cyan3},
 	pythonStatement = {fg = colors.cyan3},
 	pythonBoolean = {fg = colors.cyan5},
+
+	pythonTSRepeat = {fg="#e30022"},
+
 	-----------------------------------------
 
 	-----------------------------------------
 	-- for C/C++ language:
 	-----------------------------------------
-	cppStatement = {fg = colors.purple4},
+	cppStatement = {fg = "#D68EB2", style="NONE"},
+	cppBlock = {fg="#FC2929", style="NONE"},
 	-- cppAccess = {fg="#FC2929"},
-	cBlock = {fg="#FC2929"},
+
+	cStatement = {fg ="#D68EB2", style="NONE"},
+	cBlock = {fg="#FC2929", style="NONE"},
+	-- cAccess = {fg="#FC2929"},
+
+	-- TreeSitter specially for CPP
+	cppTSVariable= {fg="#00cc99"},
+	cppTSType  = {fg="#d4a373"},
+	cppTSKeyword  = {fg="#e30022"},
+	cppTSConditional = {fg="#ffff99"},
+	cppTSProperty = {fg="#ed872d"},
+	cppTSRepeat = {fg="#e30022"},
+	cppTSBoolean = {fg="#8e24ff"},
+
+	-- TreeSitter specially for C
+	cTSVariable= {fg="#00cc99"},
+	cTSType  = {fg="#d4a373"},
+	cTSKeyword  = {fg="#e30022"},
+	cTSConditional = {fg="#ffff99"},
+	cTSProperty = {fg="#ed872d"},
+	cTSRepeat = {fg="#e30022"},
+	cTSBoolean = {fg="#8e24ff"},
+
 	-- cppStructure
+	-----------------------------------------
+
+	-----------------------------------------
+	-- for HTML language:
+	-----------------------------------------
+	htmlArg = { style = 'italic'},
+	Title = { style='NONE' },
+	-- htmlTag = {},
+	-- htmlLink = { fg = colors.blue },
 	-----------------------------------------
 
 	-----------------------------------------
@@ -483,6 +518,8 @@ M.plugins = {
 
 	TSWarning = {fg = "#FBB13C"},
 	TSNote = {fg = "#FBB13C"},
+	TSTag = {fg = "#178C94"},
+	TSTagAttribute = {fg = "#00cc99"},
 
 	TSAnnotation = {fg = "#cc5500"},
 	TSAttribute = {fg = "#e97451"},
@@ -496,7 +533,7 @@ M.plugins = {
 	TSLabel = {fg = "#ed872d"},
 	TSLiteral = {fg = "#e30022"},
 	TSNamespace = {fg = "#a67b5b"},
-	TSProperty = {fg = "#1e4d2b"},
+	TSProperty = {fg = "#307c44"},
 	TSPunctBracket = {fg = "#a3c1ad"},
 	TSPunctDelimiter = {fg = "#c19a6b"},
 	TSPunctSpecial = {fg = "#78866b"},
@@ -506,11 +543,10 @@ M.plugins = {
 	TSStrong = {fg = "#e4717a"},
 	TSStructure = {fg = "#00bfff"},
 	TSSymbol = {fg = "#592720"},
-	TSTag = {fg = "#c41e3a"},
 	TSTagDelimiter = {fg = "#00cc99"},
-	TSText = {fg = "#ff0040"},
+	TSText = {fg = "#ffff99"},
 	TSQueryLinterError = {fg = "#eb4c42"},
-	TSTitle = {fg = "#ff0038", style = 'bold'},
+	TSTitle = {fg = "#ffff99", style = 'NONE'},
 	TSTypeBuiltin = {fg = "#ffa6c9"},
 	TSURI = {fg = "#b31b1b", style = 'underline'},
 	TSVariableBuiltin = {fg = "#99badd"},
