@@ -338,7 +338,7 @@ M.plugins = {
 	cppTSVariable= {fg="#00cc99"},
 	cppTSType  = {fg="#d4a373"},
 	cppTSKeyword  = {fg="#e30022"},
-	cppTSConditional = {fg="#ffff99"},
+	cppTSConditional = {fg="#e2ff22"},
 	cppTSProperty = {fg="#ed872d"},
 	cppTSRepeat = {fg="#e30022"},
 	cppTSBoolean = {fg="#8e24ff"},
