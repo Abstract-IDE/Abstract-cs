@@ -295,37 +295,6 @@ M.plugins = {
 	-----------------------------------------
 
 	-----------------------------------------
-	--   LspDiagnostics:
-	-----------------------------------------
-	LspDiagnosticsDefaultHint = {fg = colors.blue1}, -- Deprecated
-	LspDiagnosticsError = {fg = colors.red2}, -- Deprecated
-	LspDiagnosticsFloatingError = {fg = colors.red2}, -- Deprecated
-	LspDiagnosticsFloatingHint = {fg = colors.blue1}, -- Deprecated
-	LspDiagnosticsFloatingInformation = {fg = colors.yellow1}, -- Deprecated
-	LspDiagnosticsFloatingWarning = {fg = colors.orange1}, -- Deprecated
-	LspDiagnosticsHint = {fg = colors.blue1}, -- Deprecated
-	LspDiagnosticsInformation = {fg = colors.yellow1}, -- Deprecated
-	LspDiagnosticsSignHint = {fg = colors.blue1}, -- Deprecated
-	LspDiagnosticsSignInformation = {fg = colors.yellow1}, -- Deprecated
-	LspDiagnosticsSignWarning = {fg = colors.orange1}, -- Deprecated
-	LspDiagnosticsUnderlineError = {style = 'underline'}, -- Deprecated
-	LspDiagnosticsUnderlineHint = {style = 'underline'}, -- Deprecated
-	LspDiagnosticsUnderlineWarning = {style = 'underline'}, -- Deprecated
-	LspDiagnosticsVirtualTextWarning = {fg = colors.orange6}, -- Deprecated
-	LspDiagnosticsWarning = {fg = colors.orange1}, -- Deprecated
-	LspReferenceRead = {bg = colors.fg_gutter, style = 'bold'}, -- Deprecated
-	LspReferenceText = {bg = colors.fg_gutter, style = 'bold'}, -- Deprecated
-	LspReferenceWrite = {bg = colors.fg_gutter, style = 'bold'}, -- Deprecated
-	LspDiagnosticsDefaultError = {fg = colors.red}, -- Deprecated
-	LspDiagnosticsSignError = {fg = colors.red}, -- Deprecated
-	LspDiagnosticsDefaultWarning = {fg = colors.yellow6}, -- Deprecated
-	LspDiagnosticsDefaultInformation = {fg = colors.yellow5}, -- Deprecated
-	LspDiagnosticsVirtualTextHint = {fg = colors.gray2}, -- Deprecated
-	LspDiagnosticsVirtualTextInformation = {fg = colors.yellow1}, -- Deprecated
-	LspDiagnosticsUnderlineInformation = {style = 'underline'}, -- Deprecated
-	-----------------------------------------
-
-	-----------------------------------------
 	-- VIM INDENT GUIDES:   github.com/nathanaelkane/vim-indent-guides
 	-----------------------------------------
 	IndentGuidesEven = {fg = colors.white1},
@@ -362,6 +331,7 @@ M.plugins = {
 
 	cStatement = {fg ="#D68EB2", style="NONE"},
 	cBlock = {fg="#FC2929", style="NONE"},
+	cStructure = {fg="#FC2929", style="NONE"},
 	-- cAccess = {fg="#FC2929"},
 
 	-- TreeSitter specially for CPP
@@ -372,6 +342,7 @@ M.plugins = {
 	cppTSProperty = {fg="#ed872d"},
 	cppTSRepeat = {fg="#e30022"},
 	cppTSBoolean = {fg="#8e24ff"},
+	cppTSError = {f="#FF0000", bg="NONE"},
 
 	-- TreeSitter specially for C
 	cTSVariable= {fg="#00cc99"},
@@ -381,6 +352,7 @@ M.plugins = {
 	cTSProperty = {fg="#ed872d"},
 	cTSRepeat = {fg="#e30022"},
 	cTSBoolean = {fg="#8e24ff"},
+	cTSError = {f="#FF0000", bg="NONE"},
 
 	-- cppStructure
 	-----------------------------------------
