@@ -342,7 +342,8 @@ M.plugins = {
 	cppTSProperty = {fg="#ed872d"},
 	cppTSRepeat = {fg="#e30022"},
 	cppTSBoolean = {fg="#8e24ff"},
-	cppTSError = {f="#FF0000", bg="NONE"},
+	cppTSError = {fg="#FF0000", bg="NONE"},
+	cppTSNamespace = {fg="#FFFFFF", bg="NONE"},
 
 	-- TreeSitter specially for C
 	cTSVariable= {fg="#00cc99"},
