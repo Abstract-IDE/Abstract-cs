@@ -325,37 +325,37 @@ M.plugins = {
 	-----------------------------------------
 	-- for C/C++ language:
 	-----------------------------------------
-	cppStatement = {fg = "#D68EB2", style="NONE"},
-	cppBlock = {fg="#FC2929", style="NONE"},
-	-- cppAccess = {fg="#FC2929"},
+	cppStatement      = {fg="#D68EB2", style="NONE"},
+	cppBlock          = {fg="#FC2929", style="NONE"},
+	-- cppAccess         = {fg="#FC2929"},
 
-	cStatement = {fg ="#D68EB2", style="NONE"},
-	cBlock = {fg="#FC2929", style="NONE"},
-	cStructure = {fg="#FC2929", style="NONE"},
-	-- cAccess = {fg="#FC2929"},
+	cStatement        = {fg="#D68EB2", style="NONE"},
+	cBlock            = {fg="#FC2929", style="NONE"},
+	cStructure        = {fg="#FC2929", style="NONE"},
+	-- cAccess           = {fg="#FC2929"},
 
 	-- TreeSitter specially for CPP
-	cppTSVariable= {fg="#00cc99"},
-	cppTSType  = {fg="#d4a373"},
-	cppTSKeyword  = {fg="#e30022"},
-	cppTSConditional = {fg="#e2ff22"},
-	cppTSProperty = {fg="#ed872d"},
-	cppTSRepeat = {fg="#e30022"},
-	cppTSBoolean = {fg="#8e24ff"},
-	cppTSError = {fg="#FF0000", bg="NONE"},
-	cppTSNamespace = {fg="#FFFFFF", bg="NONE"},
+	cppTSVariable     = {fg="#00cc99"},
+	cppTSType         = {fg="#d4a373"},
+	cppTSKeyword      = {fg="#e30022"},
+	cppTSConditional  = {fg="#e2ff22"},
+	cppTSProperty     = {fg="#ed872d"},
+	cppTSRepeat       = {fg="#e30022"},
+	cppTSBoolean      = {fg="#8e24ff"},
+	cppTSError        = {fg="#FF0000", bg="NONE"},
+	cppTSNamespace    = {fg="#FFFFFF", bg="NONE"},
+	cppTSOperator     = {fg="#F92672", bg="NONE"},
 
 	-- TreeSitter specially for C
-	cTSVariable= {fg="#00cc99"},
-	cTSType  = {fg="#d4a373"},
-	cTSKeyword  = {fg="#e30022"},
-	cTSConditional = {fg="#ffff99"},
-	cTSProperty = {fg="#ed872d"},
-	cTSRepeat = {fg="#e30022"},
-	cTSBoolean = {fg="#8e24ff"},
-	cTSError = {f="#FF0000", bg="NONE"},
+	cTSVariable       = {fg="#00cc99"},
+	cTSType           = {fg="#d4a373"},
+	cTSKeyword        = {fg="#e30022"},
+	cTSConditional    = {fg="#ffff99"},
+	cTSProperty	      = {fg="#ed872d"},
+	cTSRepeat         = {fg="#e30022"},
+	cTSBoolean        = {fg="#8e24ff"},
+	cTSError          = {fg="#FF0000", bg="NONE"},
 
-	-- cppStructure
 	-----------------------------------------
 
 	-----------------------------------------
@@ -459,9 +459,11 @@ M.plugins = {
 	cmakeArguments = {fg = colors.cyan6},
 	cmakeKWvariable_watch = {fg = colors.cyan3},
 	cmakeKWproject = {fg = colors.pink1},
-	cmakeGeneratorExpressions = {fg = colors.purple4},
+	cmakeGeneratorExpressions = {fg = "#FF1111"},
 	cmakeVariable = {fg = colors.cyan3},
 	cmakeKWuse_mangled_mesa = {fg = colors.fg, style = 'italic'},
+
+	cmakeTSVariable = {fg = "#00cc99"},
 	-----------------------------------------
 
 	-----------------------------------------
