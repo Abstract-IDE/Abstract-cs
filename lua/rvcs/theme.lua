@@ -1,9 +1,10 @@
+
 local colors = require 'rvcs.colors'
 local config = require 'rvcs.config'
-
 local M = {}
 
 M.base = {
+
 	---------------------------------------
 	--        Styles
 	---------------------------------------
@@ -12,8 +13,11 @@ M.base = {
 	Underlined = {style = 'underline'},
 	---------------------------------------
 
+
+
+
 	-----------------------------------------
-	--        Editors settings
+	--  Editors settings
 	-----------------------------------------
 	Boolean = {fg = colors.cyan5},
 
@@ -142,44 +146,23 @@ M.base = {
 	Whitespace = {fg = colors.non_text},
 	WildMenu = {fg = colors.fg},
 	lCursor = {fg = colors.cursor_fg, bg = colors.cursor_bg},
-
-	-- Markdown
-	markdownBold = {fg = colors.gray7, style = 'bold'},
-	markdownCode = {fg = colors.orange3},
-	markdownCodeBlock = {fg = colors.orange3},
-	markdownUrl = {fg = colors.purple2, style = 'underline'},
-	markdownCodeError = {fg = colors.red3},
-	markdownH1 = {fg = colors.cyan6},
-	markdownH2 = {fg = colors.cyan6},
-	markdownH3 = {fg = colors.cyan6},
-	markdownH4 = {fg = colors.cyan6},
-	markdownH5 = {fg = colors.cyan6},
-	markdownH6 = {fg = colors.cyan6},
-	markdownId = {fg = colors.purple2},
-	markdownItalic = {gf = colors.gray7, style = 'italic'},
-	markdownLinkText = {fg = colors.cyan6},
-	markdownRule = {fg = colors.accent},
-	markdownListMarker = {fg = colors.red1},
-	markdownHeadingDelimiter = {fg = colors.cyan6},
-	markdownHeadingRule = {fg = colors.accent},
-	markdownUrlTitleDelimiter = {fg = colors.cyan3},
-	markdownCodeSpecial = {fg = colors.orange2},
-	markdownCodeDelimiter = {fg = colors.green1},
-	markdownBlockquote = {fg = colors.accent},
-	markdownIdDeclaration = {fg = colors.cyan6},
-	markdownIdDelimiter = {fg = colors.gray6},
-	markdownLinkDelimiter = {fg = colors.gray6},
-	markdownOrderedListMarker = {fg = colors.red1},
-
 	-----------------------------------------
-	--        end Editors settings
+	--  end Editors settings
 	-----------------------------------------
+
 }
+
+
+
 
 M.plugins = {
 
 	-----------------------------------------
-	--   Buffer:
+	-- PLUGIN SPECIFIC
+	-----------------------------------------
+
+
+	-- Buffer:
 	-----------------------------------------
 	BufferCurrent = {fg = colors.fg, bg = colors.gray},
 	BufferCurrentIndex = {fg = colors.fg, bg = colors.bg},
@@ -199,8 +182,8 @@ M.plugins = {
 	BufferLineFill = {fg = colors.fg, bg = colors.gray, style = 'bold'},
 	-----------------------------------------
 
-	-----------------------------------------
-	--   Cmp:    github.com/hrsh7th/nvim-cmp
+
+	-- Cmp: github.com/hrsh7th/nvim-cmp
 	-----------------------------------------
 	CmpDocumentation = {fg = colors.fg, bg = colors.none},
 	CmpDocumentationBorder = {fg = colors.gray3, bg = colors.none},
@@ -212,23 +195,23 @@ M.plugins = {
 	CmpItemMenu = {fg = colors.gray6, bg = colors.none},
 	-----------------------------------------
 
-	-----------------------------------------
-	--    Dashboard: github.com/glepnir/dashboard-nvim
+
+	-- Dashboard: github.com/glepnir/dashboard-nvim
 	-----------------------------------------
 	DashboardCenter = {fg = colors.purple2},
 	DashboardFooter = {fg = colors.cyan3},
 	DashboardHeader = {fg = colors.cyan6},
 	-----------------------------------------
 
-	-----------------------------------------
-	--   Debug:
+
+	--  Debug:
 	-----------------------------------------
 	debugBreakpoint = {fg = colors.red1, style = 'reverse'},
 	debugPc = {bg = colors.cyan3},
 	-----------------------------------------
 
-	-----------------------------------------
-	--   Diffview
+
+	-- Diffview
 	-----------------------------------------
 	DiffViewNormal = {fg = colors.gray3, bg = colors.dark},
 	DiffviewFilePanelDeletion = {fg = colors.red4},
@@ -240,15 +223,15 @@ M.plugins = {
 	DiffviewVertSplit = {bg = colors.bg},
 	-----------------------------------------
 
-	-----------------------------------------
-	--   Gitsigns: github.com/lewis6991/gitsigns.nvim
+
+	-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 	-----------------------------------------
 	GitSignsAdd = {fg = colors.green1, bg = colors.line_bg},
 	GitSignsChange = {fg = colors.diff_change, bg = colors.line_bg},
 	GitSignsDelete = {fg = colors.red, bg = colors.line_bg},
 	-----------------------------------------
 
-	-----------------------------------------
+
 	-- gitgutter: github.com/airblade/vim-gitgutter
 	-----------------------------------------
 	GitGutterAdd = {fg = colors.diff_add},
@@ -256,17 +239,29 @@ M.plugins = {
 	GitGutterDelete = {fg = colors.red4},
 	-----------------------------------------
 
+
+	-- Indent-blankline: github.com/lukas-reineke/indent-blankline.nvim
 	-----------------------------------------
-	--    Indent-blankline: github.com/lukas-reineke/indent-blankline.nvim
-	-----------------------------------------
-	IndentBlanklineChar = {fg = colors.black3},
-	IndentBlanklineContextChar = {fg = colors.gray3},
-	IndentBlanklineSpaceChar = {fg = colors.cyan6},
-	IndentBlanklineSpaceCharBlankline = {fg = colors.yellow1},
-	-----------------------------------------
+	IndentBlanklineChar               = { fg="#fff000"},
+	IndentBlanklineContextChar        = { fg="#888888" }, -- current Curosr Highlighted function
+	IndentBlanklineSpaceChar          = { fg="#126b70" },  -- cursor color on indent space
+	-- IndentBlanklineSpaceCharBlankline = { fg= "#ff0000"},
+	-- IndentBlanklineContextStart       = { fg= colors.yellow},
+
+	IndentBlanklineIndent1            = { fg="#273c45" },
+	IndentBlanklineIndent2            = { fg="#223232" },
+	IndentBlanklineIndent3            = { fg="#292929" },
+	IndentBlanklineIndent4            = { fg="#202020" },
+	IndentBlanklineIndent5            = { fg="#1f1f1f" },
+	IndentBlanklineIndent6            = { fg="#12121f" },
+	IndentBlanklineIndent7            = { fg="#151515" },
+	IndentBlanklineIndent8            = { fg="#12121f" },
+
 
 	-----------------------------------------
-	--   Lsp: neovim.io/doc/user/lsp.html
+
+
+	-- Lsp: neovim.io/doc/user/lsp.html
 	-----------------------------------------
 	DiagnosticVirtualTextInfo = {fg = colors.orange6},
 	DiagnosticHint = {fg = colors.blue1},
@@ -294,81 +289,21 @@ M.plugins = {
 	DiagnosticVirtualTextHint = {fg = colors.gray1},
 	-----------------------------------------
 
-	-----------------------------------------
-	-- VIM INDENT GUIDES:   github.com/nathanaelkane/vim-indent-guides
+
+	-- vim-indent-guides: github.com/nathanaelkane/vim-indent-guides
 	-----------------------------------------
 	IndentGuidesEven = {fg = colors.white1},
 	IndentGuidesOdd = {fg = colors.gray7},
 	-----------------------------------------
 
-	-----------------------------------------
-	--   flutter-tools.nvim:    github.com/akinsho/flutter-tools.nvim/
+
+	-- flutter-tools.nvim: github.com/akinsho/flutter-tools.nvim/
 	-----------------------------------------
 	FlutterWidgetGuides = {fg = colors.gray4},
 	-----------------------------------------
 
-	-----------------------------------------
-	-- for python language:
-	-----------------------------------------
-	pythonConditional = {fg = colors.purple4},
-	pythonException = {fg = colors.purple4},
-	pythonFunction = {fg = colors.cyan2},
-	pythonInclude = {fg = colors.cyan6},
-	pythonOperator = {fg = colors.cyan3},
-	pythonStatement = {fg = colors.cyan3},
-	pythonBoolean = {fg = colors.cyan5},
 
-	pythonTSRepeat = {fg="#e30022"},
-
-	-----------------------------------------
-
-	-----------------------------------------
-	-- for C/C++ language:
-	-----------------------------------------
-	cppStatement      = {fg="#D68EB2", style="NONE"},
-	cppBlock          = {fg="#FC2929", style="NONE"},
-	-- cppAccess         = {fg="#FC2929"},
-
-	cStatement        = {fg="#D68EB2", style="NONE"},
-	cBlock            = {fg="#FC2929", style="NONE"},
-	cStructure        = {fg="#FC2929", style="NONE"},
-	-- cAccess           = {fg="#FC2929"},
-
-	-- TreeSitter specially for CPP
-	cppTSVariable     = {fg="#00cc99"},
-	cppTSType         = {fg="#d4a373"},
-	cppTSKeyword      = {fg="#e30022"},
-	cppTSConditional  = {fg="#e2ff22"},
-	cppTSProperty     = {fg="#ed872d"},
-	cppTSRepeat       = {fg="#e30022"},
-	cppTSBoolean      = {fg="#8e24ff"},
-	cppTSError        = {fg="#FF0000", bg="NONE"},
-	cppTSNamespace    = {fg="#FFFFFF", bg="NONE"},
-	cppTSOperator     = {fg="#F92672", bg="NONE"},
-
-	-- TreeSitter specially for C
-	cTSVariable       = {fg="#00cc99"},
-	cTSType           = {fg="#d4a373"},
-	cTSKeyword        = {fg="#e30022"},
-	cTSConditional    = {fg="#ffff99"},
-	cTSProperty	      = {fg="#ed872d"},
-	cTSRepeat         = {fg="#e30022"},
-	cTSBoolean        = {fg="#8e24ff"},
-	cTSError          = {fg="#FF0000", bg="NONE"},
-
-	-----------------------------------------
-
-	-----------------------------------------
-	-- for HTML language:
-	-----------------------------------------
-	htmlArg = { style = 'italic'},
-	Title = { style='NONE' },
-	-- htmlTag = {},
-	-- htmlLink = { fg = colors.blue },
-	-----------------------------------------
-
-	-----------------------------------------
-	--    Neogit: github.com/TimUntersberger/neogit
+	-- Neogit: github.com/TimUntersberger/neogit
 	-----------------------------------------
 	NeogitBranch = {fg = colors.purple3},
 	NeogitRemote = {fg = colors.purple2},
@@ -383,8 +318,8 @@ M.plugins = {
 	NeogitDiffDeleteHighlight = {fg = colors.red4, bg = colors.dark},
 	-----------------------------------------
 
-	-----------------------------------------
-	--   Nvim-tree: github.com/kyazdani42/nvim-tree.lua
+
+	-- Nvim-tree: github.com/kyazdani42/nvim-tree.lua
 	-----------------------------------------
 	NvimTreeCursorLine = {fg = colors.black, bg = colors.cyan5},
 	NvimTreeExecFile = {fg = colors.green1},
@@ -406,8 +341,8 @@ M.plugins = {
 	NvimTreeVertSplit = {fg = colors.gray1},
 	-----------------------------------------
 
-	-----------------------------------------
-	--    telescope: github.com/nvim-telescope/telescope.nvim
+
+	-- telescope: github.com/nvim-telescope/telescope.nvim
 	-----------------------------------------
 	TelescopeBorder = {
 		fg = colors.gray3,
@@ -418,7 +353,7 @@ M.plugins = {
 	TelescopeSelection = {fg = colors.white, bg = colors.gray},
 	-----------------------------------------
 
-	-----------------------------------------
+
 	-- https://github.com/folke/trouble.nvim
 	-----------------------------------------
 	-- TroubleTextInformation = { fg = colors.red, bg = colors.green},
@@ -451,10 +386,108 @@ M.plugins = {
 
 	-----------------------------------------
 
+
 	-----------------------------------------
-	-- MAKE
+	-- end PLUGIN SPECIFIC
 	-----------------------------------------
 
+
+
+
+	-----------------------------------------
+	-- LANGUAGE SPECIFIC
+	-----------------------------------------
+
+	-- Markdown
+	-----------------------------------------
+	markdownBold = {fg = colors.gray7, style = 'bold'},
+	markdownCode = {fg = colors.orange3},
+	markdownCodeBlock = {fg = colors.orange3},
+	markdownUrl = {fg = colors.purple2, style = 'underline'},
+	markdownCodeError = {fg = colors.red3},
+	markdownH1 = {fg = colors.cyan6},
+	markdownH2 = {fg = colors.cyan6},
+	markdownH3 = {fg = colors.cyan6},
+	markdownH4 = {fg = colors.cyan6},
+	markdownH5 = {fg = colors.cyan6},
+	markdownH6 = {fg = colors.cyan6},
+	markdownId = {fg = colors.purple2},
+	markdownItalic = {gf = colors.gray7, style = 'italic'},
+	markdownLinkText = {fg = colors.cyan6},
+	markdownRule = {fg = colors.accent},
+	markdownListMarker = {fg = colors.red1},
+	markdownHeadingDelimiter = {fg = colors.cyan6},
+	markdownHeadingRule = {fg = colors.accent},
+	markdownUrlTitleDelimiter = {fg = colors.cyan3},
+	markdownCodeSpecial = {fg = colors.orange2},
+	markdownCodeDelimiter = {fg = colors.green1},
+	markdownBlockquote = {fg = colors.accent},
+	markdownIdDeclaration = {fg = colors.cyan6},
+	markdownIdDelimiter = {fg = colors.gray6},
+	markdownLinkDelimiter = {fg = colors.gray6},
+	markdownOrderedListMarker = {fg = colors.red1},
+
+
+	-- Python Language
+	-----------------------------------------
+	pythonConditional = {fg = colors.purple4},
+	pythonException = {fg = colors.purple4},
+	pythonFunction = {fg = colors.cyan2},
+	pythonInclude = {fg = colors.cyan6},
+	pythonOperator = {fg = colors.cyan3},
+	pythonStatement = {fg = colors.cyan3},
+	pythonBoolean = {fg = colors.cyan5},
+
+	pythonTSRepeat = {fg="#e30022"},
+	-----------------------------------------
+
+
+	-- C/C++ language:
+	-----------------------------------------
+	cppStatement      = {fg="#D68EB2", style="NONE"},
+	cppBlock          = {fg="#FC2929", style="NONE"},
+	-- cppAccess         = {fg="#FC2929"},
+
+	cStatement        = {fg="#D68EB2", style="NONE"},
+	cBlock            = {fg="#FC2929", style="NONE"},
+	cStructure        = {fg="#FC2929", style="NONE"},
+	-- cAccess           = {fg="#FC2929"},
+
+	-- TreeSitter specially for CPP
+	cppTSVariable     = {fg="#00cc99"},
+	cppTSType         = {fg="#d4a373"},
+	cppTSKeyword      = {fg="#e30022"},
+	cppTSConditional  = {fg="#e2ff22"},
+	cppTSProperty     = {fg="#ed872d"},
+	cppTSRepeat       = {fg="#e30022"},
+	cppTSBoolean      = {fg="#8e24ff"},
+	cppTSError        = {fg="#FF0000", bg="NONE"},
+	cppTSNamespace    = {fg="#FFFFFF", bg="NONE"},
+	cppTSOperator     = {fg="#F92672", bg="NONE"},
+
+	-- TreeSitter specially for C
+	cTSVariable       = {fg="#00cc99"},
+	cTSType           = {fg="#d4a373"},
+	cTSKeyword        = {fg="#e30022"},
+	cTSConditional    = {fg="#ffff99"},
+	cTSProperty	      = {fg="#ed872d"},
+	cTSRepeat         = {fg="#e30022"},
+	cTSBoolean        = {fg="#8e24ff"},
+	cTSError          = {fg="#FF0000", bg="NONE"},
+	-----------------------------------------
+
+
+	-- HTML language:
+	-----------------------------------------
+	htmlArg = { style = 'italic'},
+	Title = { style='NONE' },
+	-- htmlTag = {},
+	-- htmlLink = { fg = colors.blue },
+	-----------------------------------------
+
+
+	-- MAKE Language
+	-----------------------------------------
 	cmakeCommand = {fg = colors.white},
 	cmakeArguments = {fg = colors.cyan6},
 	cmakeKWvariable_watch = {fg = colors.cyan3},
@@ -466,69 +499,76 @@ M.plugins = {
 	cmakeTSVariable = {fg = "#00cc99"},
 	-----------------------------------------
 
+
+	-----------------------------------------
+	-- end LANGUAGE SPECIFIC
+	-----------------------------------------
+
+
+
+
 	-----------------------------------------
 	-- treesitter:  github.com/nvim-treesitter/nvim-treesitter
 	-----------------------------------------
 
-	TSInclude = {fg = '#F92672'},
-	TSVariable = {fg = '#01af96', style = 'NONE'},
-	TSString = {fg = '#CF5C36'},
-	TSFunction = {fg = '#FFFFFF'},
-	TSKeywordFunction = {fg = '#FC2929'},
-	TSKeywordReturn = {fg = '#FC2929'},
-	TSKeywordOperator = {fg = '#FBB13C'},
-	TSParameter = {fg = '#7FBEEB', style = 'italic'},
-	TSComment = {fg = '#5c4d4d', style = 'italic'},
-	TSOperator = {fg = "#FC2929"},
-	TSConditional = {fg = '#00AF54'},
-	TSKeyword = {fg = "#F92672", style="NONE"},
-	TSException = {fg = "#00DFFF"},
-	TSBoolean = {fg = "#00DFFF"},
-	TSError = {fg = "#FC2929", bg = "#060606", style = 'bold'},
-	TSNumber = {fg = "#c19a6b"},
-	TSType = {fg = '#767FD1', style="NONE"},
-	TSMethod = {fg = "#8877B1"},
-	TSConstructor = {fg = "#01A0F5"},
-	TSFuncBuiltin = {fg = "#00bfff"},
+	TSInclude            = { fg='#F92672' },
+	TSVariable           = { fg='#01af96' , style = 'NONE'},
+	TSString             = { fg='#CF5C36' },
+	TSFunction           = { fg='#FFFFFF' },
+	TSKeywordFunction    = { fg='#FC2929' },
+	TSKeywordReturn      = { fg='#FC2929' },
+	TSKeywordOperator    = { fg='#FBB13C' },
+	TSParameter          = { fg='#7FBEEB' , style = 'italic'},
+	TSComment            = { fg='#5c4d4d' , style = 'italic'},
+	TSOperator           = { fg="#FC2929" },
+	TSConditional        = { fg='#00AF54' },
+	TSKeyword            = { fg="#F92672" , style="NONE"},
+	TSException          = { fg="#00DFFF" },
+	TSBoolean            = { fg="#00DFFF" },
+	TSError              = { fg="#FC2929" , bg = "#060606", style = 'bold'},
+	TSNumber             = { fg="#c19a6b" },
+	TSType               = { fg='#767FD1' , style="NONE"},
+	TSMethod             = { fg="#8877B1" },
+	TSConstructor        = { fg="#01A0F5" },
+	TSFuncBuiltin        = { fg="#00bfff" },
 
-	TSWarning = {fg = "#FBB13C"},
-	TSNote = {fg = "#FBB13C"},
-	TSTag = {fg = "#178C94"},
-	TSTagAttribute = {fg = "#00cc99"},
+	TSWarning            = { fg="#FBB13C" },
+	TSNote               = { fg="#FBB13C" },
+	TSTag                = { fg="#178C94" },
+	TSTagAttribute       = { fg="#00cc99" },
 
-	TSAnnotation = {fg = "#cc5500"},
-	TSAttribute = {fg = "#e97451"},
-	TSCharacter = {fg = "#8a3324"},
-	TSConstBuiltin = {fg = "#bd33a4"},
-	TSConstMacro = {fg = "#702963"},
-	TSConstant = {fg = "#007aa5"},
-	TSField = {fg = "#01af96"},
-	TSFloat = {fg = "#5f9ea0"},
-	TSFuncMacro = {fg = "#006b3c"},
-	TSLabel = {fg = "#ed872d"},
-	TSLiteral = {fg = "#e30022"},
-	TSNamespace = {fg = "#a67b5b"},
-	TSProperty = {fg = "#307c44"},
-	TSPunctBracket = {fg = "#a3c1ad"},
-	TSPunctDelimiter = {fg = "#c19a6b"},
-	TSPunctSpecial = {fg = "#78866b"},
-	TSRepeat = {fg = "#ffff99"},
-	TSStringEscape = {fg = "#ff0800"},
-	TSStringRegex = {fg = "#ff0800"},
-	TSStrong = {fg = "#e4717a"},
-	TSStructure = {fg = "#00bfff"},
-	TSSymbol = {fg = "#592720"},
-	TSTagDelimiter = {fg = "#00cc99"},
-	TSText = {fg = "#ffff99"},
-	TSQueryLinterError = {fg = "#eb4c42"},
-	TSTitle = {fg = "#ffff99", style = 'NONE'},
-	TSTypeBuiltin = {fg = "#ffa6c9"},
-	TSURI = {fg = "#b31b1b", style = 'underline'},
-	TSVariableBuiltin = {fg = "#99badd"},
-
-	TSParameterReference = {fg = colors.blue2},
-	TSEmphasis = {style = 'italic'},
-	TSUnderline = {style = 'underline'},
+	TSAnnotation         = { fg="#cc5500" },
+	TSAttribute          = { fg="#e97451" },
+	TSCharacter          = { fg="#8a3324" },
+	TSConstBuiltin       = { fg="#bd33a4" },
+	TSConstMacro         = { fg="#702963" },
+	TSConstant           = { fg="#007aa5" },
+	TSField              = { fg="#01af96" },
+	TSFloat              = { fg="#5f9ea0" },
+	TSFuncMacro          = { fg="#006b3c" },
+	TSLabel              = { fg="#ed872d" },
+	TSLiteral            = { fg="#e30022" },
+	TSNamespace          = { fg="#a67b5b" },
+	TSProperty           = { fg="#307c44" },
+	TSPunctBracket       = { fg="#a3c1ad" },
+	TSPunctDelimiter     = { fg="#c19a6b" },
+	TSPunctSpecial       = { fg="#78866b" },
+	TSRepeat             = { fg="#ffff99" },
+	TSStringEscape       = { fg="#ff0800" },
+	TSStringRegex        = { fg="#ff0800" },
+	TSStrong             = { fg="#e4717a" },
+	TSStructure          = { fg="#00bfff" },
+	TSSymbol             = { fg="#592720" },
+	TSTagDelimiter       = { fg="#00cc99" },
+	TSText               = { fg="#ffff99" },
+	TSQueryLinterError   = { fg="#eb4c42" },
+	TSTitle              = { fg="#ffff99" , style = 'NONE'},
+	TSTypeBuiltin        = { fg="#ffa6c9" },
+	TSURI                = { fg="#b31b1b" , style = 'underline'},
+	TSVariableBuiltin    = { fg="#99badd" },
+	TSParameterReference = { fg=colors.blue2 },
+	TSEmphasis           = { style = 'italic' },
+	TSUnderline          = { style = 'underline' },
 	-----------------------------------------
 
 }
