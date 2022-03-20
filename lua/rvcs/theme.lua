@@ -138,7 +138,7 @@ M.base = {
 	Typedef = {fg = colors.cyan4},
 
 	Variable = {fg = colors.cyan3},
-	VertSplit = {fg = colors.vsplit_bg},
+	VertSplit = {fg="#060606", bg="#808080"},
 	Visual = {fg = "NONE", bg = colors.visual_select_bg, style = 'bold'},
 	VisualNOS = {fg = colors.selection_fg, bg = colors.selection_bg},
 
