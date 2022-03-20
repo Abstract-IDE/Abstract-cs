@@ -64,7 +64,7 @@ M.base = {
 
 	Keyword = {fg = colors.cyan4},
 
-	Label = {fg = colors.cyan4},
+	Label = { fg="#888888", style="bold" }, -- underline Highlighted defination
 	LineNr = {fg = colors.line_fg, bg = colors.line_bg},
 
 	Macro = {fg = colors.purple4},
@@ -264,28 +264,28 @@ M.plugins = {
 	-- Lsp: neovim.io/doc/user/lsp.html
 	-----------------------------------------
 	DiagnosticVirtualTextInfo = {fg = colors.orange6},
-	DiagnosticHint = {fg = colors.blue1},
-	DiagnosticError = {fg = colors.red2},
-	DiagnosticInfo = {fg = colors.yellow1},
+	DiagnosticHint            = {fg = colors.blue1},
+	DiagnosticError           = {fg = colors.red2},
+	DiagnosticInfo            = {fg = colors.yellow1},
 	DiagnosticVirtualTextWarn = {fg = colors.orange6},
-	DiagnosticWarn = {fg = colors.orange1},
+	DiagnosticWarn            = {fg = colors.orange1},
 
-	DiagnosticFloatingError = {fg = colors.red2},
-	DiagnosticFloatingHint = {fg = colors.blue1},
-	DiagnosticFloatingInfo = {fg = colors.yellow1},
-	DiagnosticFloatingWarn = {fg = colors.orange1},
+	DiagnosticFloatingError   = {fg = colors.red2},
+	DiagnosticFloatingHint    = {fg = colors.blue1},
+	DiagnosticFloatingInfo    = {fg = colors.yellow1},
+	DiagnosticFloatingWarn    = {fg = colors.orange1},
 
-	DiagnosticSignError = {fg = colors.red2, bg = colors.line_bg},
-	DiagnosticSignHint = {fg = colors.blue1, bg = colors.line_bg},
-	DiagnosticSignInfo = {fg = colors.yellow1, bg = colors.line_bg},
-	DiagnosticSignWarn = {fg = colors.orange1, bg = colors.line_bg},
+	DiagnosticSignError       = {fg = colors.red2, bg = colors.line_bg},
+	DiagnosticSignHint        = {fg = colors.blue1, bg = colors.line_bg},
+	DiagnosticSignInfo        = {fg = colors.yellow1, bg = colors.line_bg},
+	DiagnosticSignWarn        = {fg = colors.orange1, bg = colors.line_bg},
 
-	DiagnosticUnderlineError = {style = 'underline'},
-	DiagnosticUnderlineHint = {style = 'underline'},
-	DiagnosticUnderlineInfo = {style = 'underline'},
-	DiagnosticUnderlineWarn = {style = 'underline'},
+	DiagnosticUnderlineError  = {style = 'underline'},
+	DiagnosticUnderlineHint   = {style = 'underline'},
+	DiagnosticUnderlineInfo   = {style = 'underline'},
+	DiagnosticUnderlineWarn   = {style = 'underline'},
 
-	DiagnosticVirtualTextError = {fg = colors.red5},
+	DiagnosticVirtualTextError= {fg = colors.red5},
 	DiagnosticVirtualTextHint = {fg = colors.gray1},
 	-----------------------------------------
 
@@ -321,24 +321,24 @@ M.plugins = {
 
 	-- Nvim-tree: github.com/kyazdani42/nvim-tree.lua
 	-----------------------------------------
-	NvimTreeCursorLine = {fg = colors.black, bg = colors.cyan5},
-	NvimTreeExecFile = {fg = colors.green1},
-	NvimTreeFolderIcon = {fg = colors.cyan6},
-	NvimTreeFolderName = {fg = colors.cyan6},
-	NvimTreeGitDeleted = {fg = colors.red4},
-	NvimTreeGitDirty = {fg = colors.diff_add},
-	NvimTreeGitMerge = {fg = colors.diff_change},
-	NvimTreeGitNew = {fg = colors.diff_add},
-	NvimTreeGitRenamed = {fg = colors.diff_change},
-	NvimTreeGitStaged = {fg = colors.diff_add},
-	NvimTreeImageFile = {fg = colors.purple2},
+	NvimTreeCursorLine   = {fg = colors.black, bg = colors.cyan5},
+	NvimTreeExecFile     = {fg = colors.green1},
+	NvimTreeFolderIcon   = {fg = colors.cyan6},
+	NvimTreeFolderName   = {fg = colors.cyan6},
+	NvimTreeGitDeleted   = {fg = colors.red4},
+	NvimTreeGitDirty     = {fg = colors.diff_add},
+	NvimTreeGitMerge     = {fg = colors.diff_change},
+	NvimTreeGitNew       = {fg = colors.diff_add},
+	NvimTreeGitRenamed   = {fg = colors.diff_change},
+	NvimTreeGitStaged    = {fg = colors.diff_add},
+	NvimTreeImageFile    = {fg = colors.purple2},
 	NvimTreeIndentMarker = {fg = colors.gray3},
-	NvimTreeNormal = {fg = colors.accent, bg = colors.black2},
+	NvimTreeNormal       = {fg = colors.accent, bg = colors.black2},
 	NvimTreeOpenedFolderName = {fg = colors.cyan6, style = 'italic'},
-	NvimTreeRootFolder = {fg = colors.gray3, style = 'bold'},
-	NvimTreeSpecialFile = {fg = colors.orange2},
-	NvimTreeSymlink = {fg = colors.cyan3},
-	NvimTreeVertSplit = {fg = colors.gray1},
+	NvimTreeRootFolder   = {fg = colors.gray3, style = 'bold'},
+	NvimTreeSpecialFile  = {fg = colors.orange2},
+	NvimTreeSymlink      = {fg = colors.cyan3},
+	NvimTreeVertSplit    = {fg = colors.gray1},
 	-----------------------------------------
 
 
