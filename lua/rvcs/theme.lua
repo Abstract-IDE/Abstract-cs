@@ -93,10 +93,15 @@ M.base = {
 	Number = {fg = colors.purple4},
 
 	Operator = {fg = colors.cyan3},
-	Pmenu = {fg = colors.white1, bg = colors.gray},
-	PmenuSbar = {bg = colors.gray},
-	PmenuSel = {fg = colors.black, bg = colors.cyan6},
-	PmenuThumb = {bg = colors.cyan6},
+
+	--  completion menu
+	----------------------------------
+	Pmenu      = {fg=colors.white1, bg="#141414"},
+	PmenuSbar  = {bg=colors.gray},
+	PmenuSel   = {fg=colors.black, bg = colors.cyan6},
+	PmenuThumb = {bg=colors.cyan6},
+	----------------------------------
+
 	PreCondit = {fg = colors.purple4},
 	PreProc = {fg = colors.cyan4},
 
@@ -185,14 +190,14 @@ M.plugins = {
 
 	-- Cmp: github.com/hrsh7th/nvim-cmp
 	-----------------------------------------
-	CmpDocumentation = {fg = colors.fg, bg = colors.none},
+	CmpDocumentation       = {fg = colors.fg,    bg = colors.none},
 	CmpDocumentationBorder = {fg = colors.gray3, bg = colors.none},
-	CmpItemAbbr = {fg = colors.fg, bg = colors.none},
-	CmpItemAbbrDeprecated = {fg = colors.gray3, bg = colors.none},
-	CmpItemAbbrMatch = {fg = colors.cyan3, bg = colors.none},
-	CmpItemAbbrMatchFuzzy = {fg = colors.cyan3, bg = colors.none},
-	CmpItemKind = {fg = colors.cyan6, bg = colors.none},
-	CmpItemMenu = {fg = colors.gray6, bg = colors.none},
+	CmpItemAbbr            = {fg = colors.fg,    bg = colors.none},
+	CmpItemAbbrDeprecated  = {fg = colors.gray3, bg = colors.none},
+	CmpItemAbbrMatch       = {fg = colors.cyan3, bg = colors.none},
+	CmpItemAbbrMatchFuzzy  = {fg = colors.cyan3, bg = colors.none},
+	CmpItemKind            = {fg = colors.cyan6, bg = colors.none},
+	CmpItemMenu            = {fg = colors.gray6, bg = colors.none},
 	-----------------------------------------
 
 
@@ -483,6 +488,17 @@ M.plugins = {
 	Title = { style='NONE' },
 	-- htmlTag = {},
 	-- htmlLink = { fg = colors.blue },
+	-----------------------------------------
+
+
+	-- CSS
+	-----------------------------------------
+	-----------------------------------------
+
+
+	-- CSS
+	-----------------------------------------
+	scssTSProperty      = {fg="#00cc99"},
 	-----------------------------------------
 
 
