@@ -85,7 +85,7 @@ M.base = {
 		fg = colors.fg,
 		bg = config.transparent_background and 'NONE' or colors.bg,
 	},
-	NormalFloat = {bg = colors.dark},
+	NormalFloat = {bg="#060606"}, -- floating window
 	NormalNC = {
 		fg = colors.fg,
 		bg = config.transparent_background and 'NONE' or colors.bg,
