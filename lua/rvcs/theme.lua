@@ -65,7 +65,8 @@ M.base = {
 	Keyword = {fg = colors.cyan4},
 
 	Label = { fg="#888888", style="bold" }, -- underline Highlighted defination
-	LineNr = {fg = colors.line_fg, bg = colors.line_bg},
+	LineNr = {fg = colors.line_fg, bg = "#090909"}, -- number column
+	SignColumn = {bg = "#090909"},
 
 	Macro = {fg = colors.purple4},
 	MatchParen = {fg = colors.white1, bg = colors.cyan6},
@@ -111,7 +112,6 @@ M.base = {
 	Repeat = {fg = colors.cyan4},
 
 	Search = {fg = colors.bg, bg = colors.orange2},
-	SignColumn = {bg = colors.line_bg},
 	Special = {fg = colors.orange3},
 	SpecialChar = {fg = colors.gray5},
 	SpecialComment = {fg = colors.cyan5},
