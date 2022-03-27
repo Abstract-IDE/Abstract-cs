@@ -48,7 +48,7 @@ M.base = {
 
 	-- EndOfBuffer = { fg = colors.bg },
 	Error = {fg = colors.red1, bg = colors.bg, style = 'bold'},
-	ErrorMsg = {fg = colors.gray, bg = colors.red3, style = 'bold'},
+	ErrorMsg = {fg="#FF3939", bg = colors.bg, style = 'bold'}, -- command error message
 	Exception = {fg = colors.cyan5},
 
 	Float = {fg = colors.purple4},
