@@ -169,22 +169,22 @@ M.plugins = {
 
 	-- Buffer:
 	-----------------------------------------
-	BufferCurrent = {fg = colors.fg, bg = colors.gray},
-	BufferCurrentIndex = {fg = colors.fg, bg = colors.bg},
-	BufferCurrentMod = {fg = colors.yellow1, bg = colors.bg},
-	BufferCurrentSign = {fg = colors.blue1, bg = colors.bg},
-	BufferCurrentTarget = {fg = colors.red1, bg = colors.bg, style = 'bold'},
-	BufferInactive = {fg = colors.gray3, bg = colors.dark},
-	BufferInactiveIndex = {fg = colors.gray3, bg = colors.dark},
-	BufferInactiveMod = {fg = colors.yellow1, bg = colors.dark},
-	BufferInactiveSign = {fg = colors.gray3, bg = colors.dark},
-	BufferInactiveTarget = {fg = colors.red1, bg = colors.dark, style = 'bold'},
-	BufferVisible = {fg = colors.fg, bg = colors.bg},
-	BufferVisibleIndex = {fg = colors.fg, bg = colors.bg},
-	BufferVisibleMod = {fg = colors.yellow1, bg = colors.bg},
-	BufferVisibleSign = {fg = colors.gray3, bg = colors.bg},
-	BufferVisibleTarget = {fg = colors.red1, bg = colors.bg, style = 'bold'},
-	BufferLineFill = {fg = colors.fg, bg = colors.gray, style = 'bold'},
+	BufferCurrent        = {fg = colors.fg,      bg = "#141414"},
+	BufferCurrentIndex   = {fg = colors.fg,      bg = colors.bg},
+	BufferCurrentMod     = {fg = colors.yellow1, bg = colors.bg},
+	BufferCurrentSign    = {fg = colors.blue1,   bg = colors.bg},
+	BufferCurrentTarget  = {fg = colors.red1,    bg = colors.bg, style = 'bold'},
+	BufferInactive       = {fg = colors.gray3,   bg = colors.dark},
+	BufferInactiveIndex  = {fg = colors.gray3,   bg = colors.dark},
+	BufferInactiveMod    = {fg = colors.yellow1, bg = colors.dark},
+	BufferInactiveSign   = {fg = colors.gray3,   bg = colors.dark},
+	BufferInactiveTarget = {fg = colors.red1,    bg = colors.dark, style = 'bold'},
+	BufferVisible        = {fg = colors.fg,      bg = colors.bg},
+	BufferVisibleIndex   = {fg = colors.fg,      bg = colors.bg},
+	BufferVisibleMod     = {fg = colors.yellow1, bg = colors.bg},
+	BufferVisibleSign    = {fg = colors.gray3,   bg = colors.bg},
+	BufferVisibleTarget  = {fg = colors.red1,    bg = colors.bg, style = 'bold'},
+	BufferLineFill       = {fg = colors.fg,      bg = "#141414", style = 'bold'},
 	-----------------------------------------
 
 
