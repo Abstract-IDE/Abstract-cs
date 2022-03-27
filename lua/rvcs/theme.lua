@@ -502,6 +502,22 @@ M.plugins = {
 	-----------------------------------------
 
 
+	-- JSON Language
+	-----------------------------------------
+	jsonLabel        = { fg="#FFFFFF", style='NONE' },
+	jsonKeyword      = { fg="#053456", style='NONE'},
+	jsonKeywordMatch = { fg="#ff0000", style='bold'},
+
+	jsonString       = { fg="#ff0000", style='italic'},
+	-- jsonStringMatch  = { fg="#ff0000", style='italic'},
+	-- jsonFold         = { fg="#ff0000", style='italic'},
+	-- jsonBraces       = { fg="#00ff00", style='NONE' },
+
+	jsonTSLabel      = { fg="#FFFFFF", style='NONE' },
+	jsonTSPunctBracket       = { fg="#036DA5", style='bold' },
+	-----------------------------------------
+
+
 	-- MAKE Language
 	-----------------------------------------
 	cmakeCommand = {fg = colors.white},
