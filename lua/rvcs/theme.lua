@@ -231,9 +231,9 @@ M.plugins = {
 
 	-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 	-----------------------------------------
-	GitSignsAdd = {fg = colors.green1, bg = colors.line_bg},
-	GitSignsChange = {fg = colors.diff_change, bg = colors.line_bg},
-	GitSignsDelete = {fg = colors.red, bg = colors.line_bg},
+	GitSignsAdd    = {fg = colors.green1, bg ="#090909"},
+	GitSignsChange = {fg = colors.diff_change, bg="#090909"},
+	GitSignsDelete = {fg = colors.red, bg="#090909"},
 	-----------------------------------------
 
 
@@ -280,10 +280,10 @@ M.plugins = {
 	DiagnosticFloatingInfo    = {fg = colors.yellow1},
 	DiagnosticFloatingWarn    = {fg = colors.orange1},
 
-	DiagnosticSignError       = {fg = colors.red2, bg = colors.line_bg},
-	DiagnosticSignHint        = {fg = colors.blue1, bg = colors.line_bg},
-	DiagnosticSignInfo        = {fg = colors.yellow1, bg = colors.line_bg},
-	DiagnosticSignWarn        = {fg = colors.orange1, bg = colors.line_bg},
+	DiagnosticSignError       = {fg = colors.red2,    bg="#090909"},
+	DiagnosticSignHint        = {fg = colors.blue1,   bg="#090909"},
+	DiagnosticSignInfo        = {fg = colors.yellow1, bg="#090909"},
+	DiagnosticSignWarn        = {fg = colors.orange1, bg="#090909"},
 
 	DiagnosticUnderlineError  = {style = 'underline'},
 	DiagnosticUnderlineHint   = {style = 'underline'},
