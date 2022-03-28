@@ -493,6 +493,23 @@ M.plugins = {
 
 	-- CSS
 	-----------------------------------------
+
+
+	cssFlexibleBoxAttr  = { fg="#00557f", style='italic' }, -- example -> center
+	cssColor            = { fg="#00ffff", style='italic' }, -- example -> green, red, blue
+	cssUnitDecorators   = {  style='italic' },  -- exaple -> rem, em, px,
+
+	cssTSPunctDelimiter = { fg="#e0e0e0", style='NONE' }, -- example -> :
+	cssTSPunctBracket   = { fg="#ffffff", style='NONE' }, -- example -> {}, ()
+	cssTSProperty       = { fg="#ff557f", style='NONE' }, -- example -> background-color, display, text-align
+
+	-- cssDefinition = { fg="#f0ff0f", style='bold' },
+	-- cssAttrRegion = { fg="#ff0fff", style='bold' },
+	-- cssClassName  = { fg="#FFFFFF", style='NONE' },
+	-- cssBackgroundProp
+	-- cssAttrRegion
+	-- cssBraces
+
 	-----------------------------------------
 
 
@@ -513,8 +530,8 @@ M.plugins = {
 	-- jsonFold         = { fg="#ff0000", style='italic'},
 	-- jsonBraces       = { fg="#00ff00", style='NONE' },
 
-	jsonTSLabel      = { fg="#FFFFFF", style='NONE' },
-	jsonTSPunctBracket       = { fg="#036DA5", style='bold' },
+	jsonTSLabel        = { fg="#FFFFFF", style='NONE' },
+	jsonTSPunctBracket = { fg="#036DA5", style='bold' },
 	-----------------------------------------
 
 
