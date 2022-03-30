@@ -496,12 +496,14 @@ M.plugins = {
 
 
 	cssFlexibleBoxAttr  = { fg="#00557f", style='italic' }, -- example -> center
-	cssColor            = { fg="#00ffff", style='italic' }, -- example -> green, red, blue
-	cssUnitDecorators   = {  style='italic' },  -- exaple -> rem, em, px,
+	cssColor            = { fg="#ff557f", style='italic' }, -- example -> green, red, blue
+	cssUnitDecorators   = { style='italic' },  -- exaple -> rem, em, px,
+	cssTagName          = { fg="#00cc99", style='NONE' }, -- only changes bold/italic| example -> body, html
 
 	cssTSPunctDelimiter = { fg="#e0e0e0", style='NONE' }, -- example -> :
 	cssTSPunctBracket   = { fg="#ffffff", style='NONE' }, -- example -> {}, ()
-	cssTSProperty       = { fg="#ff557f", style='NONE' }, -- example -> background-color, display, text-align
+	cssTSProperty       = { fg="#007AA5", style='NONE' }, -- example -> background-color, display, text-align
+	cssTSType           = { fg="#00cc99", style='NONE' }, -- only changes color | example -> body, html
 
 	-- cssDefinition = { fg="#f0ff0f", style='bold' },
 	-- cssAttrRegion = { fg="#ff0fff", style='bold' },
