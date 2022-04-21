@@ -185,6 +185,7 @@ M.plugins = {
 	BufferVisibleSign    = {fg = colors.gray3,   bg = colors.bg},
 	BufferVisibleTarget  = {fg = colors.red1,    bg = colors.bg, style = 'bold'},
 	BufferLineFill       = {fg = colors.fg,      bg = "#141414", style = 'bold'},
+	BuffNumbers          = {fg = colors.red,     bg = "#141414"},
 	-----------------------------------------
 
 
