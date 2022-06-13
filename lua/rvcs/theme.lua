@@ -291,7 +291,7 @@ M.plugins = {
 	DiagnosticUnderlineInfo   = {style = 'underline'},
 	DiagnosticUnderlineWarn   = {style = 'underline'},
 
-	DiagnosticVirtualTextError= {fg = colors.red5},
+	DiagnosticVirtualTextError= {fg = "#840000"},
 	DiagnosticVirtualTextHint = {fg = colors.gray1},
 	-----------------------------------------
 
