@@ -233,7 +233,7 @@ M.plugins = {
 	-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 	-----------------------------------------
 	GitSignsAdd    = {fg = colors.green1, bg ="#090909"},
-	GitSignsChange = {fg = colors.diff_change, bg="#090909"},
+	GitSignsChange = {fg = "#967b11", bg="#090909"},
 	GitSignsDelete = {fg = colors.red, bg="#090909"},
 	-----------------------------------------
 
