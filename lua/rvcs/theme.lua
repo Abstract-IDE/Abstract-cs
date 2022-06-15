@@ -97,7 +97,7 @@ M.base = {
 
 	--  completion menu
 	----------------------------------
-	Pmenu      = {fg=colors.white1, bg="#141414"},
+	Pmenu      = {fg=colors.white1, bg="#060606"},
 	PmenuSbar  = {bg=colors.gray},
 	PmenuSel   = {fg=colors.black, bg = colors.cyan6},
 	PmenuThumb = {bg=colors.cyan6},
