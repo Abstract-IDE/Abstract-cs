@@ -1,2 +1,2 @@
-package.loaded['rvcs'] = nil
-require 'rvcs'
+package.loaded['abscs'] = nil
+require 'abscs'

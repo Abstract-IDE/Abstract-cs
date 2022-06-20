@@ -1,6 +1,6 @@
-# roshnivim-cs
+# abstract-cs
 
-colorscheme for (neo)vim written in lua, specially made for [roshnivim ](https://github.com/shaeinst/roshnivim) Colorscheme with Tree-sitter support.
+colorscheme for (neo)vim written in lua, specially made for [abstract](github.com/abstract-IDE/abstract-cs) Colorscheme with Tree-sitter support.
 
 ## Screenshots
    ![screenshot_lua](https://raw.githubusercontent.com/shaeinst/media/main/images/github-repositories/roshnivim/buff_and_nerdtree.png)
@@ -37,13 +37,13 @@ Install the theme with your preferred package manager:
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'shaeinst/roshnivim-cs'
+Plug 'Abstract-IDE/Abstract-cs'
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'shaeinst/roshnivim-cs'
+use 'Abstract-IDE/Abstract-cs'
 ```
 
 ## 🚀 Usage
@@ -52,12 +52,12 @@ Enable the colorscheme:
 
 ```vim
 " Vim Script
-colorscheme rvcs
+colorscheme abscs
 ```
 
 ```lua
 -- Lua
-vim.cmd[[colorscheme rvcs]]
+vim.cmd[[colorscheme abscs]]
 ```
 
 ## 🔥 Contributing

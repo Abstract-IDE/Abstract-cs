@@ -1,7 +1,7 @@
-local util          = require 'rvcs.util'
-local theme         = require 'rvcs.theme'
+local util          = require 'abscs.util'
+local theme         = require 'abscs.theme'
 
 vim.o.background    = 'dark'
-vim.g.colors_name   = 'rvcs-cs'
+vim.g.colors_name   = 'abscs-cs'
 
 util.load(theme)

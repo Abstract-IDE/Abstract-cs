@@ -1,6 +1,6 @@
 
-local colors = require "rvcs.colors"
-local config = require "rvcs.config"
+local colors = require "abscs.colors"
+local config = require "abscs.config"
 local M = {}
 
 M.base = {
