@@ -18,6 +18,11 @@ M.base = {
 	--  Editors settings
 	-----------------------------------------
 
+	NormalFloat   = { bg=colors.bg },                          -- floating window
+	FloatBorder   = { fg = colors.gray3, bg = "NONE" },
+	FoldColumn    = { fg = colors.line_fg },
+	Folded        = { fg = colors.white, bg = colors.gray },
+
 	--  completion menu
 	----------------------------------
 	Pmenu         = { fg="#848484", bg="#060606" },-- completion window border color and background color
@@ -26,6 +31,11 @@ M.base = {
 	PmenuThumb    = { bg=colors.cyan6 },
 	----------------------------------
 
+	Cursor        = { fg = colors.yellow, bg = colors.bg },
+	CursorColumn  = { fg = "NONE", bg = "NONE" },
+	-- CursorIM      =  { fg = colors.cursor_fg, bg = colors.cursor_bg },
+	CursorLine    = { bg = colors.black2 },
+	CursorLineNr  = { fg = colors.black, bg = colors.cl_bg, style = "bold" },
 	Boolean       = { fg = colors.Boolean },
 	Character     = { fg = colors.green2 },
 	ColorColumn   = { bg = colors.black1 },
@@ -33,11 +43,6 @@ M.base = {
 	Conceal       = { fg = colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
 	Conditional   = { fg = colors.cyan4 },
 	Constant      = { fg = colors.white1 },
-	Cursor        = { fg = colors.yellow, bg = colors.bg },
-	CursorColumn  = { fg = "NONE", bg = "NONE" },
-	-- CursorIM      =  { fg = colors.cursor_fg, bg = colors.cursor_bg },
-	CursorLine    = { bg = colors.black2 },
-	CursorLineNr  = { fg = colors.black, bg = colors.cl_bg, style = "bold" },
 	Debug         = { fg = colors.fg },
 	Define        = { fg = colors.purple4 },
 	Delimiter     = { fg = colors.gray7 },
@@ -55,9 +60,6 @@ M.base = {
 	ErrorMsg      = { fg="#FF3939", bg = colors.bg, style = "bold" },-- command error message
 	Exception     = { fg = colors.cyan5 },
 	Float         = { fg = colors.purple4 },
-	FloatBorder   = { fg = colors.gray3, bg = "NONE" },
-	FoldColumn    = { fg = colors.line_fg },
-	Folded        = { fg = colors.white, bg = colors.gray },
 	Identifier    = { fg = colors.white1 },
 	Ignore        = { fg = colors.gray7 },
 	IncSearch     = { fg = colors.bg, bg = colors.orange2 },
@@ -75,7 +77,6 @@ M.base = {
 	MsgSeparator  = { fg = colors.fg, bg = colors.bg },
 	NonText       = { fg = colors.non_text },
 	Normal        = { fg = colors.fg, bg = config.transparent_background and "NONE" or colors.bg, },
-	NormalFloat   = { bg=colors.Float },-- floating window
 	NormalNC      = { fg = colors.fg, bg = config.transparent_background and "NONE" or colors.bg, },
 	Number        = { fg = colors.purple4 },
 	Operator      = { fg = colors.cyan3 },

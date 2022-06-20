@@ -90,12 +90,12 @@ return {
 	cyan                 = "#00FFFF",
 
 
-	Statement            = "#D68EB2",
+	Statement            = "#00DFFF",
 	Block                = "#FC2929",
 	Access               = "#FC2929",
 	Structure            = "#FC2929",
 	Type                 = "#d4a373",
-	Conditional          = "#e2ff22",
+	Conditional          = "#ff557f",
 	Repeat               = "#e30022",
 	Error                = "#FF0000",
 	Namespace            = "#FFFFFF",
@@ -118,7 +118,7 @@ return {
 	KeywordOperator      = "#FBB13C",
 	Parameter            = "#7FBEEB",
 	Comment              = "#5c4d4d",
-	Exception            = "#00DFFF",
+	Exception            = "#D68EB2",
 	Number               = "#c19a6b",
 	Method               = "#8877B1",
 	Constructor          = "#01A0F5",
