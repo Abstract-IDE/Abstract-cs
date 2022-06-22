@@ -23,7 +23,7 @@ M.base = {
 	FoldColumn    = { fg=colors.line_fg },
 	Folded        = { fg="#178c94", bg=colors.black2 },
 
-	VertSplit     = { fg=colors.line_bg, bg=colors.line_bg },
+	VertSplit     = { fg="#178c94", bg=colors.line_bg },
 	LineNr        = { fg=colors.line_fg, bg=colors.line_bg},-- number column
 
 	CursorLine    = { bg=colors.black2 },
