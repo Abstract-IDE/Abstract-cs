@@ -21,7 +21,8 @@ M.base = {
 	NormalFloat   = { fg=colors.cyan5, bg=colors.bg },         -- floating window
 	FloatBorder   = { fg=colors.gray3, bg = "NONE" },
 	FoldColumn    = { fg=colors.line_fg },
-	Folded        = { fg=colors.white, bg=colors.gray },
+	Folded        = { fg="#178c94", bg=colors.black2 },
+	VertSplit     = { fg="#808080", bg="#060606" },
 
 	--  completion menu
 	----------------------------------
@@ -110,7 +111,6 @@ M.base = {
 	Type          = { fg=colors.cyan6, style="NONE" },
 	Typedef       = { fg=colors.cyan4 },
 	Variable      = { fg=colors.cyan3 },
-	VertSplit     = { fg="#060606", bg="#808080" },
 	Visual        = { fg = "NONE", bg=colors.visual_select_bg, style = "bold" },
 	VisualNOS     = { fg=colors.selection_fg, bg=colors.selection_bg },
 	WarningMsg    = { fg=colors.gray, bg=colors.orange3 },
