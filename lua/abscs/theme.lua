@@ -22,7 +22,15 @@ M.base = {
 	FloatBorder   = { fg=colors.gray3, bg = "NONE" },
 	FoldColumn    = { fg=colors.line_fg },
 	Folded        = { fg="#178c94", bg=colors.black2 },
-	VertSplit     = { fg="#808080", bg="#060606" },
+
+	VertSplit     = { fg=colors.line_bg, bg=colors.line_bg },
+	LineNr        = { fg=colors.line_fg, bg=colors.line_bg},-- number column
+
+	CursorLine    = { bg=colors.black2 },
+	CursorLineNr  = { fg=colors.black, bg=colors.cl_bg, style = "bold" },
+
+	SignColumn    = { fg=colors.line_bg, bg=colors.line_bg },
+	ColorColumn   = { bg=colors.line_bg },
 
 	--  completion menu
 	----------------------------------
@@ -35,11 +43,8 @@ M.base = {
 	Cursor        = { fg=colors.yellow, bg=colors.bg },
 	CursorColumn  = { fg = "NONE", bg = "NONE" },
 	-- CursorIM      =  { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	CursorLine    = { bg=colors.black2 },
-	CursorLineNr  = { fg=colors.black, bg=colors.cl_bg, style = "bold" },
 	Boolean       = { fg=colors.Boolean },
 	Character     = { fg=colors.green2 },
-	ColorColumn   = { bg=colors.black1 },
 	Comment       = { fg=colors.comment, style = "italic" },
 	Conceal       = { fg=colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
 	Conditional   = { fg=colors.cyan4 },
@@ -65,8 +70,6 @@ M.base = {
 	Ignore        = { fg=colors.gray7 },
 	IncSearch     = { fg=colors.bg, bg=colors.orange2 },
 	Label         = { fg="#888888", style="bold" },-- underline Highlighted defination
-	LineNr        = { fg=colors.line_fg, bg = "#090909" },-- number column
-	SignColumn    = { bg = "#090909" },
 	Macro         = { fg=colors.purple4 },
 	MatchParen    = { fg=colors.white1, bg=colors.cyan6 },
 	MatchParenCur = { style = "underline" },
@@ -199,9 +202,9 @@ M.plugins = {
 
 	-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 	-----------------------------------------
-	GitSignsAdd    = { fg=colors.green1, bg ="#090909" },
-	GitSignsChange = { fg = "#967b11",     bg="#090909" },
-	GitSignsDelete = { fg=colors.red,    bg="#090909" },
+	GitSignsAdd    = { fg=colors.green1, bg=colors.line_bg },
+	GitSignsChange = { fg = "#967b11",   bg=colors.line_bg },
+	GitSignsDelete = { fg=colors.red,    bg=colors.line_bg },
 	-----------------------------------------
 
 
@@ -243,10 +246,10 @@ M.plugins = {
 	DiagnosticFloatingHint    = { fg=colors.blue1 },
 	DiagnosticFloatingInfo    = { fg=colors.yellow1 },
 	DiagnosticFloatingWarn    = { fg=colors.orange1 },
-	DiagnosticSignError       = { fg=colors.red2,    bg="#090909" },
-	DiagnosticSignHint        = { fg=colors.blue1,   bg="#090909" },
-	DiagnosticSignInfo        = { fg=colors.yellow1, bg="#090909" },
-	DiagnosticSignWarn        = { fg=colors.orange1, bg="#090909" },
+	DiagnosticSignError       = { fg=colors.red2,    bg=colors.line_bg },
+	DiagnosticSignHint        = { fg=colors.blue1,   bg=colors.line_bg },
+	DiagnosticSignInfo        = { fg=colors.yellow1, bg=colors.line_bg },
+	DiagnosticSignWarn        = { fg=colors.orange1, bg=colors.line_bg },
 	DiagnosticUnderlineError  = { style = "underline" },
 	DiagnosticUnderlineHint   = { style = "underline" },
 	DiagnosticUnderlineInfo   = { style = "underline" },
@@ -304,7 +307,7 @@ M.plugins = {
 	NvimTreeRootFolder   = { fg=colors.gray3, style = "bold" },
 	NvimTreeSpecialFile  = { fg=colors.orange2 },
 	NvimTreeSymlink      = { fg=colors.cyan3 },
-	NvimTreeVertSplit    = { fg=colors.gray1 },
+	NvimTreeVertSplit    = { fg=colors.line_bg, bg=colors.line_bg },
 	-----------------------------------------
 
 
