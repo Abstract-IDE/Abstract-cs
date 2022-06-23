@@ -122,7 +122,7 @@ return {
 	Parameter            = "#7FBEEB",
 	Comment              = "#5c4d4d",
 	Exception            = "#D68EB2",
-	Number               = "#c19a6b",
+	Number               = "#FFCC66",
 	Method               = "#8877B1",
 	Constructor          = "#01A0F5",
 	FuncBuiltin          = "#00bfff",
