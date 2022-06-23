@@ -114,6 +114,7 @@ return {
 	KWuse_mangled_mesa   = "#FFFADE",
 	TSVariable           = "#00cc99",
 	Include              = "#F92672",
+	PreProc              = "#F92672",
 	String               = "#CF5C36",
 	Function             = "#FFFFFF",
 	KeywordFunction      = "#FC2929",

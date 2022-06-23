@@ -85,7 +85,7 @@ M.base = {
 	Number        = { fg=colors.purple4 },
 	Operator      = { fg=colors.cyan3 },
 	PreCondit     = { fg=colors.purple4 },
-	PreProc       = { fg=colors.cyan4 },
+	PreProc       = { fg=colors.PreProc },
 	Question      = { fg=colors.gray },
 	QuickFixLine  = { bg=colors.gray1 },
 	Repeat        = { fg=colors.cyan4 },
@@ -471,6 +471,7 @@ M.plugins = {
 	sassDefinition     = { fg=colors.Definition },
 	sassProperty       = { fg=colors.Property },
 	sassCssAttribute   = { fg=colors.Attribute },
+	sassInclude        = { fg=colors.Include },
 
 	scssTSProperty     = { fg=colors.Property },
 	scssTSPunctBracket = { fg=colors.PunctBracket },
