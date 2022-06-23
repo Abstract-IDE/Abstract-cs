@@ -463,9 +463,17 @@ M.plugins = {
 	-----------------------------------------
 
 
-	-- CSS
+	-- CSS / SASS / SCSS
 	-----------------------------------------
-	scssTSProperty      = { fg=colors.Property },
+	cssBoxProp         = { fg=colors.BoxProp },
+	cssBraces          = { fg=colors.Braces },
+	cssUIProp          = { fg=colors.UIProp },
+	sassDefinition     = { fg=colors.Definition },
+	sassProperty       = { fg=colors.Property },
+	sassCssAttribute   = { fg=colors.Attribute },
+
+	scssTSProperty     = { fg=colors.Property },
+	scssTSPunctBracket = { fg=colors.PunctBracket },
 	-----------------------------------------
 
 

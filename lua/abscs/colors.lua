@@ -90,6 +90,9 @@ return {
 	cyan                 = "#00FFFF",
 
 
+	Braces               = "#8e24ff",
+	BoxProp              = "#FF80FF",
+	Definition           = "#FFCC66",
 	Statement            = "#00DFFF",
 	Block                = "#FC2929",
 	Access               = "#FC2929",
@@ -158,5 +161,6 @@ return {
 	Arguments            = "#1D918B",
 	Command              = "#FFFFFF",
 	KeywordMatch         = "#ff0000",
+	UIProp               = "#e4717a",
 }
 
