@@ -105,7 +105,7 @@ return {
 	Operator             = "#F92672",
 	Variable             = "#00cc99",
 	Keyword              = "#e30022",
-	Property	         = "#ed872d",
+	Property	         = "#00cc99",
 	Boolean              = "#8e24ff",
 	FlexibleBoxAttr      = "#00557f",
 	Color                = "#ff557f",
