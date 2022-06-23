@@ -323,15 +323,15 @@ M.plugins = {
 	-- https://github.com/folke/trouble.nvim
 	-----------------------------------------
 	-- TroubleTextInformation = { fg=colors.red, bg=colors.green },
-	TroubleFile      = { fg=colors.black,   bg=colors.gray6 },-- the source file that has error
-	TroubleFoldIcon  = { fg=colors.red,     bg=colors.black2 },-- fold icon color
-	TroubleCount     = { fg=colors.red,     bg=colors.black2 },
-	TroubleTextError = { fg=colors.red3,    bg=colors.black2 },-- error info text
-	TroubleNormal    = { fg=colors.white,   bg=colors.black2 },-- background color of trouble window
-	TroubleLocation  = { fg=colors.cyan,    bg=colors.black2 },-- location of error
-	TroubleIndent    = { fg=colors.white,   bg=colors.black2 },-- indent color
-	TroubleCode      = { fg=colors.yellow5, bg=colors.black2 },
-	TroubleSignError = { fg=colors.red,     bg=colors.black2 },-- error sign color
+	TroubleFile      = { fg=colors.black,   bg=colors.gray6   },    -- the source file that has error
+	TroubleFoldIcon  = { fg=colors.red,     bg=colors.line_bg },    -- fold icon color
+	TroubleTextError = { fg=colors.red3,    bg=colors.line_bg },    -- error info text
+	TroubleNormal    = { fg=colors.white,   bg=colors.line_bg },    -- background color of trouble window
+	TroubleLocation  = { fg=colors.cyan,    bg=colors.line_bg },    -- location of error
+	TroubleIndent    = { fg=colors.white,   bg=colors.line_bg },    -- indent color
+	TroubleSignError = { fg=colors.red,     bg=colors.line_bg },    -- error sign color
+	TroubleCount     = { fg=colors.red,     bg=colors.line_bg },
+	TroubleCode      = { fg=colors.yellow5, bg=colors.line_bg },
 	-- TroubleError       = { fg=colors.red, bg=colors.green },
 	-- TroubleSignWarning = { fg=colors.red, bg=colors.green },
 	-- TroubleWarning     = { fg=colors.red, bg=colors.green },
