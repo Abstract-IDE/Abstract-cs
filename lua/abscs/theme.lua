@@ -18,19 +18,6 @@ M.base = {
 	--  Editors settings
 	-----------------------------------------
 
-	NormalFloat   = { fg=colors.cyan5, bg=colors.bg },         -- floating window
-	FloatBorder   = { fg=colors.gray3, bg = "NONE" },
-	FoldColumn    = { fg=colors.line_fg },
-	Folded        = { fg="#178c94", bg=colors.black2 },
-
-	VertSplit     = { fg="#178c94", bg=colors.line_bg },
-	LineNr        = { fg=colors.line_fg, bg=colors.line_bg},-- number column
-
-	CursorLine    = { bg=colors.black2 },
-	CursorLineNr  = { fg=colors.black, bg=colors.cl_bg, style = "bold" },
-
-	SignColumn    = { fg=colors.line_bg, bg=colors.line_bg },
-	ColorColumn   = { bg=colors.line_bg },
 
 	--  completion menu
 	----------------------------------
@@ -40,17 +27,35 @@ M.base = {
 	PmenuThumb    = { bg=colors.cyan6 },
 	----------------------------------
 
+	NormalFloat   = { fg=colors.cyan5, bg=colors.bg },         -- floating window
+	FloatBorder   = { fg=colors.gray3, bg = "NONE" },
+	FoldColumn    = { fg=colors.line_fg },
+	Folded        = { fg="#178c94", bg=colors.black2 },
+	VertSplit     = { fg="#178c94", bg=colors.line_bg },
+	LineNr        = { fg=colors.line_fg, bg=colors.line_bg},-- number column
+	CursorLine    = { bg=colors.black2 },
+	CursorLineNr  = { fg=colors.black, bg=colors.cl_bg, style = "bold" },
 	Cursor        = { fg=colors.yellow, bg=colors.bg },
 	CursorColumn  = { fg = "NONE", bg = "NONE" },
 	-- CursorIM      =  { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	Boolean       = { fg=colors.Boolean },
-	Character     = { fg=colors.green2 },
-	Comment       = { fg=colors.comment, style = "italic" },
+	SignColumn    = { fg=colors.line_bg, bg=colors.line_bg },
+	ColorColumn   = { bg=colors.line_bg },
 	Conceal       = { fg=colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
-	Conditional   = { fg=colors.cyan4 },
-	Constant      = { fg=colors.white1 },
-	Debug         = { fg=colors.fg },
-	Define        = { fg=colors.purple4 },
+
+	QuickFixLine  = { bg=colors.gray1 },
+	Repeat        = { fg=colors.cyan4 },
+	Search        = { fg=colors.bg, bg=colors.orange2 },
+	WarningMsg    = { fg=colors.gray, bg=colors.orange3 },
+	Whitespace    = { fg=colors.non_text },
+	WildMenu      = { fg=colors.fg },
+	lCursor       = { fg=colors.cursor_fg, bg=colors.cursor_bg },
+	TermCursor    = { fg=colors.cursor_fg, bg=colors.cursor_bg },
+	TermCursorNC  = { fg=colors.cursor_fg, bg=colors.cursor_bg },
+	StatusLine    = { fg=colors.black2, bg=colors.gray6 },
+	StatusLineNC  = { fg=colors.gray7, bg=colors.gray },
+	StatusLineTerm      = { fg=colors.cyan5, bg=colors.gray },
+	StatusLineTermNC    = { fg=colors.gray7, bg=colors.gray },
+	StatusLineSeparator = { fg=colors.dark },
 	Delimiter     = { fg=colors.gray7 },
 	DiffAdd       = { fg=colors.green1 },
 	DiffAdded     = { fg=colors.green1 },
@@ -64,12 +69,20 @@ M.base = {
 	-- EndOfBuffe r = { fg=colors.bg },
 	Error         = { fg=colors.red1, bg=colors.bg, style = "bold" },
 	ErrorMsg      = { fg="#FF3939", bg=colors.bg, style = "bold" },-- command error message
+	Debug         = { fg=colors.fg },
+
+	Boolean       = { fg=colors.Boolean },
+	Character     = { fg=colors.Character },
+	Comment       = { fg=colors.Comment, style = "italic" },
+	Conditional   = { fg=colors.Conditional },
+	Constant      = { fg=colors.Constant },
+	Define        = { fg=colors.Define},
 	Exception     = { fg=colors.cyan5 },
 	Float         = { fg=colors.purple4 },
 	Identifier    = { fg=colors.white1 },
 	Ignore        = { fg=colors.gray7 },
 	IncSearch     = { fg=colors.bg, bg=colors.orange2 },
-	Label         = { fg="#888888", style="bold" },-- underline Highlighted defination
+	Label         = { fg=colors.Label, style="bold" },-- underline Highlighted defination
 	Macro         = { fg=colors.purple4 },
 	MatchParen    = { fg=colors.white1, bg=colors.cyan6 },
 	MatchParenCur = { style = "underline" },
@@ -87,9 +100,6 @@ M.base = {
 	PreCondit     = { fg=colors.purple4 },
 	PreProc       = { fg=colors.PreProc },
 	Question      = { fg=colors.gray },
-	QuickFixLine  = { bg=colors.gray1 },
-	Repeat        = { fg=colors.cyan4 },
-	Search        = { fg=colors.bg, bg=colors.orange2 },
 	Special       = { fg=colors.orange3 },
 	SpecialChar   = { fg=colors.gray5 },
 	SpecialComment= { fg=colors.cyan5 },
@@ -107,24 +117,13 @@ M.base = {
 	TabLineFill   = { fg=colors.gray7 },
 	TabLineSel    = { fg=colors.fg },
 	Tag           = { fg=colors.gray7 },
-	TermCursor    = { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	TermCursorNC  = { fg=colors.cursor_fg, bg=colors.cursor_bg },
 	Title         = { fg=colors.gray7 },
 	Todo          = { fg=colors.yellow6, style = "bold" },
-	Type          = { fg=colors.cyan6, style="NONE" },
-	Typedef       = { fg=colors.cyan4 },
-	Variable      = { fg=colors.cyan3 },
+	Type          = { fg=colors.Type, style="NONE" },
+	Typedef       = { fg=colors.Typedef },
+	Variable      = { fg=colors.Variable },
 	Visual        = { fg = "NONE", bg=colors.visual_select_bg, style = "bold" },
 	VisualNOS     = { fg=colors.selection_fg, bg=colors.selection_bg },
-	WarningMsg    = { fg=colors.gray, bg=colors.orange3 },
-	Whitespace    = { fg=colors.non_text },
-	WildMenu      = { fg=colors.fg },
-	lCursor       = { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	StatusLine    = { fg=colors.black2, bg=colors.gray6 },
-	StatusLineNC  = { fg=colors.gray7, bg=colors.gray },
-	StatusLineTerm      = { fg=colors.cyan5, bg=colors.gray },
-	StatusLineTermNC    = { fg=colors.gray7, bg=colors.gray },
-	StatusLineSeparator = { fg=colors.dark },
 	-----------------------------------------
 	--  end Editors settings
 	-----------------------------------------
@@ -396,7 +395,10 @@ M.plugins = {
 	pythonOperator    = { fg=colors.Operator },
 	pythonStatement   = { fg=colors.Statement },
 	pythonBoolean     = { fg=colors.Boolean },
-	pythonTSRepeat    = { fg=colors.Repeat },
+
+	pythonTSRepeat          = { fg=colors.Repeat },
+	pythonTSKeywordFunction = { fg=colors.KeywordFunction },
+	pythonTSFunction        = { fg=colors.Function },
 	-----------------------------------------
 
 
@@ -522,7 +524,7 @@ M.plugins = {
 	TSComment            = { fg=colors.Comment,    style="italic" },
 	TSKeyword            = { fg=colors.Keyword,    style="NONE" },
 	TSType               = { fg=colors.Type,       style="NONE" },
-	TSError              = { fg=colors.Error, bg=colors.Error, style="bold" },
+	TSError              = { fg=colors.Error,      tyle="bold" },
 	TSInclude            = { fg=colors.Include },
 	TSString             = { fg=colors.String },
 	TSFunction           = { fg=colors.Function },
