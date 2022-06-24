@@ -167,7 +167,15 @@ return {
 	UIProp               = "#e4717a",
 	Identifier           = "#FFFADE",
 	Ignore               = "#CCCCCC",
-	IncSearchFg          = "#060606",
+	IncSearchFG          = "#060606",
 	IncSearchBg          = "#E25600",
+	TodoFG               = "#FFFFFF",
+	TodoBg               = "#3B3B1D",
+	GitAddFG             = "#44B273",
+	GitAddBG             = "#0c0c0c",
+	GitChangeFG          = "#967b11",
+	GitChangeBG          = "#0c0c0c",
+	GitDeleteFG          = "#FF0000",
+	GitDeleteBG          = "#0c0c0c",
 }
 

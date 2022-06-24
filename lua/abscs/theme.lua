@@ -81,7 +81,7 @@ M.base = {
 	Float         = { fg=colors.Float },
 	Identifier    = { fg=colors.Identifier },
 	Ignore        = { fg=colors.Ignore },
-	IncSearch     = { fg=colors.IncSearchFg, bg=colors.IncSearchBg },
+	IncSearch     = { fg=colors.IncSearchFG, bg=colors.IncSearchBg },
 	Label         = { fg=colors.Label, style="bold" },-- underline Highlighted defination
 	Macro         = { fg=colors.Macro },
 	MatchParen    = { fg=colors.white1, bg=colors.cyan6 },
@@ -118,7 +118,7 @@ M.base = {
 	TabLineSel    = { fg=colors.fg },
 	Tag           = { fg=colors.gray7 },
 	Title         = { fg=colors.gray7 },
-	Todo          = { fg=colors.yellow6, style = "bold" },
+	Todo          = { fg=colors.TodoFG, bg=colors.TodoBg, style = "bold" },
 	Type          = { fg=colors.Type, style="NONE" },
 	Typedef       = { fg=colors.Typedef },
 	Variable      = { fg=colors.Variable },
@@ -201,9 +201,9 @@ M.plugins = {
 
 	-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 	-----------------------------------------
-	GitSignsAdd    = { fg=colors.green1, bg=colors.line_bg },
-	GitSignsChange = { fg = "#967b11",   bg=colors.line_bg },
-	GitSignsDelete = { fg=colors.red,    bg=colors.line_bg },
+	GitSignsAdd    = { fg=colors.GitAddFG,    bg=colors.GitAddBG },
+	GitSignsChange = { fg=colors.GitChangeFG, bg=colors.GitChangeBG },
+	GitSignsDelete = { fg=colors.GitDeleteFG, bg=colors.GitDeleteBG },
 	-----------------------------------------
 
 
