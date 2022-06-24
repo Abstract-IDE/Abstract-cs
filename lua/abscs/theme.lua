@@ -77,13 +77,13 @@ M.base = {
 	Conditional   = { fg=colors.Conditional },
 	Constant      = { fg=colors.Constant },
 	Define        = { fg=colors.Define},
-	Exception     = { fg=colors.cyan5 },
-	Float         = { fg=colors.purple4 },
-	Identifier    = { fg=colors.white1 },
-	Ignore        = { fg=colors.gray7 },
-	IncSearch     = { fg=colors.bg, bg=colors.orange2 },
+	Exception     = { fg=colors.Exception },
+	Float         = { fg=colors.Float },
+	Identifier    = { fg=colors.Identifier },
+	Ignore        = { fg=colors.Ignore },
+	IncSearch     = { fg=colors.IncSearchFg, bg=colors.IncSearchBg },
 	Label         = { fg=colors.Label, style="bold" },-- underline Highlighted defination
-	Macro         = { fg=colors.purple4 },
+	Macro         = { fg=colors.Macro },
 	MatchParen    = { fg=colors.white1, bg=colors.cyan6 },
 	MatchParenCur = { style = "underline" },
 	MatchWord     = { style = "underline" },
@@ -388,17 +388,17 @@ M.plugins = {
 
 	-- Python Language
 	-----------------------------------------
-	pythonConditional = { fg=colors.Conditional },
-	pythonException   = { fg=colors.Exception },
-	pythonFunction    = { fg=colors.Function },
-	pythonInclude     = { fg=colors.Include },
-	pythonOperator    = { fg=colors.Operator },
-	pythonStatement   = { fg=colors.Statement },
-	pythonBoolean     = { fg=colors.Boolean },
+	-- pythonConditional = { fg=colors.Conditional },
+	-- pythonException   = { fg=colors.Exception },
+	-- pythonFunction    = { fg=colors.Function },
+	-- pythonInclude     = { fg=colors.Include },
+	-- pythonOperator    = { fg=colors.Operator },
+	-- pythonStatement   = { fg=colors.Statement },
+	-- pythonBoolean     = { fg=colors.Boolean },
 
-	pythonTSRepeat          = { fg=colors.Repeat },
+	-- pythonTSRepeat          = { fg=colors.Repeat },
 	pythonTSKeywordFunction = { fg=colors.KeywordFunction },
-	pythonTSFunction        = { fg=colors.Function },
+	-- pythonTSFunction        = { fg=colors.Function },
 	-----------------------------------------
 
 
@@ -528,7 +528,7 @@ M.plugins = {
 	TSInclude            = { fg=colors.Include },
 	TSString             = { fg=colors.String },
 	TSFunction           = { fg=colors.Function },
-	TSKeywordFunction    = { fg=colors.KeywordFunction },
+	TSKeywordFunction    = { fg=colors.KeywordFunction, style="NONE" },
 	TSKeywordReturn      = { fg=colors.KeywordReturn },
 	TSKeywordOperator    = { fg=colors.KeywordOperator },
 	TSOperator           = { fg=colors.Operator },
