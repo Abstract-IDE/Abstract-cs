@@ -5,54 +5,44 @@ local M = {}
 
 M.base = {
 
-	---------------------------------------
-	--        Styles
-	---------------------------------------
-	Bold       = { style = "bold" },
-	Italic     = { style = "italic" },
-	Underlined = { style = "underline" },
-	---------------------------------------
-
-
 	-----------------------------------------
 	--  Editors settings
 	-----------------------------------------
 
-
 	--  completion menu
 	----------------------------------
-	Pmenu         = { fg="#848484", bg="#060606" },-- completion window border color and background color
+	Pmenu         = { fg="#848484",      bg="#060606" },-- completion window border color and background color
+	PmenuSel      = { fg=colors.black,   bg=colors.cyan6 },
 	PmenuSbar     = { bg=colors.gray },
-	PmenuSel      = { fg=colors.black, bg=colors.cyan6 },
 	PmenuThumb    = { bg=colors.cyan6 },
 	----------------------------------
 
-	NormalFloat   = { fg=colors.cyan5, bg=colors.bg },         -- floating window
-	FloatBorder   = { fg=colors.gray3, bg = "NONE" },
+	NormalFloat   = { fg=colors.cyan5,    bg=colors.bg },         -- floating window
+	FloatBorder   = { fg=colors.gray3,    bg = "NONE" },
+	Folded        = { fg=colors.cl_bg,    bg=colors.black2 },
+	VertSplit     = { fg=colors.cl_bg,    bg=colors.line_bg },
+	LineNr        = { fg=colors.line_fg,  bg=colors.line_bg},-- number column
+	CursorLineNr  = { fg=colors.black,    bg=colors.cl_bg, style = "bold" },
+	Cursor        = { fg=colors.yellow,   bg=colors.bg },
+	CursorColumn  = { fg = "NONE",        bg = "NONE" },
 	FoldColumn    = { fg=colors.line_fg },
-	Folded        = { fg="#178c94", bg=colors.black2 },
-	VertSplit     = { fg="#178c94", bg=colors.line_bg },
-	LineNr        = { fg=colors.line_fg, bg=colors.line_bg},-- number column
 	CursorLine    = { bg=colors.black2 },
-	CursorLineNr  = { fg=colors.black, bg=colors.cl_bg, style = "bold" },
-	Cursor        = { fg=colors.yellow, bg=colors.bg },
-	CursorColumn  = { fg = "NONE", bg = "NONE" },
 	-- CursorIM      =  { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	SignColumn    = { fg=colors.line_bg, bg=colors.line_bg },
+	SignColumn    = { fg=colors.line_bg,  bg=colors.line_bg },
 	ColorColumn   = { bg=colors.line_bg },
 	Conceal       = { fg=colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
 
 	QuickFixLine  = { bg=colors.gray1 },
 	Repeat        = { fg=colors.cyan4 },
-	Search        = { fg=colors.bg, bg=colors.orange2 },
-	WarningMsg    = { fg=colors.gray, bg=colors.orange3 },
+	Search        = { fg=colors.bg,        bg=colors.orange2 },
+	WarningMsg    = { fg=colors.gray,      bg=colors.orange3 },
 	Whitespace    = { fg=colors.non_text },
 	WildMenu      = { fg=colors.fg },
 	lCursor       = { fg=colors.cursor_fg, bg=colors.cursor_bg },
 	TermCursor    = { fg=colors.cursor_fg, bg=colors.cursor_bg },
 	TermCursorNC  = { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	StatusLine    = { fg=colors.black2, bg=colors.gray6 },
-	StatusLineNC  = { fg=colors.gray7, bg=colors.gray },
+	StatusLine    = { fg=colors.black2,    bg=colors.gray6 },
+	StatusLineNC  = { fg=colors.gray7,     bg=colors.gray },
 	StatusLineTerm      = { fg=colors.cyan5, bg=colors.gray },
 	StatusLineTermNC    = { fg=colors.gray7, bg=colors.gray },
 	StatusLineSeparator = { fg=colors.dark },
@@ -68,7 +58,7 @@ M.base = {
 	-- Directory  = { fg=colors.cyan6 },
 	-- EndOfBuffe r = { fg=colors.bg },
 	Error         = { fg=colors.red1, bg=colors.bg, style = "bold" },
-	ErrorMsg      = { fg="#FF3939", bg=colors.bg, style = "bold" },-- command error message
+	ErrorMsg      = { fg="#FF3939",   bg=colors.bg, style = "bold" },-- command error message
 	Debug         = { fg=colors.fg },
 
 	Boolean       = { fg=colors.Boolean },
@@ -88,13 +78,13 @@ M.base = {
 	MatchParenCur = { style = "underline" },
 	MatchWord     = { style = "underline" },
 	MatchWordCur  = { style = "underline" },
-	ModeMsg       = { fg=colors.fg, bg=colors.bg },
 	MoreMsg       = { fg=colors.orange2 },
-	MsgArea       = { fg=colors.fg, bg = config.transparent_background and "NONE" or colors.bg, },
+	ModeMsg       = { fg=colors.fg, bg=colors.bg },
+	MsgArea       = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
 	MsgSeparator  = { fg=colors.fg, bg=colors.bg },
+	Normal        = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
+	NormalNC      = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
 	NonText       = { fg=colors.non_text },
-	Normal        = { fg=colors.fg, bg = config.transparent_background and "NONE" or colors.bg, },
-	NormalNC      = { fg=colors.fg, bg = config.transparent_background and "NONE" or colors.bg, },
 	Number        = { fg=colors.purple4 },
 	Operator      = { fg=colors.cyan3 },
 	PreCondit     = { fg=colors.purple4 },
@@ -103,10 +93,10 @@ M.base = {
 	Special       = { fg=colors.orange3 },
 	SpecialChar   = { fg=colors.gray5 },
 	SpecialComment= { fg=colors.cyan5 },
-	SpecialKey    = { fg=colors.gray7, style = "bold" },
-	SpellBad      = { fg=colors.red1, style = "underline" },
+	SpecialKey    = { fg=colors.gray7,   style = "bold" },
+	SpellBad      = { fg=colors.red1,    style = "underline" },
 	SpellCap      = { fg=colors.orange2, style = "underline" },
-	SpellLocal    = { fg=colors.green1, style = "underline" },
+	SpellLocal    = { fg=colors.green1,  style = "underline" },
 	SpellRare     = { fg=colors.purple2, style = "underline" },
 	Statement     = { fg=colors.red1 },
 	StorageClass  = { fg=colors.pink1 },
