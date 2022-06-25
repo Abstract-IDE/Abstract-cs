@@ -116,7 +116,7 @@ return {
 
 	Function             = "#FFFFFF",
 	KeywordFunction      = "#01A0F5",
-	Type                 = "#01A0F5",
+	Type                 = "#00CC99",
 	Keyword              = "#e30022",
 	KeywordReturn        = "#FC2929",
 	KeywordOperator      = "#F92672",
