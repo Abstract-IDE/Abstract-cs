@@ -140,7 +140,7 @@ return {
 	ConstMacro           = "#702963",
 	Macro                = "#D68EB2",
 	Constant             = "#FFFADE",
-	Field                = "#01AF96",
+	Field                = "#FF557F",
 	Float                = "#D68EB2",
 	FuncMacro            = "#006B3C",
 	Label                = "#888888",
@@ -177,5 +177,6 @@ return {
 	GitChangeBG          = "#0C0C0C",
 	GitDeleteFG          = "#FF0000",
 	GitDeleteBG          = "#0C0C0C",
+	TableBlock           = "#FFCC66"
 }
 

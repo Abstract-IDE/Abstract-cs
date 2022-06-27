@@ -6,118 +6,164 @@ local M = {}
 M.base = {
 
 	-----------------------------------------
-	--  Editors settings
+	--  Editor settings
 	-----------------------------------------
 
 	--  completion menu
 	----------------------------------
-	Pmenu         = { fg="#848484",      bg="#060606" },-- completion window border color and background color
-	PmenuSel      = { fg=colors.black,   bg=colors.cyan6 },
-	PmenuSbar     = { bg=colors.gray },
-	PmenuThumb    = { bg=colors.cyan6 },
+	Pmenu              = { fg="#848484",      bg="#060606" },-- completion window border color and background color
+	PmenuSel           = { fg=colors.black,   bg=colors.cyan6 },
+	PmenuSbar          = { bg=colors.gray },
+	PmenuThumb         = { bg=colors.cyan6 },
 	----------------------------------
 
-	NormalFloat   = { fg=colors.cyan5,    bg=colors.bg },         -- floating window
-	FloatBorder   = { fg=colors.gray3,    bg = "NONE" },
-	Folded        = { fg=colors.cl_bg,    bg=colors.black2 },
-	VertSplit     = { fg=colors.cl_bg,    bg=colors.line_bg },
-	LineNr        = { fg=colors.line_fg,  bg=colors.line_bg},-- number column
-	CursorLineNr  = { fg=colors.black,    bg=colors.cl_bg, style = "bold" },
-	Cursor        = { fg=colors.yellow,   bg=colors.bg },
-	CursorColumn  = { fg = "NONE",        bg = "NONE" },
-	FoldColumn    = { fg=colors.line_fg },
-	CursorLine    = { bg=colors.black2 },
-	-- CursorIM      =  { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	SignColumn    = { fg=colors.line_bg,  bg=colors.line_bg },
-	ColorColumn   = { bg=colors.line_bg },
-	Conceal       = { fg=colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
-
-	QuickFixLine  = { bg=colors.gray1 },
-	Repeat        = { fg=colors.cyan4 },
-	Whitespace    = { fg=colors.non_text },
-	WildMenu      = { fg=colors.fg },
-	WarningMsg    = { fg=colors.gray,      bg=colors.orange3 },
-	Search        = { fg=colors.SearchFG,  bg=colors.SearchBg },
-	IncSearch     = { fg=colors.red,       bg=colors.SearchFG },
-	CurSearch     = { fg=colors.SearchFG,  bg=colors.red },
-	lCursor       = { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	TermCursor    = { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	TermCursorNC  = { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	StatusLine    = { fg=colors.black2,    bg=colors.gray6 },
-	StatusLineNC  = { fg=colors.gray7,     bg=colors.gray },
-	Delimiter     = { fg=colors.gray7 },
-	DiffAdd       = { fg=colors.green1 },
-	DiffAdded     = { fg=colors.green1 },
-	DiffChange    = { fg=colors.orange2 },
-	DiffDelete    = { fg=colors.red1 },
-	DiffRemoved   = { fg=colors.red1 },
-	DiffText      = { fg=colors.cyan6 },
-	DiffFile      = { fg=colors.purple2 },
-	StatusLineTerm      = { fg=colors.cyan5, bg=colors.gray },
-	StatusLineTermNC    = { fg=colors.gray7, bg=colors.gray },
-	StatusLineSeparator = { fg=colors.dark },
+	NormalFloat        = { fg=colors.cyan5,    bg=colors.bg },         -- floating window
+	FloatBorder        = { fg=colors.gray3,    bg = "NONE" },
+	Folded             = { fg=colors.cl_bg,    bg=colors.black2 },
+	VertSplit          = { fg=colors.cl_bg,    bg=colors.line_bg },
+	LineNr             = { fg=colors.line_fg,  bg=colors.line_bg},-- number column
+	CursorLineNr       = { fg=colors.black,    bg=colors.cl_bg, style = "bold" },
+	Cursor             = { fg=colors.yellow,   bg=colors.bg },
+	CursorColumn       = { fg = "NONE",        bg = "NONE" },
+	FoldColumn         = { fg=colors.line_fg },
+	CursorLine         = { bg=colors.black2 },
+	-- CursorIM           =  { fg=colors.cursor_fg, bg=colors.cursor_bg },
+	SignColumn         = { fg=colors.line_bg,  bg=colors.line_bg },
+	ColorColumn        = { bg=colors.line_bg },
+	Conceal            = { fg=colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
+	QuickFixLine       = { bg=colors.gray1 },
+	Repeat             = { fg=colors.cyan4 },
+	Whitespace         = { fg=colors.non_text },
+	WildMenu           = { fg=colors.fg },
+	WarningMsg         = { fg=colors.gray,      bg=colors.orange3 },
+	Search             = { fg=colors.SearchFG,  bg=colors.SearchBg },
+	IncSearch          = { fg=colors.red,       bg=colors.SearchFG },
+	CurSearch          = { fg=colors.SearchFG,  bg=colors.red },
+	lCursor            = { fg=colors.cursor_fg, bg=colors.cursor_bg },
+	TermCursor         = { fg=colors.cursor_fg, bg=colors.cursor_bg },
+	TermCursorNC       = { fg=colors.cursor_fg, bg=colors.cursor_bg },
+	StatusLine         = { fg=colors.black2,    bg=colors.gray6 },
+	StatusLineNC       = { fg=colors.gray7,     bg=colors.gray },
+	Delimiter          = { fg=colors.gray7 },
+	DiffAdd            = { fg=colors.green1 },
+	DiffAdded          = { fg=colors.green1 },
+	DiffChange         = { fg=colors.orange2 },
+	DiffDelete         = { fg=colors.red1 },
+	DiffRemoved        = { fg=colors.red1 },
+	DiffText           = { fg=colors.cyan6 },
+	DiffFile           = { fg=colors.purple2 },
+	StatusLineTerm     = { fg=colors.cyan5, bg=colors.gray },
+	StatusLineTermNC   = { fg=colors.gray7, bg=colors.gray },
+	StatusLineSeparator= { fg=colors.dark },
+	Underline          = { style = "underline" },
+	Label              = { fg=colors.Label, style="bold" },-- underline Highlighted defination
+	MatchParen         = { fg=colors.white1, bg=colors.cyan6 },
+	MatchParenCur      = { style = "underline" },
+	MatchWord          = { style = "underline" },
+	MatchWordCur       = { style = "underline" },
+	MoreMsg            = { fg=colors.orange2 },
+	ModeMsg            = { fg=colors.fg, bg=colors.bg },
+	MsgArea            = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
+	MsgSeparator       = { fg=colors.fg, bg=colors.bg },
+	Normal             = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
+	NormalNC           = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
+	Error              = { fg=colors.red1, bg=colors.bg, style = "bold" },
+	ErrorMsg           = { fg="#FF3939",   bg=colors.bg, style = "bold" },-- command error message
+	Debug              = { fg=colors.fg },
+	Visual             = { fg = "NONE", bg=colors.visual_select_bg, style = "bold" },
+	Substitute         = { fg=colors.gray6, bg=colors.orange4 },
+	VisualNOS          = { fg=colors.selection_fg, bg=colors.selection_bg },
 	-- DiffIndexLine = { fg=colors.gray3 },
 	-- Directory     = { fg=colors.cyan6 },
 	-- EndOfBuffer   = { fg=colors.bg },
-	Error         = { fg=colors.red1, bg=colors.bg, style = "bold" },
-	ErrorMsg      = { fg="#FF3939",   bg=colors.bg, style = "bold" },-- command error message
-	Debug         = { fg=colors.fg },
+	-----------------------------------------
+	--  end Editor settings
+	-----------------------------------------
 
-	Boolean       = { fg=colors.Boolean },
-	Character     = { fg=colors.Character },
-	Comment       = { fg=colors.Comment, style = "italic" },
-	Conditional   = { fg=colors.Conditional },
-	Constant      = { fg=colors.Constant },
-	Define        = { fg=colors.Define},
-	Exception     = { fg=colors.Exception },
-	Float         = { fg=colors.Float },
-	Identifier    = { fg=colors.Identifier },
-	Ignore        = { fg=colors.Ignore },
-	Label         = { fg=colors.Label, style="bold" },-- underline Highlighted defination
-	Macro         = { fg=colors.Macro },
-	MatchParen    = { fg=colors.white1, bg=colors.cyan6 },
-	MatchParenCur = { style = "underline" },
-	MatchWord     = { style = "underline" },
-	MatchWordCur  = { style = "underline" },
-	MoreMsg       = { fg=colors.orange2 },
-	ModeMsg       = { fg=colors.fg, bg=colors.bg },
-	MsgArea       = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
-	MsgSeparator  = { fg=colors.fg, bg=colors.bg },
-	Normal        = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
-	NormalNC      = { fg=colors.fg, bg=config.transparent_background and "NONE" or colors.bg, },
-	NonText       = { fg=colors.non_text },
-	Number        = { fg=colors.purple4 },
-	Operator      = { fg=colors.cyan3 },
-	PreCondit     = { fg=colors.purple4 },
-	PreProc       = { fg=colors.PreProc },
-	Question      = { fg=colors.gray },
-	Special       = { fg=colors.orange3 },
-	SpecialChar   = { fg=colors.gray5 },
-	SpecialComment= { fg=colors.cyan5 },
-	SpecialKey    = { fg=colors.gray7,   style = "bold" },
-	SpellBad      = { fg=colors.red1,    style = "underline" },
-	SpellCap      = { fg=colors.orange2, style = "underline" },
-	SpellLocal    = { fg=colors.green1,  style = "underline" },
-	SpellRare     = { fg=colors.purple2, style = "underline" },
-	Statement     = { fg=colors.red1 },
-	StorageClass  = { fg=colors.pink1 },
-	String        = { fg=colors.orange5 },
-	Structure     = { fg=colors.cyan4 },
-	Substitute    = { fg=colors.gray6, bg=colors.orange4 },
-	TabLine       = { fg=colors.gray7 },
-	TabLineFill   = { fg=colors.gray7 },
-	TabLineSel    = { fg=colors.fg },
-	Tag           = { fg=colors.gray7 },
-	Title         = { fg=colors.gray7 },
-	Todo          = { fg=colors.TodoFG, bg=colors.TodoBg, style = "bold" },
-	Type          = { fg=colors.Type, style="NONE" },
-	Typedef       = { fg=colors.Typedef },
-	Variable      = { fg=colors.Variable },
-	Visual        = { fg = "NONE", bg=colors.visual_select_bg, style = "bold" },
-	VisualNOS     = { fg=colors.selection_fg, bg=colors.selection_bg },
+
 	-----------------------------------------
-	--  end Editors settings
+	-- LANGUAGE SYNTAX
 	-----------------------------------------
+	Boolean            = { fg=colors.Boolean },
+	Character          = { fg=colors.Character },
+	Comment            = { fg=colors.Comment, style = "italic" },
+	Conditional        = { fg=colors.Conditional },
+	Constant           = { fg=colors.Constant },
+	Define             = { fg=colors.Define},
+	Exception          = { fg=colors.Exception },
+	Float              = { fg=colors.Float },
+	Identifier         = { fg=colors.Identifier },
+	Ignore             = { fg=colors.Ignore },
+	Macro              = { fg=colors.Macro },
+	NonText            = { fg=colors.non_text },
+	Number             = { fg=colors.purple4 },
+	Operator           = { fg=colors.cyan3 },
+	PreCondit          = { fg=colors.purple4 },
+	PreProc            = { fg=colors.PreProc },
+	Question           = { fg=colors.gray },
+	Special            = { fg=colors.orange3 },
+	SpecialChar        = { fg=colors.gray5 },
+	SpecialComment     = { fg=colors.cyan5 },
+	SpecialKey         = { fg=colors.gray7,   style = "bold" },
+	SpellBad           = { fg=colors.red1,    style = "underline" },
+	SpellCap           = { fg=colors.orange2, style = "underline" },
+	SpellLocal         = { fg=colors.green1,  style = "underline" },
+	SpellRare          = { fg=colors.purple2, style = "underline" },
+	Statement          = { fg=colors.red1 },
+	StorageClass       = { fg=colors.pink1 },
+	String             = { fg=colors.orange5 },
+	Structure          = { fg=colors.cyan4 },
+	TabLine            = { fg=colors.gray7 },
+	TabLineFill        = { fg=colors.gray7 },
+	TabLineSel         = { fg=colors.fg },
+	Tag                = { fg=colors.gray7 },
+	Title              = { fg=colors.gray7 },
+	Todo               = { fg=colors.TodoFG, bg=colors.TodoBg, style = "bold" },
+	Type               = { fg=colors.Type, style="NONE" },
+	Typedef            = { fg=colors.Typedef },
+	Variable           = { fg=colors.Variable },
+	URI                = { fg=colors.URI,        style="underline" },
+	Parameter          = { fg=colors.Parameter,  style="italic" },
+	Keyword            = { fg=colors.Keyword,    style="NONE" },
+	Include            = { fg=colors.Include },
+	Function           = { fg=colors.Function },
+	KeywordFunction    = { fg=colors.KeywordFunction, style="NONE" },
+	KeywordReturn      = { fg=colors.KeywordReturn },
+	KeywordOperator    = { fg=colors.KeywordOperator },
+	Method             = { fg=colors.Method },
+	Constructor        = { fg=colors.Constructor },
+	FuncBuiltin        = { fg=colors.FuncBuiltin },
+	Warning            = { fg=colors.Warning },
+	Note               = { fg=colors.Note },
+	TagAttribute       = { fg=colors.TagAttribute },
+	Annotation         = { fg=colors.Annotation },
+	Attribute          = { fg=colors.Attribute },
+	ConstBuiltin       = { fg=colors.ConstBuiltin },
+	ConstMacro         = { fg=colors.ConstMacro },
+	Field              = { fg=colors.Field },
+	FuncMacro          = { fg=colors.FuncMacro },
+	Literal            = { fg=colors.Literal },
+	Namespace          = { fg=colors.Namespace },
+	Property           = { fg=colors.Property },
+	PunctBracket       = { fg=colors.PunctBracket },
+	TableBlock         = { fg=colors.TableBlock },
+	PunctDelimiter     = { fg=colors.PunctDelimiter },
+	PunctSpecial       = { fg=colors.PunctSpecial },
+	StringEscape       = { fg=colors.StringEscape },
+	StringRegex        = { fg=colors.StringRegex },
+	Strong             = { fg=colors.Strong },
+	Symbol             = { fg=colors.Symbol },
+	TagDelimiter       = { fg=colors.TagDelimiter },
+	Text               = { fg=colors.Text },
+	QueryLinterError   = { fg=colors.QueryLinterError },
+	TypeBuiltin        = { fg=colors.TypeBuiltin },
+	VariableBuiltin    = { fg=colors.VariableBuiltin },
+	ParameterReference = { fg=colors.ParameterReference },
+	Emphasis           = { style = "italic" },
+	-----------------------------------------
+	-- end LANGUAGE SYNTAX
+	-----------------------------------------
+
 }
 
 
@@ -343,7 +389,7 @@ M.plugins = {
 
 
 	-----------------------------------------
-	-- LANGUAGE SPECIFIC
+	-- LANGUAGE SYNTAX
 	-----------------------------------------
 
 
@@ -430,7 +476,6 @@ M.plugins = {
 	-- HTML language:
 	-----------------------------------------
 	htmlArg = { style="italic" },
-	Title   = { style="NONE" },
 	-- htmlTag = { },
 	-- htmlLink = { fg=colors.blue },
 	-----------------------------------------
@@ -500,7 +545,7 @@ M.plugins = {
 
 
 	-----------------------------------------
-	-- end LANGUAGE SPECIFIC
+	-- end LANGUAGE SYNTAX
 	-----------------------------------------
 
 
