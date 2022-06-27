@@ -190,8 +190,15 @@ M.plugins = {
 	BufferVisibleMod     = { fg=colors.yellow1, bg=colors.bg },
 	BufferVisibleSign    = { fg=colors.gray3,   bg=colors.bg },
 	BufferVisibleTarget  = { fg=colors.red1,    bg=colors.bg, style = "bold" },
-	BufferLineFill       = { fg=colors.fg,      bg = "#141414", style = "bold" },
-	BuffNumbers          = { fg=colors.red,     bg = "#141414" },
+	BufferLineFill       = { fg=colors.fg,      bg =colors.black2, style = "bold" },
+	BuffNumbers          = { fg=colors.red,     bg =colors.black2 },
+
+	-- Tabs
+	TabSelectedFG        = { fg=colors.white,   bg =colors.black2 },
+	TabSelectedBG        = { fg=colors.green,   bg =colors.bg },
+
+	TabFG                = { fg=colors.white,   bg =colors.black2 },
+	TabBG                = { fg=colors.black2,  bg =colors.black2 },
 	-----------------------------------------
 
 
