@@ -140,7 +140,7 @@ return {
 	ConstMacro           = "#702963",
 	Macro                = "#D68EB2",
 	Constant             = "#FFFADE",
-	Field                = "#FF557F",
+	Field                = "#05d2dd",
 	Float                = "#D68EB2",
 	FuncMacro            = "#006B3C",
 	Label                = "#888888",
