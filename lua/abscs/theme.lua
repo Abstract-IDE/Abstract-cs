@@ -11,14 +11,14 @@ M.base = {
 
 	--  completion menu
 	----------------------------------
-	Pmenu              = { fg="#848484",      bg="#060606" },-- completion window border color and background color
-	PmenuSel           = { fg=colors.black,   bg=colors.cyan6 },
+	Pmenu              = { fg=colors.gray3,    bg="#060606" },-- completion window border color and background color
+	PmenuSel           = { fg=colors.black,    bg=colors.cyan6 },
 	PmenuSbar          = { bg=colors.gray },
 	PmenuThumb         = { bg=colors.cyan6 },
 	----------------------------------
 
 	winhighlight       = { fg=colors.white,    bg=colors.line_bg },         -- win bar (bottom of buffer tab window)
-	NormalFloat        = { fg=colors.cyan5,    bg=colors.bg },         -- floating window
+	NormalFloat        = { fg=colors.white,    bg=colors.bg },         -- floating window
 	FloatBorder        = { fg=colors.gray3,    bg = "NONE" },
 	Folded             = { fg=colors.cl_bg,    bg=colors.black2 },
 	VertSplit          = { fg=colors.cl_bg,    bg=colors.line_bg },
