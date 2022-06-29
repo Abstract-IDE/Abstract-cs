@@ -17,11 +17,12 @@ M.base = {
 	PmenuThumb         = { bg=colors.cyan6 },
 	----------------------------------
 
+	winhighlight       = { fg=colors.white,    bg=colors.line_bg },         -- win bar (bottom of buffer tab window)
 	NormalFloat        = { fg=colors.cyan5,    bg=colors.bg },         -- floating window
 	FloatBorder        = { fg=colors.gray3,    bg = "NONE" },
 	Folded             = { fg=colors.cl_bg,    bg=colors.black2 },
 	VertSplit          = { fg=colors.cl_bg,    bg=colors.line_bg },
-	LineNr             = { fg=colors.line_fg,  bg=colors.line_bg},-- number column
+	LineNr             = { fg=colors.line_fg,  bg=colors.bg},-- number column
 	CursorLineNr       = { fg=colors.black,    bg=colors.cl_bg, style = "bold" },
 	Cursor             = { fg=colors.yellow,   bg=colors.bg },
 	CursorColumn       = { fg = "NONE",        bg = "NONE" },
@@ -56,7 +57,7 @@ M.base = {
 	StatusLineTermNC   = { fg=colors.gray7, bg=colors.gray },
 	StatusLineSeparator= { fg=colors.dark },
 	Underline          = { style = "underline" },
-	Label              = { fg=colors.Label, style="bold" },-- underline Highlighted defination
+	Label              = { fg=colors.Label },-- underline Highlighted defination
 	MatchParen         = { fg=colors.white1, bg=colors.cyan6 },
 	MatchParenCur      = { style = "underline" },
 	MatchWord          = { style = "underline" },
