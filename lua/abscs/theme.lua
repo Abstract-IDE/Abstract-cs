@@ -11,26 +11,25 @@ M.base = {
 
 	--  completion menu
 	----------------------------------
-	Pmenu              = { fg=colors.gray3,    bg="#060606" },-- completion window border color and background color
+	Pmenu              = { fg=colors.gray3,    bg="#060606" }, -- completion window border color and background color
 	PmenuSel           = { fg=colors.black,    bg=colors.cyan6 },
 	PmenuSbar          = { bg=colors.gray },
 	PmenuThumb         = { bg=colors.cyan6 },
 	----------------------------------
 
-	winhighlight       = { fg=colors.white,    bg=colors.line_bg },         -- win bar (bottom of buffer tab window)
-	NormalFloat        = { fg=colors.white,    bg=colors.bg },         -- floating window
+	NormalFloat        = { fg=colors.white,    bg=colors.bg },        -- floating window
 	FloatBorder        = { fg=colors.gray3,    bg = "NONE" },
 	Folded             = { fg=colors.cl_bg,    bg=colors.black2 },
-	VertSplit          = { fg=colors.cl_bg,    bg=colors.line_bg },
-	LineNr             = { fg=colors.line_fg,  bg=colors.bg},-- number column
+	VertSplit          = { fg=colors.cl_bg,    bg=colors.bg },
+	LineNr             = { fg=colors.line_fg,  bg=colors.bg},         -- number column
 	CursorLineNr       = { fg=colors.black,    bg=colors.cl_bg, style = "bold" },
 	Cursor             = { fg=colors.yellow,   bg=colors.bg },
 	CursorColumn       = { fg = "NONE",        bg = "NONE" },
 	FoldColumn         = { fg=colors.line_fg },
 	CursorLine         = { bg=colors.black2 },
 	-- CursorIM           =  { fg=colors.cursor_fg, bg=colors.cursor_bg },
-	SignColumn         = { fg=colors.line_bg,  bg=colors.line_bg },
-	ColorColumn        = { bg=colors.line_bg },
+	SignColumn         = { fg=colors.bg,  bg=colors.bg },
+	ColorColumn        = { bg=colors.bg },
 	Conceal            = { fg=colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
 	QuickFixLine       = { bg=colors.gray1 },
 	Repeat             = { fg=colors.cyan4 },
@@ -290,10 +289,10 @@ M.plugins = {
 	DiagnosticFloatingHint    = { fg=colors.blue1 },
 	DiagnosticFloatingInfo    = { fg=colors.yellow1 },
 	DiagnosticFloatingWarn    = { fg=colors.orange1 },
-	DiagnosticSignError       = { fg=colors.red2,    bg=colors.line_bg },
-	DiagnosticSignHint        = { fg=colors.blue1,   bg=colors.line_bg },
-	DiagnosticSignInfo        = { fg=colors.yellow1, bg=colors.line_bg },
-	DiagnosticSignWarn        = { fg=colors.orange1, bg=colors.line_bg },
+	DiagnosticSignError       = { fg=colors.red2,    bg=colors.bg },
+	DiagnosticSignHint        = { fg=colors.blue1,   bg=colors.bg },
+	DiagnosticSignInfo        = { fg=colors.yellow1, bg=colors.bg },
+	DiagnosticSignWarn        = { fg=colors.orange1, bg=colors.bg },
 	DiagnosticUnderlineError  = { style = "underline" },
 	DiagnosticUnderlineHint   = { style = "underline" },
 	DiagnosticUnderlineInfo   = { style = "underline" },
@@ -351,7 +350,7 @@ M.plugins = {
 	NvimTreeRootFolder   = { fg=colors.gray3, style = "bold" },
 	NvimTreeSpecialFile  = { fg=colors.orange2 },
 	NvimTreeSymlink      = { fg=colors.cyan3 },
-	NvimTreeVertSplit    = { fg=colors.line_bg, bg=colors.line_bg },
+	NvimTreeVertSplit    = { fg=colors.bg, bg=colors.bg },
 	-----------------------------------------
 
 
@@ -368,14 +367,14 @@ M.plugins = {
 	-----------------------------------------
 	-- TroubleTextInformation = { fg=colors.red, bg=colors.green },
 	TroubleFile      = { fg=colors.black,   bg=colors.gray6   },    -- the source file that has error
-	TroubleFoldIcon  = { fg=colors.red,     bg=colors.line_bg },    -- fold icon color
-	TroubleTextError = { fg=colors.red3,    bg=colors.line_bg },    -- error info text
-	TroubleNormal    = { fg=colors.white,   bg=colors.line_bg },    -- background color of trouble window
-	TroubleLocation  = { fg=colors.cyan,    bg=colors.line_bg },    -- location of error
-	TroubleIndent    = { fg=colors.white,   bg=colors.line_bg },    -- indent color
-	TroubleSignError = { fg=colors.red,     bg=colors.line_bg },    -- error sign color
-	TroubleCount     = { fg=colors.red,     bg=colors.line_bg },
-	TroubleCode      = { fg=colors.yellow5, bg=colors.line_bg },
+	TroubleFoldIcon  = { fg=colors.red,     bg=colors.bg },    -- fold icon color
+	TroubleTextError = { fg=colors.red3,    bg=colors.bg },    -- error info text
+	TroubleNormal    = { fg=colors.white,   bg=colors.bg },    -- background color of trouble window
+	TroubleLocation  = { fg=colors.cyan,    bg=colors.bg },    -- location of error
+	TroubleIndent    = { fg=colors.white,   bg=colors.bg },    -- indent color
+	TroubleSignError = { fg=colors.red,     bg=colors.bg },    -- error sign color
+	TroubleCount     = { fg=colors.red,     bg=colors.bg },
+	TroubleCode      = { fg=colors.yellow5, bg=colors.bg },
 	-- TroubleError       = { fg=colors.red, bg=colors.green },
 	-- TroubleSignWarning = { fg=colors.red, bg=colors.green },
 	-- TroubleWarning     = { fg=colors.red, bg=colors.green },

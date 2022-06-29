@@ -172,11 +172,11 @@ return {
 	TodoFG               = "#FFFFFF",
 	TodoBg               = "#3B3B1D",
 	GitAddFG             = "#44B273",
-	GitAddBG             = "#0C0C0C",
+	GitAddBG             = "#060606",
 	GitChangeFG          = "#967B11",
-	GitChangeBG          = "#0C0C0C",
+	GitChangeBG          = "#060606",
 	GitDeleteFG          = "#FF0000",
-	GitDeleteBG          = "#0C0C0C",
+	GitDeleteBG          = "#060606",
 	TableBlock           = "#FFCC66"
 }
 
