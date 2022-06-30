@@ -20,7 +20,7 @@ M.base = {
 	NormalFloat        = { fg=colors.white,    bg=colors.bg },        -- floating window
 	FloatBorder        = { fg=colors.gray3,    bg = "NONE" },
 	Folded             = { fg=colors.cl_bg,    bg=colors.black2 },
-	VertSplit          = { fg=colors.cl_bg,    bg=colors.bg },
+	VertSplit          = { fg=colors.bg,       bg=colors.gray3 },
 	LineNr             = { fg=colors.line_fg,  bg=colors.bg},         -- number column
 	CursorLineNr       = { fg=colors.black,    bg=colors.cl_bg, style = "bold" },
 	Cursor             = { fg=colors.yellow,   bg=colors.bg },
