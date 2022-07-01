@@ -170,7 +170,7 @@ return {
 	SearchFG             = "#060606",
 	SearchBg             = "#E25600",
 	TodoFG               = "#FFFFFF",
-	TodoBg               = "#3B3B1D",
+	TodoBG               = "#3B3B1D",
 	GitAddFG             = "#44B273",
 	GitAddBG             = "#060606",
 	GitChangeFG          = "#967B11",

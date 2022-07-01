@@ -118,7 +118,7 @@ M.base = {
 	TabLineSel         = { fg=colors.fg },
 	Tag                = { fg=colors.gray7 },
 	Title              = { fg=colors.gray7 },
-	Todo               = { fg=colors.TodoFG, bg=colors.TodoBg, style = "bold" },
+	Todo               = { fg=colors.TodoFG, bg="NONE", style = "bold" },
 	Type               = { fg=colors.Type, style="NONE" },
 	Typedef            = { fg=colors.Typedef },
 	Variable           = { fg=colors.Variable },
