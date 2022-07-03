@@ -345,12 +345,12 @@ M.plugins = {
 	NvimTreeGitStaged    = { fg=colors.diff_add },
 	NvimTreeImageFile    = { fg=colors.purple2 },
 	NvimTreeIndentMarker = { fg=colors.gray3 },
-	NvimTreeNormal       = { fg=colors.accent, bg=colors.black2 },
+	NvimTreeNormal       = { fg=colors.accent, bg=colors.bg },
 	NvimTreeOpenedFolderName = { fg=colors.cyan6, style = "italic" },
 	NvimTreeRootFolder   = { fg=colors.gray3, style = "bold" },
 	NvimTreeSpecialFile  = { fg=colors.orange2 },
 	NvimTreeSymlink      = { fg=colors.cyan3 },
-	NvimTreeVertSplit    = { fg=colors.bg, bg=colors.bg },
+	NvimTreeVertSplit    = { fg=colors.gray1, bg=colors.bg },
 	-----------------------------------------
 
 
