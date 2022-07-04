@@ -446,6 +446,12 @@ M.plugins = {
 	-----------------------------------------
 
 
+	-- Javascript Language
+	-----------------------------------------
+	javaScriptFunction = { fg=colors.KeywordFunction },
+	-----------------------------------------
+
+
 	-- C/C++ language:
 	-----------------------------------------
 	cStatement        = { fg=colors.Statement, style="NONE" },
@@ -456,7 +462,7 @@ M.plugins = {
 	cppBlock          = { fg=colors.Block,     style="NONE" },
 	cppAccess         = { fg=colors.Access },
 
-	-- TreeSitter specially for CPP
+	-- TreeSitter only for CPP
 	cppTSVariable     = { fg=colors.Variable },
 	cppTSType         = { fg=colors.Type },
 	cppTSKeyword      = { fg=colors.Keyword },
@@ -468,7 +474,7 @@ M.plugins = {
 	cppTSNamespace    = { fg=colors.Namespace, bg="NONE" },
 	cppTSOperator     = { fg=colors.Operator,  bg="NONE" },
 
-	-- TreeSitter specially for C
+	-- TreeSitter only for C
 	cTSVariable       = { fg=colors.Variable },
 	cTSType           = { fg=colors.Type },
 	cTSKeyword        = { fg=colors.Keyword },
@@ -488,38 +494,28 @@ M.plugins = {
 	-----------------------------------------
 
 
-	-- CSS
+	-- CSS / SASS / SCSS
 	-----------------------------------------
 	cssFlexibleBoxAttr  = { fg=colors.FlexibleBoxAttr, style="italic" },-- example -> center
 	cssColor            = { fg=colors.Color,           style="italic" },-- example -> green, red, blue
 	cssUnitDecorators   = { style="italic" }, -- exaple -> rem, em, px,
 	cssTagName          = { fg=colors.TagName,         style="NONE" },-- only changes bold/italic| example -> body, html
+	cssBoxProp          = { fg=colors.BoxProp },
+	cssBraces           = { fg=colors.Braces },
+	cssUIProp           = { fg=colors.UIProp },
+
+	sassDefinition      = { fg=colors.Definition },
+	sassProperty        = { fg=colors.Property },
+	sassCssAttribute    = { fg=colors.Attribute },
+	sassInclude         = { fg=colors.Include },
 
 	cssTSPunctDelimiter = { fg=colors.PunctDelimiter, style="NONE" },-- example -> :
 	cssTSPunctBracket   = { fg=colors.PunctBracket,   style="NONE" },-- example -> { },()
 	cssTSProperty       = { fg=colors.Property,       style="NONE" },-- example -> background-color, display, text-align
 	cssTSType           = { fg=colors.Type,           style="NONE" },-- only changes color | example -> body, html
-	-- cssDefinition = { fg="#f0ff0f", style="bold" },
-	-- cssAttrRegion = { fg="#ff0fff", style="bold" },
-	-- cssClassName  = { fg="#FFFFFF", style="NONE" },
-	-- cssBackgroundProp
-	-- cssAttrRegion
-	-- cssBraces
-	-----------------------------------------
 
-
-	-- CSS / SASS / SCSS
-	-----------------------------------------
-	cssBoxProp         = { fg=colors.BoxProp },
-	cssBraces          = { fg=colors.Braces },
-	cssUIProp          = { fg=colors.UIProp },
-	sassDefinition     = { fg=colors.Definition },
-	sassProperty       = { fg=colors.Property },
-	sassCssAttribute   = { fg=colors.Attribute },
-	sassInclude        = { fg=colors.Include },
-
-	scssTSProperty     = { fg=colors.Property },
-	scssTSPunctBracket = { fg=colors.PunctBracket },
+	scssTSProperty      = { fg=colors.Property },
+	scssTSPunctBracket  = { fg=colors.PunctBracket },
 	-----------------------------------------
 
 
