@@ -14,7 +14,7 @@ return {
 	diff_change          = "#0C7D9D",
 	cl_bg                = "#178C94",
 	diff_text            = "#265478",
-	line_fg              = "#747578",
+	line_fg              = "#444444",
 	line_bg              = "#0C0C0C",
 	gutter_bg            = "#282C34",
 	non_text             = "#373C45",
