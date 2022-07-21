@@ -302,6 +302,13 @@ M.plugins = {
 	-----------------------------------------
 
 
+	-- fidget.nvim: https://github.com/j-hui/fidget.nvim
+	-----------------------------------------
+	FidgetTitle = { fg=colors.FidgetTitle },
+	FidgetTask  = { fg=colors.FidgetTask },
+	-----------------------------------------
+
+
 	-- vim-indent-guides: github.com/nathanaelkane/vim-indent-guides
 	-----------------------------------------
 	IndentGuidesEven = { fg=colors.white1 },
