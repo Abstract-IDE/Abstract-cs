@@ -178,8 +178,7 @@ return {
 	GitDeleteFG          = "#FF0000",
 	GitDeleteBG          = "#060606",
 	TableBlock           = "#FFCC66",
-	FidgetTitle          = "#072B2C",
-	FidgetTask           = "#072B2C"
-
+	FidgetTitle          = "#0c494a",
+	FidgetTask           = "#093536"
 }
 
