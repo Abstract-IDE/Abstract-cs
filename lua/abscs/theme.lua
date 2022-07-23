@@ -266,14 +266,14 @@ M.plugins = {
 	IndentBlanklineSpaceChar   = { fg="#126b70" }, -- cursor color on indent space
 	-- IndentBlanklineSpaceCharBlankline = { fg= "#ff0000" },
 	-- IndentBlanklineContextStart       = { fg= colors.yellow },
-	IndentBlanklineIndent1     = { fg="#273c45" },
-	IndentBlanklineIndent2     = { fg="#223232" },
-	IndentBlanklineIndent3     = { fg="#292929" },
-	IndentBlanklineIndent4     = { fg="#202020" },
-	IndentBlanklineIndent5     = { fg="#1f1f1f" },
-	IndentBlanklineIndent6     = { fg="#12121f" },
-	IndentBlanklineIndent7     = { fg="#151515" },
-	IndentBlanklineIndent8     = { fg="#12121f" },
+	IndentBlanklineIndent1     = { fg="#1d1d26" },
+	IndentBlanklineIndent2     = { fg="#17171e" },
+	IndentBlanklineIndent3     = { fg="#1a171e" },
+	IndentBlanklineIndent4     = { fg="#151d1c" },
+	IndentBlanklineIndent5     = { fg="#111d13" },
+	IndentBlanklineIndent6     = { fg="#1c1d15" },
+	IndentBlanklineIndent7     = { fg="#1d0f12" },
+	IndentBlanklineIndent8     = { fg="#1d0c19" },
 	-----------------------------------------
 
 
