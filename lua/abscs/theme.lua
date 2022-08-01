@@ -302,10 +302,15 @@ M.plugins = {
 	-----------------------------------------
 
 
+	-- lspsaga.nvim: https://github.com/glepnir/lspsaga.nvim
+	-----------------------------------------
+	LspSagaLightBulb = { fg=colors.green1, bg='NONE' },
+
+
 	-- fidget.nvim: https://github.com/j-hui/fidget.nvim
 	-----------------------------------------
-	FidgetTitle = { fg=colors.FidgetTitle },
-	FidgetTask  = { fg=colors.FidgetTask },
+	FidgetTitle = { fg=colors.FidgetTitle, bg='NONE' },
+	FidgetTask  = { fg=colors.FidgetTask,  bg='NONE' },
 	-----------------------------------------
 
 
