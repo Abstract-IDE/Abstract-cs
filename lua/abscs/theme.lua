@@ -70,7 +70,7 @@ M.base = {
 	Error              = { fg=colors.red1, bg=colors.bg, style = "bold" },
 	ErrorMsg           = { fg="#FF3939",   bg=colors.bg, style = "bold" },-- command error message
 	Debug              = { fg=colors.fg },
-	Visual             = { fg = "NONE", bg=colors.visual_select_bg, style = "bold" },
+	Visual             = { fg = "NONE", bg="#2B2F31", style = "bold" },
 	Substitute         = { fg=colors.gray6, bg=colors.orange4 },
 	VisualNOS          = { fg=colors.selection_fg, bg=colors.selection_bg },
 	-- DiffIndexLine = { fg=colors.gray3 },
