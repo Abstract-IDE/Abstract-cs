@@ -43,7 +43,7 @@ M.base = {
 	ColorColumn        = { bg=colors.bg },
 	Conceal            = { fg=colors.fg },-- { bg = config.transparent_background and "NONE" or colors.bg },
 	QuickFixLine       = { bg=colors.gray1 },
-	Repeat             = { fg=colors.cyan4 },
+	Repeat             = { fg=colors.Repeat },
 	Whitespace         = { fg=colors.non_text },
 	WildMenu           = { fg=colors.fg },
 	WarningMsg         = { fg=colors.gray,      bg=colors.orange3 },
@@ -123,7 +123,7 @@ M.base = {
 	Statement          = { fg=colors.red1 },
 	StorageClass       = { fg=colors.pink1 },
 	String             = { fg=colors.orange5 },
-	Structure          = { fg=colors.cyan4 },
+	Structure          = { fg=colors.Structure },
 	TabLine            = { fg=colors.gray7 },
 	TabLineFill        = { fg=colors.gray7 },
 	TabLineSel         = { fg=colors.fg },
@@ -379,10 +379,10 @@ M.plugins = {
 
 	-- telescope: github.com/nvim-telescope/telescope.nvim
 	-----------------------------------------
-	TelescopeBorder       = { fg=colors.gray3, bg = config.transparent_background and "NONE" or colors.bg, },
-	TelescopeMatching     = { fg=colors.orange },
-	TelescopePromptPrefix = { fg=colors.cyan2 },
-	TelescopeSelection    = { fg=colors.white, bg=colors.gray },
+	TelescopeBorder       = { fg=colors.TelescopeBorder, bg = config.transparent_background and "NONE" or colors.bg, },
+	TelescopeMatching     = { fg=colors.TelescopeMatching },
+	TelescopePromptPrefix = { fg=colors.TelescopePromptPrefix },
+	TelescopeSelection    = { fg=colors.TelescopeSelectionFG, bg=colors.TelescopeSelectionBG },
 	-----------------------------------------
 
 

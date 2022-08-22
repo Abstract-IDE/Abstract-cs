@@ -84,10 +84,14 @@ return {
 
 	cyan6                = "#1D918B",
 	cyan5                = "#47A8A1",
-	cyan4                = "#5AD1AA",
 	cyan3                = "#00BFA4",
-	cyan2                = "#00DFFF",
 	cyan                 = "#00FFFF",
+
+	TelescopeBorder       = "#808080",
+	TelescopeMatching     = "#FF8000",
+	TelescopePromptPrefix = "#00DFFF",
+	TelescopeSelectionFG  = "#FFFFFF",
+	TelescopeSelectionBG  = "#21252D",
 
 	Define               = "#D68EB2",
 	Braces               = "#8E24FF",
