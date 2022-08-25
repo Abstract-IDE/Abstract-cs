@@ -34,7 +34,7 @@ M.base = {
 	VertSplit          = { fg=colors.bg,       bg=colors.gray3 },
 	LineNr             = { fg=colors.line_fg,  bg=colors.bg},         -- number column
 	CursorLineNr       = { fg=colors.black,    bg=colors.cl_bg, style = "bold" },
-	Cursor             = { fg=colors.yellow,   bg=colors.bg },
+	Cursor             = { fg=colors.Curosr,   bg=colors.bg },
 	CursorColumn       = { fg = "NONE",        bg = "NONE" },
 	FoldColumn         = { fg=colors.line_fg },
 	CursorLine         = { bg=colors.black2 },
@@ -68,7 +68,7 @@ M.base = {
 	StatusLineSeparator= { fg=colors.dark },
 	Underline          = { style = "underline" },
 	Label              = { fg=colors.Label },-- underline Highlighted defination
-	MatchParen         = { fg=colors.white1, bg=colors.cyan6 },
+	MatchParen         = { fg=colors.MatchParenFG, bg=colors.MatchParenBG },
 	MatchParenCur      = { style = "underline" },
 	MatchWord          = { style = "underline" },
 	MatchWordCur       = { style = "underline" },
@@ -121,7 +121,7 @@ M.base = {
 	SpellLocal         = { fg=colors.green1,  style = "underline" },
 	SpellRare          = { fg=colors.purple2, style = "underline" },
 	Statement          = { fg=colors.red1 },
-	StorageClass       = { fg=colors.pink1 },
+	StorageClass       = { fg=colors.StorageClass },
 	String             = { fg=colors.orange5 },
 	Structure          = { fg=colors.Structure },
 	TabLine            = { fg=colors.gray7 },
@@ -275,8 +275,6 @@ M.plugins = {
 	IndentBlanklineChar        = { fg=colors.IndentBlanklineChar },
 	IndentBlanklineContextChar = { fg=colors.IndentBlanklineContextChar },-- current Curosr Highlighted function
 	IndentBlanklineSpaceChar   = { fg=colors.IndentBlanklineSpaceChar }, -- cursor color on indent space
-	-- IndentBlanklineSpaceCharBlankline = { fg= "#ff0000" },
-	-- IndentBlanklineContextStart       = { fg= colors.yellow },
 	IndentBlanklineIndent1     = { fg=colors.IndentBlanklineIndent1 },
 	IndentBlanklineIndent2     = { fg=colors.IndentBlanklineIndent2 },
 	IndentBlanklineIndent3     = { fg=colors.IndentBlanklineIndent3 },
@@ -327,8 +325,8 @@ M.plugins = {
 
 	-- vim-indent-guides: github.com/nathanaelkane/vim-indent-guides
 	-----------------------------------------
-	IndentGuidesEven = { fg=colors.white1 },
-	IndentGuidesOdd  = { fg=colors.gray7 },
+	IndentGuidesEven = { fg=colors.IndentGuidesEven },
+	IndentGuidesOdd  = { fg=colors.IndentGuidesOdd },
 	-----------------------------------------
 
 
@@ -389,15 +387,15 @@ M.plugins = {
 	-- https://github.com/folke/trouble.nvim
 	-----------------------------------------
 	-- TroubleTextInformation = { fg=colors.red, bg=colors.green },
-	TroubleFile      = { fg=colors.black,   bg=colors.gray6   },    -- the source file that has error
-	TroubleFoldIcon  = { fg=colors.red,     bg=colors.bg },    -- fold icon color
-	TroubleTextError = { fg=colors.red3,    bg=colors.bg },    -- error info text
-	TroubleNormal    = { fg=colors.white,   bg=colors.bg },    -- background color of trouble window
-	TroubleLocation  = { fg=colors.cyan,    bg=colors.bg },    -- location of error
-	TroubleIndent    = { fg=colors.white,   bg=colors.bg },    -- indent color
-	TroubleSignError = { fg=colors.red,     bg=colors.bg },    -- error sign color
-	TroubleCount     = { fg=colors.red,     bg=colors.bg },
-	TroubleCode      = { fg=colors.yellow5, bg=colors.bg },
+	TroubleFile      = { fg=colors.TroubleFileFG,    bg=colors.TroubleFileBG   },    -- the source file that has error
+	TroubleFoldIcon  = { fg=colors.TroubleFoldIcon,  bg=colors.bg },    -- fold icon color
+	TroubleTextError = { fg=colors.TroubleTextError, bg=colors.bg },    -- error info text
+	TroubleNormal    = { fg=colors.TroubleNormal,    bg=colors.bg },    -- background color of trouble window
+	TroubleLocation  = { fg=colors.TroubleLocation,  bg=colors.bg },    -- location of error
+	TroubleIndent    = { fg=colors.TroubleIndent,    bg=colors.bg },    -- indent color
+	TroubleSignError = { fg=colors.TroubleSignError, bg=colors.bg },    -- error sign color
+	TroubleCount     = { fg=colors.TroubleCount,     bg=colors.bg },
+	TroubleCode      = { fg=colors.TroubleCode,      bg=colors.bg },
 	-- TroubleError       = { fg=colors.red, bg=colors.green },
 	-- TroubleSignWarning = { fg=colors.red, bg=colors.green },
 	-- TroubleWarning     = { fg=colors.red, bg=colors.green },
@@ -455,17 +453,7 @@ M.plugins = {
 
 	-- Python Language
 	-----------------------------------------
-	-- pythonConditional = { fg=colors.Conditional },
-	-- pythonException   = { fg=colors.Exception },
-	-- pythonFunction    = { fg=colors.Function },
-	-- pythonInclude     = { fg=colors.Include },
-	-- pythonOperator    = { fg=colors.Operator },
-	-- pythonStatement   = { fg=colors.Statement },
-	-- pythonBoolean     = { fg=colors.Boolean },
-
-	-- pythonTSRepeat          = { fg=colors.Repeat },
 	pythonTSKeywordFunction = { fg=colors.KeywordFunction },
-	-- pythonTSFunction        = { fg=colors.Function },
 	-----------------------------------------
 
 
@@ -512,8 +500,6 @@ M.plugins = {
 	-- HTML language:
 	-----------------------------------------
 	htmlArg = { style="italic" },
-	-- htmlTag = { },
-	-- htmlLink = { fg=colors.blue },
 	-----------------------------------------
 
 
@@ -544,9 +530,6 @@ M.plugins = {
 
 	-- JSON Language
 	-----------------------------------------
-	-- jsonStringMatch  = { fg="#ff0000", style="italic" },
-	-- jsonFold         = { fg="#ff0000", style="italic" },
-	-- jsonBraces       = { fg="#00ff00", style="NONE" },
 	jsonLabel        = { fg=colors.Label,          style="NONE" },
 	jsonKeyword      = { fg=colors.Label,          style="NONE" },
 	jsonKeywordMatch = { fg=colors.KeywordMatch,   style="bold" },

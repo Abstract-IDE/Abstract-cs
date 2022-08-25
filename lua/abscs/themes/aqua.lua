@@ -46,7 +46,6 @@ return {
 	black1        		 = "#090909",
 	black         		 = "#000000",
 
-	white1        		 = "#FFFADE",
 	white         		 = "#FFFFFF",
 
 	gray7                = "#CCCCCC",
@@ -54,7 +53,6 @@ return {
 	gray5                = "#9D9797",
 	gray4                = "#8C8C8C",
 	gray3                = "#808080",
-	gray2                = "#555555",
 	gray1                = "#3E3E3E",
 	gray                 = "#21252D",
 
@@ -66,26 +64,23 @@ return {
 	orange1              = "#FF8800",
 	orange               = "#FF8000",
 
-	pink1                = "#F92672",
-	pink                 = "#FF80FF",
-
 	purple4              = "#D68EB2",
 	purple3              = "#D16D9E",
 	purple2              = "#D16BB7",
 	purple               = "#8C00BF",
 
-	yellow6              = "#3B3B1D",
-	yellow5              = "#444400",
-	yellow4              = "#D7BA7D",
-	yellow3              = "#DCDCAA",
-	yellow2              = "#FFEE79",
 	yellow1              = "#FFCC66",
-	yellow               = "#FFFF00",
 
 	cyan6                = "#1D918B",
 	cyan5                = "#47A8A1",
 	cyan3                = "#00BFA4",
 	cyan                 = "#00FFFF",
+
+	Cursor               = "#FFFF00",
+
+	StorageClass         = "#F92672",
+	MatchParenFG         = "#FFFADE",
+	MatchParenBG         = "#1D918B",
 
 	TelescopeBorder       = "#808080",
 	TelescopeMatching     = "#FF8000",
@@ -198,5 +193,19 @@ return {
 	IndentBlanklineIndent6     = "#1c1d15",
 	IndentBlanklineIndent7     = "#1d0f12",
 	IndentBlanklineIndent8     = "#1d0c19",
+
+	TroubleFileFG        = "#000000",
+	TroubleFileBG        = "#C8C9C1",
+	TroubleFoldIcon      = "#FF0000",
+	TroubleTextError     = "#FF5050",
+	TroubleNormal        = "#FFFFFF",
+	TroubleLocation      = "#00FFFF",
+	TroubleIndent        = "#FFFFFF",
+	TroubleSignError     = "#FF0000",
+	TroubleCount         = "#FF0000",
+	TroubleCode          = "#444400",
+
+	IndentGuidesEven     = "#FFFADE",
+	IndentGuidesOdd      = "#CCCCCC",
 }
 
