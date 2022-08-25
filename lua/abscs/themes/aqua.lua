@@ -207,5 +207,27 @@ return {
 
 	IndentGuidesEven     = "#FFFADE",
 	IndentGuidesOdd      = "#CCCCCC",
+
+	markdownH                = "#1D918B",
+	markdownId               = "#D16BB7",
+	markdownUrl              = "#D16BB7",
+	markdownRule             = "#BBBBBB",
+	markdownBold             = "#CCCCCC",
+	markdownCode             = "#ED722E",
+	markdownItalic           = "#CCCCCC",
+	markdownCodeBlock        = "#ED722E",
+	markdownCodeError        = "#FF5050",
+	markdownLinkText         = "#1D918B",
+	markdownListMarker       = "#FC2929",
+	markdownCodeSpecial      = "#E25600",
+	markdownCodeDelimiter    = "#44B273",
+	markdownBlockquote       = "#BBBBBB",
+	markdownIdDeclaration    = "#1D918B",
+	markdownIdDelimiter      = "#C8C9C1",
+	markdownLinkDelimiter    = "#C8C9C1",
+	markdownHeadingRule      = "#BBBBBB",
+	markdownHeadingDelimiter = "#1D918B",
+	markdownUrlTitleDelimiter= "#00BFA4",
+	markdownOrderedListMarker= "#FC2929",
 }
 
