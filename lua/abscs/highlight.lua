@@ -288,32 +288,32 @@ M.plugins = {
 
 	-- Lsp: neovim.io/doc/user/lsp.html
 	-----------------------------------------
-	DiagnosticVirtualTextInfo = { fg=colors.orange6 },
-	DiagnosticHint            = { fg=colors.blue1 },
-	DiagnosticError           = { fg=colors.red2 },
-	DiagnosticInfo            = { fg=colors.yellow1 },
-	DiagnosticVirtualTextWarn = { fg=colors.orange6 },
-	DiagnosticWarn            = { fg=colors.orange1 },
-	DiagnosticFloatingError   = { fg=colors.red2 },
-	DiagnosticFloatingHint    = { fg=colors.blue1 },
-	DiagnosticFloatingInfo    = { fg=colors.yellow1 },
-	DiagnosticFloatingWarn    = { fg=colors.orange1 },
-	DiagnosticSignError       = { fg=colors.red2,    bg=colors.bg },
-	DiagnosticSignHint        = { fg=colors.blue1,   bg=colors.bg },
-	DiagnosticSignInfo        = { fg=colors.yellow1, bg=colors.bg },
-	DiagnosticSignWarn        = { fg=colors.orange1, bg=colors.bg },
+	DiagnosticError           = { fg=colors.DiagnosticError },
+	DiagnosticFloatingError   = { fg=colors.DiagnosticFloatingError },
+	DiagnosticFloatingHint    = { fg=colors.DiagnosticFloatingHint },
+	DiagnosticFloatingInfo    = { fg=colors.DiagnosticFloatingInfo },
+	DiagnosticFloatingWarn    = { fg=colors.DiagnosticFloatingWarn },
+	DiagnosticHint            = { fg=colors.DiagnosticHint },
+	DiagnosticInfo            = { fg=colors.DiagnosticInfo },
+	DiagnosticSignError       = { fg=colors.DiagnosticSignError,bg=colors.bg },
+	DiagnosticSignHint        = { fg=colors.DiagnosticSignHint, bg=colors.bg },
+	DiagnosticSignInfo        = { fg=colors.DiagnosticSignInfo, bg=colors.bg },
+	DiagnosticSignWarn        = { fg=colors.DiagnosticSignWarn, bg=colors.bg },
 	DiagnosticUnderlineError  = { style="underline" },
 	DiagnosticUnderlineHint   = { style="underline" },
 	DiagnosticUnderlineInfo   = { style="underline" },
 	DiagnosticUnderlineWarn   = { style="underline" },
 	DiagnosticVirtualTextError= { fg=colors.DiagnosticVirtualTextError },
-	DiagnosticVirtualTextHint = { fg=colors.gray1 },
+	DiagnosticVirtualTextHint = { fg=colors.DiagnosticVirtualTextHint },
+	DiagnosticVirtualTextInfo = { fg=colors.DiagnosticVirtualTextInfo },
+	DiagnosticVirtualTextWarn = { fg=colors.DiagnosticVirtualTextWarn },
+	DiagnosticWarn            = { fg=colors.DiagnosticWarn },
 	-----------------------------------------
 
 
 	-- lspsaga.nvim: https://github.com/glepnir/lspsaga.nvim
 	-----------------------------------------
-	LspSagaLightBulb = { fg=colors.green1, bg='NONE' },
+	LspSagaLightBulb = { fg=colors.LspSagaLightBulb, bg='NONE' },
 
 
 	-- fidget.nvim: https://github.com/j-hui/fidget.nvim
@@ -332,7 +332,7 @@ M.plugins = {
 
 	-- flutter-tools.nvim: github.com/akinsho/flutter-tools.nvim/
 	-----------------------------------------
-	FlutterWidgetGuides = { fg=colors.gray4 },
+	FlutterWidgetGuides = { fg=colors.FlutterWidgetGuides },
 	-----------------------------------------
 
 
