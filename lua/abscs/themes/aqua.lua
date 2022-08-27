@@ -3,6 +3,7 @@ return {
 
 	fg                   = "#FFFADE",
 	bg                   = "#060606",
+	second_bg            = "#252525",
 
 	dark                 = "#252525",
 	popup_back           = "#2D2D30",
@@ -69,8 +70,6 @@ return {
 	purple2              = "#D16BB7",
 	purple               = "#8C00BF",
 
-	yellow1              = "#FFCC66",
-
 	cyan6                = "#1D918B",
 	cyan5                = "#47A8A1",
 	cyan3                = "#00BFA4",
@@ -81,12 +80,6 @@ return {
 	StorageClass         = "#F92672",
 	MatchParenFG         = "#FFFADE",
 	MatchParenBG         = "#1D918B",
-
-	TelescopeBorder       = "#808080",
-	TelescopeMatching     = "#FF8000",
-	TelescopePromptPrefix = "#00DFFF",
-	TelescopeSelectionFG  = "#FFFFFF",
-	TelescopeSelectionBG  = "#21252D",
 
 	Define               = "#D68EB2",
 	Braces               = "#8E24FF",
@@ -196,6 +189,22 @@ return {
 	markdownUrlTitleDelimiter  = "#00BFA4",
 	markdownOrderedListMarker  = "#FC2929",
 
+	BufferCurrent              = "#141414",
+	BufferCurrentMod           = "#FFCC66",
+	BufferCurrentSign          = "#4FC1FF",
+	BufferCurrentTarget        = "#FC2929",
+	BufferInactive             = "#808080",
+	BufferInactiveIndex        = "#808080",
+	BufferInactiveMod          = "#FFCC66",
+	BufferInactiveSign         = "#808080",
+	BufferInactiveTarget       = "#FC2929",
+	BufferLineFill             = "#141414",
+	BufferVisibleMod           = "#FFCC66",
+	BufferVisibleSign          = "#808080",
+	BufferVisibleTarget        = "#FC2929",
+	BuffNumbersBG              = "#141414",
+	BuffNumbersFG              = "#FF0000",
+
 	DiagnosticHint             = "#4FC1FF",
 	DiagnosticError            = "#F44747",
 	DiagnosticInfo             = "#FFCC66",
@@ -241,6 +250,12 @@ return {
 	IndentGuidesOdd            = "#CCCCCC",
 
 	LspSagaLightBulb           = "#44B273",
+
+	TelescopeBorder            = "#808080",
+	TelescopeMatching          = "#FF8000",
+	TelescopePromptPrefix      = "#00DFFF",
+	TelescopeSelectionFG       = "#FFFFFF",
+	TelescopeSelectionBG       = "#21252D",
 
 	TroubleFileFG              = "#000000",
 	TroubleFileBG              = "#C8C9C1",
