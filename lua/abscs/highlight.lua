@@ -22,10 +22,10 @@ M.base = {
 
 	--  completion menu
 	----------------------------------
-	Pmenu              = { fg=colors.gray3,    bg=colors.bg }, -- completion window border color and background color
-	PmenuSel           = { fg=colors.black,    bg=colors.cyan6 },
-	PmenuSbar          = { bg=colors.gray },
-	PmenuThumb         = { bg=colors.cyan6 },
+	Pmenu              = { fg=colors.Pmenu,      bg=colors.bg }, -- completion window border color and background color
+	PmenuSel           = { fg=colors.PmenuSelFG, bg=colors.PmenuSelBG },
+	PmenuSbar          = { bg=colors.PmenuSbar },
+	PmenuThumb         = { bg=colors.PmenuThumb },
 	----------------------------------
 
 	NormalFloat        = { fg=colors.white,    bg=colors.bg },        -- floating window

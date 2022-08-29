@@ -75,6 +75,12 @@ return {
 	cyan3                = "#00BFA4",
 	cyan                 = "#00FFFF",
 
+	Pmenu              =   "#808080",
+	PmenuSelFG         =   "#000000",
+	PmenuSelBG         =   "#1D918B",
+	PmenuSbar          =   "#21252D",
+	PmenuThumb         =   "#1D918B",
+
 	Cursor               = "#FFFF00",
 
 	StorageClass         = "#F92672",
