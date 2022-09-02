@@ -450,50 +450,6 @@ M.plugins = {
 	markdownUrlTitleDelimiter= { fg=colors.markdownUrlTitleDelimiter },
 	markdownOrderedListMarker= { fg=colors.markdownOrderedListMarker },
 
-
-	-- Python Language
-	-----------------------------------------
-	pythonTSKeywordFunction = { fg=colors.KeywordFunction },
-	-----------------------------------------
-
-
-	-- Javascript Language
-	-----------------------------------------
-	javaScriptFunction = { fg=colors.KeywordFunction },
-	-----------------------------------------
-
-
-	-- C/C++ language:
-	-----------------------------------------
-	cStatement        = { fg=colors.Statement, style="NONE" },
-	cBlock            = { fg=colors.Block,     style="NONE" },
-	cStructure        = { fg=colors.Structure, style="NONE" },
-	cAccess           = { fg=colors.Access },
-	cppStatement      = { fg=colors.Statement, style="NONE" },
-	cppBlock          = { fg=colors.Block,     style="NONE" },
-	cppAccess         = { fg=colors.Access },
-
-	-- TreeSitter only for CPP
-	cppTSVariable     = { fg=colors.Variable },
-	cppTSType         = { fg=colors.Type },
-	cppTSKeyword      = { fg=colors.Keyword },
-	cppTSConditional  = { fg=colors.Conditional },
-	cppTSProperty     = { fg=colors.Property },
-	cppTSRepeat       = { fg=colors.Repeat },
-	cppTSBoolean      = { fg=colors.Boolean },
-	cppTSError        = { fg=colors.Error,     bg="NONE" },
-	cppTSNamespace    = { fg=colors.Namespace, bg="NONE" },
-	cppTSOperator     = { fg=colors.Operator,  bg="NONE" },
-
-	-- TreeSitter only for C
-	cTSVariable       = { fg=colors.Variable },
-	cTSType           = { fg=colors.Type },
-	cTSKeyword        = { fg=colors.Keyword },
-	cTSConditional    = { fg=colors.Conditional },
-	cTSProperty	      = { fg=colors.Property },
-	cTSRepeat         = { fg=colors.Repeat },
-	cTSBoolean        = { fg=colors.Boolean },
-	cTSError          = { fg=colors.Error,     bg="NONE" },
 	-----------------------------------------
 
 
