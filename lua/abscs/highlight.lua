@@ -338,17 +338,17 @@ M.plugins = {
 
 	-- Neogit: github.com/TimUntersberger/neogit
 	-----------------------------------------
-	NeogitBranch               = { fg=colors.purple3 },
-	NeogitRemote               = { fg=colors.purple2 },
-	NeogitHunkHeader           = { fg=colors.accent,   bg=colors.dark },
-	NeogitDiffContext          = { fg=colors.accent,   bg=colors.bg },
-	NeogitDiffAdd              = { fg=colors.diff_add, bg=colors.dark },
-	NeogitDiffDelete           = { fg=colors.red4,     bg=colors.dark },
+	NeogitBranch               = { fg=colors.NeogitBranch },
+	NeogitDiffAdd              = { fg=colors.NeogitDiffAdd,    bg=colors.second_bg },
+	NeogitDiffContext          = { fg=colors.NeogitDiffContext,bg=colors.bg },
+	NeogitDiffDelete           = { fg=colors.NeogitDiffDelete, bg=colors.second_bg },
+	NeogitHunkHeader           = { fg=colors.NeogitHunkHeader, bg=colors.second_bg },
 	-- Neogit...Highlight is when group is focused
-	NeogitHunkHeaderHighlight  = { fg=colors.accent,   bg=colors.dark },
-	NeogitDiffContextHighlight = { fg=colors.accent,   bg=colors.bg },
-	NeogitDiffAddHighlight     = { fg=colors.diff_add, bg=colors.dark },
-	NeogitDiffDeleteHighlight  = { fg=colors.red4,     bg=colors.dark },
+	NeogitDiffAddHighlight     = { fg=colors.NeogitDiffAdd,     bg=colors.second_bg },
+	NeogitDiffContextHighlight = { fg=colors.NeogitDiffContext, bg=colors.bg },
+	NeogitDiffDeleteHighlight  = { fg=colors.NeogitDiffDelete,  bg=colors.second_bg },
+	NeogitHunkHeaderHighlight  = { fg=colors.NeogitHunkHeader,  bg=colors.second_bg },
+	NeogitRemote               = { fg=colors.NeogitRemote },
 	-----------------------------------------
 
 

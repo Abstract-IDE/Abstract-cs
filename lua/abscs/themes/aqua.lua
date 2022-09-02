@@ -277,6 +277,13 @@ return {
 	NvimTreeVertSplit          = "#3E3E3E",
 	NvimTreeOpenedFolderName   = "#1D918B",
 
+	NeogitBranch               = "#D16D9E",
+	NeogitDiffAdd              = "#587C0C",
+	NeogitDiffContext          = "#BBBBBB",
+	NeogitDiffDelete           = "#94151B",
+	NeogitHunkHeader           = "#BBBBBB",
+	NeogitRemote               = "#D16BB7",
+
 	TelescopeBorder            = "#808080",
 	TelescopeMatching          = "#FF8000",
 	TelescopePromptPrefix      = "#00DFFF",
