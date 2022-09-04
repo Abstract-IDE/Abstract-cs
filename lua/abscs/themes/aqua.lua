@@ -211,6 +211,23 @@ return {
 	BuffNumbersBG              = "#141414",
 	BuffNumbersFG              = "#FF0000",
 
+
+	CmpDocumentation          = "#FFFADE",
+	CmpDocumentationBorder    = "#808080",
+	CmpItemAbbr               = "#FFFADE",
+	CmpItemAbbrDeprecated     = "#808080",
+	CmpItemAbbrMatch          = "#00BFA4",
+	CmpItemAbbrMatchFuzzy     = "#00BFA4",
+	CmpItemKind               = "#1D918B",
+	CmpItemMenu               = "#C8C9C1",
+
+	DashboardCenter            = "#D16BB7",
+	DashboardFooter            = "#00BFA4",
+	DashboardHeader            = "#1D918B",
+
+	debugBreakpoint            = "#FC2929",
+	debugPc                    = "#00BFA4",
+
 	DiagnosticHint             = "#4FC1FF",
 	DiagnosticError            = "#F44747",
 	DiagnosticInfo             = "#FFCC66",
@@ -228,6 +245,14 @@ return {
 	DiagnosticVirtualTextHint  = "#3E3E3E",
 	DiagnosticVirtualTextWarn  = "#2F2905",
 
+	DiffViewNormal             = "#808080",
+	DiffviewFilePanelDeletion  = "#94151B",
+	DiffviewFilePanelInsertion = "#587C0C",
+	DiffviewStatusAdded        = "#587C0C",
+	DiffviewStatusDeleted      = "#94151B",
+	DiffviewStatusModified     = "#0C7D9D",
+	DiffviewStatusRenamed      = "#0C7D9D",
+
 	FidgetTitle                = "#0c494a",
 	FidgetTask                 = "#093536",
 
@@ -239,6 +264,13 @@ return {
 	GitChangeBG                = "#060606",
 	GitDeleteFG                = "#FF0000",
 	GitDeleteBG                = "#060606",
+
+	GitGutterAddFG             = "#44B273",
+	GitGutterAddBG             = "#060606",
+	GitGutterChangeFG          = "#967B11",
+	GitGutterChangeBG          = "#060606",
+	GitGutterDeleteFG          = "#FF0000",
+	GitGutterDeleteBG          = "#060606",
 
 	IndentBlanklineChar        = "#fff000",
 	IndentBlanklineContextChar = "#888888",
@@ -283,6 +315,14 @@ return {
 	NeogitDiffDelete           = "#94151B",
 	NeogitHunkHeader           = "#BBBBBB",
 	NeogitRemote               = "#D16BB7",
+
+	TabSelectedFGFG            = "#FFFFFF",
+	TabSelectedFGBG            = "#141414",
+	TabSelectedBG              = "#00FF00",
+	TabFGFG                    = "#FFFFFF",
+	TabFGBG                    = "#141414",
+	TabBGFG                    = "#141414",
+	TabBGBG                    = "#141414",
 
 	TelescopeBorder            = "#808080",
 	TelescopeMatching          = "#FF8000",

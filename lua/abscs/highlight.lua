@@ -190,66 +190,65 @@ M.plugins = {
 	BufferCurrentIndex   = { fg=colors.fg,                  bg=colors.bg },
 	BufferCurrentMod     = { fg=colors.BufferCurrentMod,    bg=colors.bg },
 	BufferCurrentSign    = { fg=colors.BufferCurrentSign,   bg=colors.bg },
-	BufferCurrentTarget  = { fg=colors.BufferCurrentTarget, bg=colors.bg, style = "bold" },
-	BufferInactive       = { fg=colors.BufferInactive,      bg=colors.dark },
-	BufferInactiveIndex  = { fg=colors.BufferInactiveIndex, bg=colors.dark },
-	BufferInactiveMod    = { fg=colors.BufferInactiveMod,   bg=colors.dark },
-	BufferInactiveSign   = { fg=colors.BufferInactiveSign,  bg=colors.dark },
-	BufferInactiveTarget = { fg=colors.BufferInactiveTarget,bg=colors.dark, style = "bold" },
+	BufferCurrentTarget  = { fg=colors.BufferCurrentTarget, bg=colors.bg, style="bold" },
+	BufferInactive       = { fg=colors.BufferInactive,      bg=colors.second_bg },
+	BufferInactiveIndex  = { fg=colors.BufferInactiveIndex, bg=colors.second_bg },
+	BufferInactiveMod    = { fg=colors.BufferInactiveMod,   bg=colors.second_bg },
+	BufferInactiveSign   = { fg=colors.BufferInactiveSign,  bg=colors.second_bg },
+	BufferInactiveTarget = { fg=colors.BufferInactiveTarget,bg=colors.second_bg, style = "bold" },
 	BufferLineFill       = { fg=colors.fg,                  bg =colors.BufferLineFill, style = "bold" },
 	BufferVisible        = { fg=colors.fg,                  bg=colors.bg },
 	BufferVisibleIndex   = { fg=colors.fg,                  bg=colors.bg },
 	BufferVisibleMod     = { fg=colors.BufferVisibleMod,    bg=colors.bg },
 	BufferVisibleSign    = { fg=colors.BufferVisibleSign,   bg=colors.bg },
 	BufferVisibleTarget  = { fg=colors.BufferVisibleTarget, bg=colors.bg, style = "bold" },
-	BuffNumbers          = { fg=colors.BuffNumbersFG,       bg =colors.BuffNumbersBG },
+	BuffNumbers          = { fg=colors.BuffNumbersFG,       bg=colors.BuffNumbersBG },
 
 	-- Tabs
-	TabSelectedFG        = { fg=colors.white,   bg =colors.black2 },
-	TabSelectedBG        = { fg=colors.green,   bg =colors.bg },
-
-	TabFG                = { fg=colors.white,   bg =colors.black2 },
-	TabBG                = { fg=colors.black2,  bg =colors.black2 },
+	TabSelectedFG        = { fg=colors.TabSelectedFGFG, bg=colors.TabSelectedFGBG },
+	TabSelectedBG        = { fg=colors.TabSelectedBG,   bg=colors.bg },
+	TabFG                = { fg=colors.TabFGFG,         bg=colors.TabFGBG },
+	TabBG                = { fg=colors.TabBGFG,         bg=colors.TabBGBG },
 	-----------------------------------------
 
 
 	-- Cmp: github.com/hrsh7th/nvim-cmp
 	-----------------------------------------
-	CmpDocumentation       = { fg=colors.fg,    bg=colors.none },
-	CmpDocumentationBorder = { fg=colors.gray3, bg=colors.none },
-	CmpItemAbbr            = { fg=colors.fg,    bg=colors.none },
-	CmpItemAbbrDeprecated  = { fg=colors.gray3, bg=colors.none },
-	CmpItemAbbrMatch       = { fg=colors.cyan3, bg=colors.none },
-	CmpItemAbbrMatchFuzzy  = { fg=colors.cyan3, bg=colors.none },
-	CmpItemKind            = { fg=colors.cyan6, bg=colors.none },
-	CmpItemMenu            = { fg=colors.gray6, bg=colors.none },
+	CmpDocumentation       = { fg=colors.CmpDocumentation,      bg=colors.none },
+	CmpDocumentationBorder = { fg=colors.CmpDocumentationBorder,bg=colors.none },
+	CmpItemAbbr            = { fg=colors.CmpItemAbbr,           bg=colors.none },
+	CmpItemAbbrDeprecated  = { fg=colors.CmpItemAbbrDeprecated, bg=colors.none },
+	CmpItemAbbrMatch       = { fg=colors.CmpItemAbbrMatch,      bg=colors.none },
+	CmpItemAbbrMatchFuzzy  = { fg=colors.CmpItemAbbrMatchFuzzy, bg=colors.none },
+	CmpItemKind            = { fg=colors.CmpItemKind,           bg=colors.none },
+	CmpItemMenu            = { fg=colors.CmpItemMenu,           bg=colors.none },
 	-----------------------------------------
 
 
 	-- Dashboard: github.com/glepnir/dashboard-nvim
 	-----------------------------------------
-	DashboardCenter = { fg=colors.purple2 },
-	DashboardFooter = { fg=colors.cyan3 },
-	DashboardHeader = { fg=colors.cyan6 },
+	DashboardCenter = { fg=colors.DashboardCenter },
+	DashboardFooter = { fg=colors.DashboardFooter },
+	DashboardHeader = { fg=colors.DashboardHeader },
 	-----------------------------------------
 
 
 	--  Debug:
 	-----------------------------------------
-	debugBreakpoint = { fg=colors.red1, style = "reverse" },
-	debugPc         = { bg=colors.cyan3 },
+	debugBreakpoint = { fg=colors.debugBreakpoint, style="reverse" },
+	debugPc         = { bg=colors.debugPc },
 	-----------------------------------------
 
 
 	-- Diffview
 	-----------------------------------------
-	DiffViewNormal             = { fg=colors.gray3, bg=colors.dark },
-	DiffviewFilePanelDeletion  = { fg=colors.red4 },
-	DiffviewFilePanelInsertion = { fg=colors.diff_add },
-	DiffviewStatusAdded        = { fg=colors.diff_add },
-	DiffviewStatusDeleted      = { fg=colors.red4 },
-	DiffviewStatusModified     = { fg=colors.diff_change },
-	DiffviewStatusRenamed      = { fg=colors.diff_change },
+	DiffViewNormal             = { fg=colors.DiffViewNormal, bg=colors.second_bg },
+	DiffviewFilePanelDeletion  = { fg=colors.DiffviewFilePanelDeletion },
+	DiffviewFilePanelInsertion = { fg=colors.DiffviewFilePanelInsertion },
+	DiffviewStatusAdded        = { fg=colors.DiffviewStatusAdded },
+	DiffviewStatusDeleted      = { fg=colors.DiffviewStatusDeleted },
+	DiffviewStatusModified     = { fg=colors.DiffviewStatusModified },
+	DiffviewStatusRenamed      = { fg=colors.DiffviewStatusRenamed },
 	DiffviewVertSplit          = { bg=colors.bg },
 	-----------------------------------------
 
@@ -264,9 +263,9 @@ M.plugins = {
 
 	-- gitgutter: github.com/airblade/vim-gitgutter
 	-----------------------------------------
-	GitGutterAdd    = { fg=colors.diff_add },
-	GitGutterChange = { fg=colors.diff_change },
-	GitGutterDelete = { fg=colors.red4 },
+	GitGutterAdd    = { fg=colors.GitGutterAddFG,    bg=colors.GitGutterAddBG },
+	GitGutterChange = { fg=colors.GitGutterChangeFG, bg=colors.GitGutterChangeBG },
+	GitGutterDelete = { fg=colors.GitGutterDeleteFG, bg=colors.GitGutterDeleteBG },
 	-----------------------------------------
 
 
