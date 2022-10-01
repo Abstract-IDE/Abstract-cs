@@ -20,7 +20,7 @@ M.base = {
 	NormalFloat        = { fg=colors.NormalFloat,   bg=colors.bg },        -- floating window
 	FloatBorder        = { fg=colors.FloatBorder,   bg = "NONE" },
 	Folded             = { fg=colors.FoldedFG,      bg=colors.FoldedBG },
-	VertSplit          = { fg=colors.bg,            bg=colors.VertSplit },
+	VertSplit          = { fg=colors.VertSplit,            bg=colors.bg },
 	LineNr             = { fg=colors.LineNr,        bg=colors.bg},         -- number column
 	CursorLineNr       = { fg=colors.CursorLineNrFG,bg=colors.CursorLineNrBG, style = "bold" },
 	Cursor             = { fg=colors.Curosr,        bg=colors.bg },
