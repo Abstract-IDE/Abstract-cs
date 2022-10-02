@@ -305,13 +305,10 @@ return {
 	NeogitHunkHeader           = "#BBBBBB",
 	NeogitRemote               = "#D16BB7",
 
-	TabSelectedFGFG            = "#FFFFFF",
-	TabSelectedFGBG            = "#141414",
-	TabSelectedBG              = "#00FF00",
-	TabFGFG                    = "#FFFFFF",
-	TabFGBG                    = "#141414",
-	TabBGFG                    = "#141414",
-	TabBGBG                    = "#141414",
+	TabSelectedFG              = "#FFFFFF",
+	TabSelectedBG              = "#141414",
+	TabFG                      = "#FFFFFF",
+	TabBG                      = "#141414",
 
 	TelescopeBorder            = "#808080",
 	TelescopeMatching          = "#FF8000",
