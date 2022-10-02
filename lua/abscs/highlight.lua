@@ -193,12 +193,11 @@ M.plugins = {
 	BufferVisibleTarget       = { fg=colors.BufferVisibleTarget, bg=colors.bg, style = "bold" },
 	BufferSelected            = { bg=colors.BufferSelected},
 
-
 	-- Tabs
-	TabSelectedFG        = { fg=colors.TabSelectedFGFG, bg=colors.TabSelectedFGBG },
-	TabSelectedBG        = { fg=colors.TabSelectedBG,   bg=colors.bg },
-	TabFG                = { fg=colors.TabFGFG,         bg=colors.TabFGBG },
-	TabBG                = { fg=colors.TabBGFG,         bg=colors.TabBGBG },
+	TabSelectedFG        = { fg=colors.TabSelectedFG },
+	TabSelectedBG        = { bg=colors.TabSelectedBG },
+	TabFG                = { fg=colors.TabFG},
+	TabBG                = { bg=colors.TabBG},
 	-----------------------------------------
 
 
