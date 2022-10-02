@@ -182,7 +182,8 @@ return {
 
 
 	-- PLUGINS
-	BufferCurrent              = "#141414",
+	BufferCurrentBg            = "#141414",
+	BufferCurrentFg            = "#b3b3b3",
 	BufferCurrentMod           = "#FFCC66",
 	BufferCurrentSign          = "#4FC1FF",
 	BufferCurrentTarget        = "#FC2929",
@@ -195,8 +196,9 @@ return {
 	BufferVisibleMod           = "#FFCC66",
 	BufferVisibleSign          = "#808080",
 	BufferVisibleTarget        = "#FC2929",
-	BuffNumbersBG              = "#141414",
-	BuffNumbersFG              = "#FF0000",
+	BuffNumbers                = "#141414",
+	BufferIndicatorSelected    = "#141414",
+	BufferCloseButtonSelected  = "#141414",
 
 	CmpDocumentation          = "#FFFADE",
 	CmpDocumentationBorder    = "#808080",
