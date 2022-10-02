@@ -191,6 +191,7 @@ M.plugins = {
 	BufferVisibleMod          = { fg=colors.BufferVisibleMod,    bg=colors.bg },
 	BufferVisibleSign         = { fg=colors.BufferVisibleSign,   bg=colors.bg },
 	BufferVisibleTarget       = { fg=colors.BufferVisibleTarget, bg=colors.bg, style = "bold" },
+	BufferSelected            = { bg=colors.BufferSelected},
 
 
 	-- Tabs
