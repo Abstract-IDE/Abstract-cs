@@ -306,7 +306,7 @@ M.plugins = {
 
 	-- fidget.nvim: https://github.com/j-hui/fidget.nvim
 	-----------------------------------------
-	FidgetTitle = { fg=colors.FidgetTitle, bg='NONE' },
+	FidgetTitle = { fg=colors.FidgetTitle, bg='NONE', style="bold" },
 	FidgetTask  = { fg=colors.FidgetTask,  bg='NONE' },
 	-----------------------------------------
 
