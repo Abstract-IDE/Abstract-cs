@@ -229,7 +229,7 @@ return {
 	DiagnosticSignHint         = "#4FC1FF",
 	DiagnosticSignInfo         = "#FFCC66",
 	DiagnosticSignWarn         = "#FF8800",
-	DiagnosticVirtualTextError = "#840000",
+	DiagnosticVirtualTextError = "#7e2525",
 	DiagnosticVirtualTextInfo  = "#2F2905",
 	DiagnosticVirtualTextHint  = "#3E3E3E",
 	DiagnosticVirtualTextWarn  = "#2F2905",
