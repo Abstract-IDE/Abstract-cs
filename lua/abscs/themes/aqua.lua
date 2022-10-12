@@ -242,8 +242,8 @@ return {
 	DiffviewStatusModified     = "#0C7D9D",
 	DiffviewStatusRenamed      = "#0C7D9D",
 
-	FidgetTitle                = "#0c494a",
-	FidgetTask                 = "#093536",
+	FidgetTitle                = "#147e7e",
+	FidgetTask                 = "#106161",
 
 	FlutterWidgetGuides        = "#8C8C8C",
 
