@@ -247,9 +247,9 @@ return {
 
 	FlutterWidgetGuides        = "#8C8C8C",
 
-	GitAddFG                   = "#44B273",
+	GitAddFG                   = "#215637",
 	GitAddBG                   = "#060606",
-	GitChangeFG                = "#967B11",
+	GitChangeFG                = "#5f4d0b",
 	GitChangeBG                = "#060606",
 	GitDeleteFG                = "#FF0000",
 	GitDeleteBG                = "#060606",
