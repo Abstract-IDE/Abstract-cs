@@ -310,7 +310,7 @@ return {
 	TabFG                      = "#FFFFFF",
 	TabBG                      = "#141414",
 
-	TelescopeBorder            = "#808080",
+	TelescopeBorder            = "#3f3f3f",
 	TelescopeMatching          = "#FF8000",
 	TelescopePromptPrefix      = "#00DFFF",
 	TelescopeSelectionFG       = "#FFFFFF",
