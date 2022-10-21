@@ -209,8 +209,18 @@ M.plugins = {
 	CmpItemAbbrDeprecated  = { fg=colors.CmpItemAbbrDeprecated, bg=colors.none },
 	CmpItemAbbrMatch       = { fg=colors.CmpItemAbbrMatch,      bg=colors.none },
 	CmpItemAbbrMatchFuzzy  = { fg=colors.CmpItemAbbrMatchFuzzy, bg=colors.none },
-	CmpItemKind            = { fg=colors.CmpItemKind,           bg=colors.none },
 	CmpItemMenu            = { fg=colors.CmpItemMenu,           bg=colors.none },
+	-- icon colors
+	CmpItemKind            = { fg=colors.CmpItemKind,           bg=colors.none },
+	CmpItemKindClass       = { fg=colors.CmpItemKindClass,      bg=colors.none },
+	CmpItemKindFunction    = { fg=colors.CmpItemKindFunction,   bg=colors.none },
+	CmpItemKindInterface   = { fg=colors.CmpItemKindInterface,  bg=colors.none },
+	CmpItemKindKeyword     = { fg=colors.CmpItemKindKeyword,    bg=colors.none },
+	CmpItemKindMethod      = { fg=colors.CmpItemKindMethod,     bg=colors.none },
+	CmpItemKindProperty    = { fg=colors.CmpItemKindProperty,   bg=colors.none },
+	CmpItemKindText        = { fg=colors.CmpItemKindText,       bg=colors.none },
+	CmpItemKindUnit        = { fg=colors.CmpItemKindUnit,       bg=colors.none },
+	CmpItemKindVariable    = { fg=colors.CmpItemKindVariable,   bg=colors.none },
 	-----------------------------------------
 
 
