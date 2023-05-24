@@ -385,21 +385,21 @@ M.plugins = {
 	-- https://github.com/folke/trouble.nvim
 	-----------------------------------------
 	-- TroubleTextInformation = { fg=colors.red, bg=colors.green },
-	TroubleFile      = { fg=colors.TroubleFileFG,    bg=colors.TroubleFileBG   },    -- the source file that has error
-	TroubleFoldIcon  = { fg=colors.TroubleFoldIcon,  bg=colors.bg },    -- fold icon color
-	TroubleTextError = { fg=colors.TroubleTextError, bg=colors.bg },    -- error info text
-	TroubleNormal    = { fg=colors.TroubleNormal,    bg=colors.bg },    -- background color of trouble window
-	TroubleLocation  = { fg=colors.TroubleLocation,  bg=colors.bg },    -- location of error
-	TroubleIndent    = { fg=colors.TroubleIndent,    bg=colors.bg },    -- indent color
-	TroubleSignError = { fg=colors.TroubleSignError, bg=colors.bg },    -- error sign color
-	TroubleCount     = { fg=colors.TroubleCount,     bg=colors.bg },
-	TroubleCode      = { fg=colors.TroubleCode,      bg=colors.bg },
+	TroubleFile      = { fg=colors.TroubleFile,      bg="NONE" }, -- the source file that has error
+	TroubleFoldIcon  = { fg=colors.TroubleFoldIcon,  bg="NONE" }, -- fold icon color
+	TroubleCount     = { fg=colors.TroubleCountFG,   bg=colors.TroubleCountBG },
+	TroubleTextError = { fg=colors.TroubleTextError, bg="NONE" }, -- error info text
+	TroubleNormal    = { fg=colors.TroubleNormal,    bg="NONE" }, -- background color of trouble window
+	TroubleLocation  = { fg=colors.TroubleLocation,  bg="NONE" }, -- location of error
+	TroubleIndent    = { fg=colors.TroubleIndent,    bg="NONE" }, -- indent color
+	TroubleSignError = { fg=colors.TroubleSignError, bg="NONE" }, -- error sign color
+	TroubleSignWarn  = { fg=colors.TroubleSignWarn,  bg="NONE" }, -- Warn sign color
+	TroubleCode      = { fg=colors.TroubleCode,      bg="NONE" },
+	TroubleSignHint  = { fg=colors.TroubleSignHint,  bg="NONE" },
 	-- TroubleError       = { fg=colors.red, bg=colors.green },
-	-- TroubleSignWarning = { fg=colors.red, bg=colors.green },
 	-- TroubleWarning     = { fg=colors.red, bg=colors.green },
 	-- TroublePreview     = { fg=colors.red, bg=colors.green },
 	-- TroubleSource      = { fg=colors.red, bg=colors.green },
-	-- TroubleSignHint    = { fg=colors.red, bg=colors.green },
 	-- TroubleSignOther   = { fg=colors.red, bg=colors.green },
 	-- TroubleTextWarning = { fg=colors.red, bg=colors.green },
 	-- TroubleInformation = { fg=colors.red, bg=colors.green },

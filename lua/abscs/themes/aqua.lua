@@ -325,15 +325,17 @@ return {
 	TelescopeSelectionFG       = "#FFFFFF",
 	TelescopeSelectionBG       = "#21252D",
 
-	TroubleFileFG              = "#000000",
-	TroubleFileBG              = "#C8C9C1",
+	TroubleFile                = "#FFFFFF",
 	TroubleFoldIcon            = "#FF0000",
+	TroubleCountFG             = "#ffffff",
+	TroubleCountBG             = "#404040",
 	TroubleTextError           = "#FF5050",
-	TroubleNormal              = "#FFFFFF",
-	TroubleLocation            = "#00FFFF",
+	TroubleNormal              = "#808080",
+	TroubleLocation            = "#626262",
 	TroubleIndent              = "#FFFFFF",
 	TroubleSignError           = "#FF0000",
-	TroubleCount               = "#FF0000",
+	TroubleSignHint            = "#626262",
+	TroubleSignWarn            = "#444400",
 	TroubleCode                = "#444400",
 	-- end PLUGINS
 }
