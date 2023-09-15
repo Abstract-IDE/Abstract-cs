@@ -9,10 +9,6 @@ local function highlight(group, properties)
 end
 
 function M.load(theme)
-  if vim.g.colors_name then
-    vim.cmd 'hi clear'
-  end
-  vim.o.termguicolors = true
   for _, v in pairs(theme) do
     for group, properties in pairs(v) do
       highlight(group, properties)
