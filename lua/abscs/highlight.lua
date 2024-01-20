@@ -254,9 +254,10 @@ M.plugins = {
 
 	-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 	-----------------------------------------
-	GitSignsAdd    = { fg=colors.GitAddFG,    bg=colors.GitAddBG },
-	GitSignsChange = { fg=colors.GitChangeFG, bg=colors.GitChangeBG },
-	GitSignsDelete = { fg=colors.GitDeleteFG, bg=colors.GitDeleteBG },
+	GitSignsAdd       = { fg=colors.GitAdd },
+	GitSignsChange    = { fg=colors.GitChange },
+	GitSignsDelete    = { fg=colors.GitDelete },
+	GitSignsUntracked = { fg=colors.GitUntracked },
 	-----------------------------------------
 
 
@@ -371,6 +372,15 @@ M.plugins = {
 	NvimTreeVertSplit    = { fg=colors.NvimTreeVertSplit, bg=colors.bg },
 	NvimTreeOpenedFolderName = { fg=colors.NvimTreeOpenedFolderName, style = "italic" },
 	-----------------------------------------
+
+
+	-- Nvim-tree: github.com/nvim-neo-tree/neo-tree.nvim
+	-----------------------------------------
+	NeoTreeIndentMarker = { fg=colors.NeoTreeIndentMarker },
+	NeoTreeExpander     = { fg=colors.NeoTreeExpander },
+	NeoTreeFileIcon     = { fg=colors.NeoTreeFileIcon },
+	NeoTreeModified     = { fg=colors.NeoTreeModified },
+	NeoTreeFileName     = { fg=colors.NeoTreeFileName },
 
 
 	-- telescope: github.com/nvim-telescope/telescope.nvim

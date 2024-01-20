@@ -256,12 +256,10 @@ return {
 
 	FlutterWidgetGuides        = "#8C8C8C",
 
-	GitAddFG                   = "#215637",
-	GitAddBG                   = "#060606",
-	GitChangeFG                = "#5f4d0b",
-	GitChangeBG                = "#060606",
-	GitDeleteFG                = "#FF0000",
-	GitDeleteBG                = "#060606",
+	GitAdd                     = "#215637",
+	GitChange                  = "#5f4d0b",
+	GitDelete                  = "#FF0000",
+	GitUntracked               = "#215637",
 
 	GitGutterAddFG             = "#44B273",
 	GitGutterAddBG             = "#060606",
@@ -306,6 +304,12 @@ return {
 	NvimTreeSymlink            = "#00BFA4",
 	NvimTreeVertSplit          = "#3E3E3E",
 	NvimTreeOpenedFolderName   = "#1D918B",
+
+	NeoTreeIndentMarker        = "#808080",
+	NeoTreeExpander            = "#1D918B",
+	NeoTreeFileIcon            = "#587C0C",
+	NeoTreeModified            = "#1D918B",
+	NeoTreeFileName            = "#DDDDDD",
 
 	NeogitBranch               = "#D16D9E",
 	NeogitDiffAdd              = "#587C0C",
