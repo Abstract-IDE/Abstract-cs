@@ -271,17 +271,18 @@ M.plugins = {
 
 	-- Indent-blankline: github.com/lukas-reineke/indent-blankline.nvim
 	-----------------------------------------
-	IndentBlanklineChar        = { fg=colors.IndentBlanklineChar },
-	IndentBlanklineContextChar = { fg=colors.IndentBlanklineContextChar },-- current Curosr Highlighted function
-	IndentBlanklineSpaceChar   = { fg=colors.IndentBlanklineSpaceChar }, -- cursor color on indent space
-	IndentBlanklineIndent1     = { fg=colors.IndentBlanklineIndent1 },
-	IndentBlanklineIndent2     = { fg=colors.IndentBlanklineIndent2 },
-	IndentBlanklineIndent3     = { fg=colors.IndentBlanklineIndent3 },
-	IndentBlanklineIndent4     = { fg=colors.IndentBlanklineIndent4 },
-	IndentBlanklineIndent5     = { fg=colors.IndentBlanklineIndent5 },
-	IndentBlanklineIndent6     = { fg=colors.IndentBlanklineIndent6 },
-	IndentBlanklineIndent7     = { fg=colors.IndentBlanklineIndent7 },
-	IndentBlanklineIndent8     = { fg=colors.IndentBlanklineIndent8 },
+	IblIndent       = { fg=colors.IblIndent },
+	IblScope        = { fg=colors.IblScope },
+	IblContextChar  = { fg=colors.IblContextChar },-- current Curosr Highlighted function
+	IblSpaceChar    = { fg=colors.IblSpaceChar }, -- cursor color on indent space
+	IblIndent1      = { fg=colors.IblIndent1 },
+	IblIndent2      = { fg=colors.IblIndent2 },
+	IblIndent3      = { fg=colors.IblIndent3 },
+	IblIndent4      = { fg=colors.IblIndent4 },
+	IblIndent5      = { fg=colors.IblIndent5 },
+	IblIndent6      = { fg=colors.IblIndent6 },
+	IblIndent7      = { fg=colors.IblIndent7 },
+	IblIndent8      = { fg=colors.IblIndent8 },
 	-----------------------------------------
 
 
