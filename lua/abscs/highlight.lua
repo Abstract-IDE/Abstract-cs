@@ -254,10 +254,14 @@ M.plugins = {
 
 	-- Gitsigns: github.com/lewis6991/gitsigns.nvim
 	-----------------------------------------
-	GitSignsAdd       = { fg=colors.GitAdd },
-	GitSignsChange    = { fg=colors.GitChange },
-	GitSignsDelete    = { fg=colors.GitDelete },
-	GitSignsUntracked = { fg=colors.GitUntracked },
+	GitSignsAdd                = { fg=colors.GitAdd },
+	GitSignsChange             = { fg=colors.GitChange },
+	GitSignsDelete             = { fg=colors.GitDelete },
+	GitSignsUntracked          = { fg=colors.GitUntracked },
+	GitSignsAddPreview         = { fg=colors.GitAddPreviewFG,    bg=colors.GitAddPreviewBG },
+	GitSignsDeletePreview      = { fg=colors.GitDeletePreviewFG, bg=colors.GitDeletePreviewBG },
+	GitSignsDeleteVirtLn       = { fg=colors.GitDeletePreviewFG, bg=colors.GitDeletePreviewBG },
+	GitSignsDeleteVirtLnInLine = { fg=colors.GitDeletePreviewFG, bg=colors.GitDeletePreviewBG },
 	-----------------------------------------
 
 
