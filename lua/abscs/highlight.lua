@@ -607,10 +607,10 @@ M.plugins = {
 	["@comment"]               = { fg=colors.Comment, style = "italic" }, -- line and block comments
 	-- ["@comment.documentation"] = {}, -- comments documenting code
 	["@comment.error"]         = { fg=colors.Error, tyle="bold" }, -- error-type comments (e.g., `DEPRECATED:`)
-	["@comment.warning"]       = { fg=colors.Warning }, -- warning-type comments (e.g., `WARNING:`, `FIX:`)
+	["@comment.warning"]       = { fg=colors.Warning, tyle="bold" }, -- warning-type comments (e.g., `WARNING:`, `FIX:`)
 	["@comment.hint"]          = { fg=colors.Note }, -- note-type comments (e.g., `NOTE:`)
 	-- ["@comment.info"]          = {}, -- info-type comments
-	-- ["@comment.todo"]          = {}, -- todo-type comments (e.g-, `TODO:`, `WIP:`)
+	["@comment.todo"]          = { fg=colors.TodoFG, bg=colors.TodoBG }, -- todo-type comments (e.g-, `TODO:`, `WIP:`)
 
 	-- Markup
 	--------------------------------
