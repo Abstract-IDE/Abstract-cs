@@ -123,7 +123,6 @@ M.base = {
 	Parameter          = { fg=colors.Parameter,  style="italic" },
 	Keyword            = { fg=colors.Keyword,    style="NONE" },
 	Include            = { fg=colors.Include },
-	Function           = { fg=colors.Function },
 	KeywordFunction    = { fg=colors.KeywordFunction, style="NONE" },
 	KeywordReturn      = { fg=colors.KeywordReturn },
 	KeywordOperator    = { fg=colors.KeywordOperator },
@@ -436,32 +435,32 @@ M.plugins = {
 
 	-- Markdown
 	-----------------------------------------
-	markdownH1               = { fg=colors.markdownH },
-	markdownH2               = { fg=colors.markdownH },
-	markdownH3               = { fg=colors.markdownH },
-	markdownH4               = { fg=colors.markdownH },
-	markdownH5               = { fg=colors.markdownH },
-	markdownH6               = { fg=colors.markdownH },
-	markdownId               = { fg=colors.markdownId },
-	markdownUrl              = { fg=colors.markdownUrl, style = "underline" },
-	markdownRule             = { fg=colors.markdownRule },
-	markdownBold             = { fg=colors.markdownBold, style = "bold" },
-	markdownCode             = { fg=colors.markdownCode },
-	markdownItalic           = { fg=colors.markdownItalic, style = "italic" },
-	markdownCodeBlock        = { fg=colors.markdownCodeBlock },
-	markdownCodeError        = { fg=colors.markdownCodeError },
-	markdownLinkText         = { fg=colors.markdownLinkText },
-	markdownListMarker       = { fg=colors.markdownListMarker },
-	markdownCodeSpecial      = { fg=colors.markdownCodeSpecial },
-	markdownCodeDelimiter    = { fg=colors.markdownCodeDelimiter },
-	markdownBlockquote       = { fg=colors.markdownBlockquote },
-	markdownIdDeclaration    = { fg=colors.markdownIdDeclaration },
-	markdownIdDelimiter      = { fg=colors.markdownIdDelimiter },
-	markdownLinkDelimiter    = { fg=colors.markdownLinkDelimiter },
-	markdownHeadingRule      = { fg=colors.markdownHeadingRule },
-	markdownHeadingDelimiter = { fg=colors.markdownHeadingDelimiter },
-	markdownUrlTitleDelimiter= { fg=colors.markdownUrlTitleDelimiter },
-	markdownOrderedListMarker= { fg=colors.markdownOrderedListMarker },
+	markdownH1               = { fg=colors.markH },
+	markdownH2               = { fg=colors.markH },
+	markdownH3               = { fg=colors.markH },
+	markdownH4               = { fg=colors.markH },
+	markdownH5               = { fg=colors.markH },
+	markdownH6               = { fg=colors.markH },
+	markdownId               = { fg=colors.markId },
+	markdownUrl              = { fg=colors.markUrl, style = "underline" },
+	markdownRule             = { fg=colors.markRule },
+	markdownBold             = { fg=colors.markBold, style = "bold" },
+	markdownCode             = { fg=colors.markCode },
+	markdownItalic           = { fg=colors.markItalic, style = "italic" },
+	markdownCodeBlock        = { fg=colors.markCodeBlock },
+	markdownCodeError        = { fg=colors.markCodeError },
+	markdownLinkText         = { fg=colors.markLinkText },
+	markdownListMarker       = { fg=colors.markList },
+	markdownCodeSpecial      = { fg=colors.markCodeSpecial },
+	markdownCodeDelimiter    = { fg=colors.markCodeDelimiter },
+	markdownBlockquote       = { fg=colors.markQuote },
+	markdownIdDeclaration    = { fg=colors.markIdDeclaration },
+	markdownIdDelimiter      = { fg=colors.markIdDelimiter },
+	markdownLinkDelimiter    = { fg=colors.markLinkDelimiter },
+	markdownHeadingRule      = { fg=colors.markHeadingRule },
+	markdownHeadingDelimiter = { fg=colors.markHeadingDelimiter },
+	markdownUrlTitleDelimiter= { fg=colors.markUrlTitleDelimiter },
+	markdownOrderedListMarker= { fg=colors.markOrderedListMarker },
 
 	-----------------------------------------
 
@@ -531,62 +530,128 @@ M.plugins = {
 	-- treesitter:  github.com/nvim-treesitter/nvim-treesitter
 	-----------------------------------------
 
-	TSTitle              = { fg=colors.Title,      style="NONE" },
-	TSURI                = { fg=colors.URI,        style="underline" },
-	TSVariable           = { fg=colors.Variable,   style="NONE" },
-	TSParameter          = { fg=colors.Parameter,  style="italic" },
-	TSComment            = { fg=colors.Comment,    style="italic" },
-	TSKeyword            = { fg=colors.Keyword,    style="NONE" },
-	TSType               = { fg=colors.Type,       style="NONE" },
-	TSError              = { fg=colors.Error,      tyle="bold" },
-	TSInclude            = { fg=colors.Include },
-	TSString             = { fg=colors.String },
-	TSFunction           = { fg=colors.Function },
-	TSKeywordFunction    = { fg=colors.KeywordFunction, style="NONE" },
-	TSKeywordReturn      = { fg=colors.KeywordReturn },
-	TSKeywordOperator    = { fg=colors.KeywordOperator },
-	TSOperator           = { fg=colors.Operator },
-	TSConditional        = { fg=colors.Conditional },
-	TSException          = { fg=colors.Exception },
-	TSBoolean            = { fg=colors.Boolean },
-	TSNumber             = { fg=colors.Number },
-	TSMethod             = { fg=colors.Method },
-	TSConstructor        = { fg=colors.Constructor },
-	TSFuncBuiltin        = { fg=colors.FuncBuiltin },
-	TSWarning            = { fg=colors.Warning },
-	TSNote               = { fg=colors.Note },
-	TSTag                = { fg=colors.Tag },
-	TSTagAttribute       = { fg=colors.TagAttribute },
-	TSAnnotation         = { fg=colors.Annotation },
-	TSAttribute          = { fg=colors.Attribute },
-	TSCharacter          = { fg=colors.Character },
-	TSConstBuiltin       = { fg=colors.ConstBuiltin },
-	TSConstMacro         = { fg=colors.ConstMacro },
-	TSConstant           = { fg=colors.Constant },
-	TSField              = { fg=colors.Field },
-	TSFloat              = { fg=colors.Float },
-	TSFuncMacro          = { fg=colors.FuncMacro },
-	TSLabel              = { fg=colors.Label },
-	TSLiteral            = { fg=colors.Literal },
-	TSNamespace          = { fg=colors.Namespace },
-	TSProperty           = { fg=colors.Property },
-	TSPunctBracket       = { fg=colors.PunctBracket },
-	TSPunctDelimiter     = { fg=colors.PunctDelimiter },
-	TSPunctSpecial       = { fg=colors.PunctSpecial },
-	TSRepeat             = { fg=colors.Repeat },
-	TSStringEscape       = { fg=colors.StringEscape },
-	TSStringRegex        = { fg=colors.StringRegex },
-	TSStrong             = { fg=colors.Strong },
-	TSStructure          = { fg=colors.Structure },
-	TSSymbol             = { fg=colors.Symbol },
-	TSTagDelimiter       = { fg=colors.TagDelimiter },
-	TSText               = { fg=colors.Text },
-	TSQueryLinterError   = { fg=colors.QueryLinterError },
-	TSTypeBuiltin        = { fg=colors.TypeBuiltin },
-	TSVariableBuiltin    = { fg=colors.VariableBuiltin },
-	TSParameterReference = { fg=colors.ParameterReference },
-	TSEmphasis           = { style = "italic" },
-	TSUnderline          = { style = "underline" },
+	-- Identifiers
+	--------------------------------
+	["@variable"]           = { fg=colors.Variable, style="NONE" }, -- various variable names
+	["@variable.builtin"]   = { fg=colors.VariableBuiltin  }, -- built-in variable names (e.g. `this`)
+	["@variable.parameter"] = { fg=colors.Parameter,  style="italic" }, -- parameters of a function
+	["@variable.member"]    = { fg=colors.Field }, -- object and struct fields
+	["@constant"]           = { fg=colors.Constant }, -- constant identifiers
+	["@constant.builtin"]   = { fg=colors.ConstBuiltin }, -- built-in constant values
+	["@constant.macro"]     = { fg=colors.ConstMacro }, -- constants defined by the preprocessor
+	["@module"]             = { fg=colors.Namespace }, -- modules or namespaces
+	-- ["@module.builtin"]     = {  }, -- built-in modules or namespaces
+	["@label"]              = { fg=colors.Label }, -- GOTO and other labels (e.g. `label:` in C), including heredoc labels
+
+	-- Literals
+	--------------------------------
+	["@string"]               = { fg=colors.String }, -- string literals
+	-- ["@string.documentation"] = {}, -- string documenting code (e.g. Python docstrings)
+	["@string.regexp"]        = { fg=colors.StringRegex }, -- regular expressions
+	["@string.escape"]        = { fg=colors.StringEscape }, -- escape sequences
+	-- ["@string.special"]       = {}, -- other special strings (e.g. dates)
+	["@string.special.symbol"]= { fg=colors.Symbol }, -- symbols or atoms
+	["@string.special.url"]   = { fg=colors.URI, style="underline" }, -- URIs (e.g. hyperlinks)
+	-- ["@string.special.path"]  = {}, -- filenames
+	["@character"]            = { fg=colors.Character }, -- character literals
+	-- ["@character.special"]    = {}, -- special characters (e.g. wildcards)
+	["@boolean"]              = { fg=colors.Boolean }, -- boolean literals
+	["@number"]               = { fg=colors.Number }, -- numeric literals
+	["@number.float"]         = { fg=colors.Float }, -- floating-point number literals
+
+	-- Types
+	--------------------------------
+	["@type"]            = { fg=colors.Type, style="NONE" }, -- type or class definitions and annotations
+	["@type.builtin"]    = { fg=colors.TypeBuiltin }, -- built-in types
+	-- ["@type.definition"] = {}, -- identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
+	-- ["@type.qualifier"]  = {}, -- type qualifiers (e.g. `const`)
+	["@attribute"]       = { fg=colors.Attribute }, -- attribute annotations (e.g. Python decorators)
+	["@property"]        = { fg=colors.Property }, -- the key in key/value pairs
+
+	-- Functions
+	--------------------------------
+	["@function"]             = { fg=colors.Function },-- function definitions
+	["@function.builtin"]     = { fg=colors.FuncBuiltin },-- built-in functions
+	-- ["@function.call"]        = {},-- function calls
+	["@function.macro"]       = { fg=colors.FuncMacro },-- preprocessor macros
+	["@function.method"]      = { fg=colors.Method },-- method definitions
+	-- ["@function.method.call"] = {},-- method calls
+	["@constructor"]          = { fg=colors.Constructor },-- constructor calls and definitions
+	["@operator"]             = { fg=colors.Operator },-- symbolic operators (e.g. `+` / `*`)
+
+	-- Keywords
+	--------------------------------
+	["@keyword"]                     = { fg=colors.Keyword, style="NONE" }, -- keywords not fitting into specific categories
+	-- ["@keyword.coroutine"]           = {}, -- keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
+	["@keyword.function"]            = { fg=colors.KeywordFunction, style="NONE" }, -- keywords that define a function (e.g. `func` in Go, `def` in Python)
+	["@keyword.operator"]            = { fg=colors.KeywordOperator }, -- operators that are English words (e.g. `and` / `or`)
+	-- ["@keyword.import"]              = {}, -- keywords for including modules (e.g. `import` / `from` in Python)
+	-- ["@keyword.storage"]             = {}, -- modifiers that affect storage in memory or life-time
+	["@keyword.repeat"]              = { fg=colors.Repeat }, -- keywords related to loops (e.g. `for` / `while`)
+	["@keyword.return"]              = { fg=colors.KeywordReturn }, -- keywords like `return` and `yield`
+	-- ["@keyword.debug"]               = {}, -- keywords related to debugging
+	["@keyword.exception"]           = { fg=colors.Exception }, -- keywords related to exceptions (e.g. `throw` / `catch`)
+	-- ["@keyword.conditional"]         = {}, -- keywords related to conditionals (e.g. `if` / `else`)
+	-- ["@keyword.conditional.ternary"] = {}, -- ternary operator (e.g. `?` / `:`)
+	-- ["@keyword.directive"]           = {}, -- various preprocessor directives & shebangs
+	-- ["@keyword.directive.define"]    = {}, -- preprocessor definition directives
+
+	-- Punctuation
+	--------------------------------
+	["@punctuation.delimiter"] = { fg=colors.PunctDelimiter }, -- delimiters (e.g. `--` / `.` / `,`)
+	["@punctuation.bracket"]   = { fg=colors.PunctBracket }, -- brackets (e.g. `()` / `{}` / `[]`)
+	["@punctuation.special"]   = { fg=colors.PunctSpecial }, -- special symbols (e.g. `{}` in string interpolation)
+
+	-- Comments
+	--------------------------------
+	["@comment"]               = { fg=colors.Comment, style = "italic" }, -- line and block comments
+	-- ["@comment.documentation"] = {}, -- comments documenting code
+	["@comment.error"]         = { fg=colors.Error, tyle="bold" }, -- error-type comments (e.g., `DEPRECATED:`)
+	["@comment.warning"]       = { fg=colors.Warning }, -- warning-type comments (e.g., `WARNING:`, `FIX:`)
+	["@comment.hint"]          = { fg=colors.Note }, -- note-type comments (e.g., `NOTE:`)
+	-- ["@comment.info"]          = {}, -- info-type comments
+	-- ["@comment.todo"]          = {}, -- todo-type comments (e.g-, `TODO:`, `WIP:`)
+
+	-- Markup
+	--------------------------------
+	["@markup.strong"]         = { fg=colors.Strong }, -- bold text
+	["@markup.italic"]         = { fg=colors.markItalic, style = "italic" }, -- text with emphasis
+	-- ["@markup.strikethrough"]  = {}, -- strikethrough text
+	["@markup.underline"]      = { style = "underline" }, -- underlined text (only for literal underline markup!)
+	["@markup.heading"]        = { fg=colors.Title, style="NONE" }, -- headings, titles (including markers)
+	["@markup.quote"]          = { fg=colors.markQuote }, -- block quotes
+	-- ["@markup.math"]           = {}, -- math environments (e.g. `$ ... $` in LaTeX)
+	-- ["@markup.environment"]    = {}, -- environments (e.g. in LaTeX)
+	["@markup.link"]           = { fg=colors.markLinkText }, -- text references, footnotes, citations, etc.
+	-- ["@markup.link.label"]     = {}, -- link, reference descriptions
+	-- ["@markup.link.url"]       = {}, -- URL-style links
+	-- ["@markup.raw"]            = {}, -- literal or verbatim text (e.g., inline code)
+	-- ["@markup.raw.block"]      = {}, -- literal or verbatim text as a stand-alone block (use priority 90 for blocks with injections)
+	["@markup.list"]           = { fg=colors.markList }, -- list markers
+	-- ["@markup.list.checked"]   = {}, -- checked todo-style list markers
+	-- ["@markup.list.unchecked"] = {}, -- unchecked todo-style list markers
+	-- ["@diff.plus"]             = {}, -- added text (for diff files)
+	-- ["@diff.minus"]            = {}, -- deleted text (for diff files)
+	-- ["@diff.delta"]            = {}, -- changed text (for diff files)
+
+	--------------------------------
+	-- Non-highlighting captures
+	-- ["@none"]    = {}, -- completely disable the highlight
+	["@conceal"] = { fg=colors.fg }, -- captures that are only meant to be concealed
+	-- ["@spell"]   = {}, -- for defining regions to be spellchecked
+	-- ["@nospell"] = {}, -- for defining regions that should NOT be spellchecked
+
+	--------------------------------
+	-- Others
+	["@tag"]                = { fg=colors.Tag },
+
+	-- TSInclude            = { fg=colors.Include },
+	-- TSTagAttribute       = { fg=colors.TagAttribute },
+	-- TSAnnotation         = { fg=colors.Annotation },
+	-- TSStructure          = { fg=colors.Structure },
+	-- TSTagDelimiter       = { fg=colors.TagDelimiter },
+	-- TSQueryLinterError   = { fg=colors.QueryLinterError },
+	-- TSParameterReference = { fg=colors.ParameterReference },
 	-----------------------------------------
 }
 
