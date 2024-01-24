@@ -73,6 +73,12 @@ M.base = {
 	Visual             = { fg="NONE", bg=colors.Visual, style="bold" },
 	Substitute         = { fg=colors.SubstituteFG, bg=colors.SubstituteBG },
 	VisualNOS          = { fg=colors.VisualNOSFG, bg=colors.VisualNOSBG },
+
+	TabLine            = { fg=colors.TabLineFG, bg=colors.TabLineBG, style="none"},
+	TabLineFill        = {fg=colors.bg, style="none" },
+	TabLineSel         = {fg=colors.fg, bg=colors.bg, style="none"},
+	TabLineCurrentWin  = {fg=colors.TabLineCurrentWin, bg=colors.TabLineBG, style="none"}, -- its non standard highlight group defined for tabby.nvim
+
 	-----------------------------------------
 	--  end Editor settings
 	-----------------------------------------
@@ -110,9 +116,6 @@ M.base = {
 	StorageClass       = { fg=colors.StorageClass },
 	String             = { fg=colors.String },
 	Structure          = { fg=colors.Structure },
-	TabLine            = { fg=colors.TabLine },
-	TabLineFill        = { fg=colors.TabLineFill },
-	TabLineSel         = { fg=colors.fg },
 	Tag                = { fg=colors.Tag },
 	Title              = { fg=colors.Title },
 	Todo               = { fg=colors.TodoFG, bg="NONE", style = "bold" },
@@ -169,7 +172,7 @@ M.plugins = {
 	-- PLUGIN SPECIFIC
 	-----------------------------------------
 
-	-- Buffer:
+	-- Buffer: github.com/akinsho/nvim-bufferline.lua
 	-----------------------------------------
 	BufferCloseButtonSelected = { fg=colors.fg,                  bg=colors.BufferCloseButtonSelected },
 	BufferCurrent             = { fg=colors.BufferCurrentFg,     bg=colors.BufferCurrentBg},
