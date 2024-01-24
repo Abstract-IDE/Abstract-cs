@@ -140,7 +140,7 @@ return {
 	Symbol               = "#592720",
 	TabLineFG            = "#B3B3B3",
 	TabLineBG            = "#141414",
-	TabLineCurrentWin    = "#808080",
+	TabLineCurrentWin    = "#7cc6ff",
 	TableBlock           = "#FFCC66",
 	Tag                  = "#178C94",
 	TagAttribute         = "#00CC99",
