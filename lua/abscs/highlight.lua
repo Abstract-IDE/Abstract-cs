@@ -1,7 +1,6 @@
 
 local config = require "abscs.config"
 local colors = require "abscs.themes.aqua"
-local dev_icons = require "abscs.util".get_filetype_icon()
 local M = {}
 
 M.base = {
@@ -430,7 +429,6 @@ M.plugins = {
 
 	-- https://github.com/SmiteshP/nvim-navic
 	-----------------------------------------
-	NavicIconsFileIcon      = { fg=dev_icons and dev_icons.icon_color or colors.NavicIconsFileIcon, bg=colors.bg, style="italic" },
 	NavicSeparator          = { fg=colors.NavicSeparator,         bg=colors.bg, style="italic" },
 	NavicText               = { fg=colors.NavicText,              bg=colors.bg, style="italic" },
 	NavicIconsArray         = { fg=colors.NavicIconsArray,        bg=colors.bg, style="italic" },
