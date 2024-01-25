@@ -1,6 +1,7 @@
 
 local config = require "abscs.config"
 local colors = require "abscs.themes.aqua"
+local dev_icons = require "abscs.util".get_filetype_icon()
 local M = {}
 
 M.base = {
@@ -424,6 +425,40 @@ M.plugins = {
 	-- TroubleTextHint    = { fg=colors.red, bg=colors.green },
 	-- TroubleText        = { fg=colors.red, bg=colors.green },
 	-- TroubleSignInformation = { fg=colors.red, bg=colors.green },
+	-----------------------------------------
+
+
+	-- https://github.com/SmiteshP/nvim-navic
+	-----------------------------------------
+	NavicIconsFileIcon      = { fg=dev_icons and dev_icons.icon_color or colors.NavicIconsFileIcon, bg=colors.bg, style="italic" },
+	NavicSeparator          = { fg=colors.NavicSeparator,         bg=colors.bg, style="italic" },
+	NavicText               = { fg=colors.NavicText,              bg=colors.bg, style="italic" },
+	NavicIconsArray         = { fg=colors.NavicIconsArray,        bg=colors.bg, style="italic" },
+	NavicIconsBoolean       = { fg=colors.NavicIconsBoolean,      bg=colors.bg, style="italic" },
+	NavicIconsClass         = { fg=colors.NavicIconsClass,        bg=colors.bg, style="italic" },
+	NavicIconsConstant      = { fg=colors.NavicIconsConstant,     bg=colors.bg, style="italic" },
+	NavicIconsConstructor   = { fg=colors.NavicIconsConstructor,  bg=colors.bg, style="italic" },
+	NavicIconsEnum          = { fg=colors.NavicIconsEnum,         bg=colors.bg, style="italic" },
+	NavicIconsEnumMember    = { fg=colors.NavicIconsEnumMember,   bg=colors.bg, style="italic" },
+	NavicIconsEvent         = { fg=colors.NavicIconsEvent,        bg=colors.bg, style="italic" },
+	NavicIconsField         = { fg=colors.NavicIconsField,        bg=colors.bg, style="italic" },
+	NavicIconsFile          = { fg=colors.NavicIconsFile,         bg=colors.bg, style="italic" },
+	NavicIconsFunction      = { fg=colors.NavicIconsFunction,     bg=colors.bg, style="italic" },
+	NavicIconsInterface     = { fg=colors.NavicIconsInterface,    bg=colors.bg, style="italic" },
+	NavicIconsKey           = { fg=colors.NavicIconsKey,          bg=colors.bg, style="italic" },
+	NavicIconsMethod        = { fg=colors.NavicIconsMethod,       bg=colors.bg, style="italic" },
+	NavicIconsModule        = { fg=colors.NavicIconsModule,       bg=colors.bg, style="italic" },
+	NavicIconsNamespace     = { fg=colors.NavicIconsNamespace,    bg=colors.bg, style="italic" },
+	NavicIconsNull          = { fg=colors.NavicIconsNull,         bg=colors.bg, style="italic" },
+	NavicIconsNumber        = { fg=colors.NavicIconsNumber,       bg=colors.bg, style="italic" },
+	NavicIconsObject        = { fg=colors.NavicIconsObject,       bg=colors.bg, style="italic" },
+	NavicIconsOperator      = { fg=colors.NavicIconsOperator,     bg=colors.bg, style="italic" },
+	NavicIconsPackage       = { fg=colors.NavicIconsPackage,      bg=colors.bg, style="italic" },
+	NavicIconsProperty      = { fg=colors.NavicIconsProperty,     bg=colors.bg, style="italic" },
+	NavicIconsString        = { fg=colors.NavicIconsString,       bg=colors.bg, style="italic" },
+	NavicIconsStruct        = { fg=colors.NavicIconsStruct,       bg=colors.bg, style="italic" },
+	NavicIconsTypeParameter = { fg=colors.NavicIconsTypeParameter,bg=colors.bg, style="italic" },
+	NavicIconsVariable      = { fg=colors.NavicIconsVariable,     bg=colors.bg, style="italic" },
 	-----------------------------------------
 
 	-----------------------------------------
