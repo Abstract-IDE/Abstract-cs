@@ -264,7 +264,7 @@ return {
 	GitAdd                     = "#215637",
 	GitChange                  = "#5f4d0b",
 	GitDelete                  = "#FF0000",
-	GitUntracked               = "#94151B",
+	GitUntracked               = "#215637",
 	GitBG                      = "#141414",
 	GitAddPreviewFG            = "#00ff04",
 	GitAddPreviewBG            = "#002201",
