@@ -75,9 +75,9 @@ M.base = {
 	VisualNOS          = { fg=colors.VisualNOSFG, bg=colors.VisualNOSBG },
 
 	TabLine            = { fg=colors.TabLineFG, bg=colors.TabLineBG, style="none"},
-	TabLineFill        = {fg=colors.bg, style="none" },
-	TabLineSel         = {fg=colors.fg, bg=colors.bg, style="none"},
-	TabLineCurrentWin  = {fg=colors.TabLineCurrentWin, bg=colors.TabLineBG, style="none"}, -- its non standard highlight group defined for tabby.nvim
+	TabLineFill        = { fg=colors.bg, style="none" },
+	TabLineSel         = { fg=colors.fg, bg=colors.TabLineSel, style="none" },
+	TabLineCurrentWin  = { fg=colors.TabLineCurrentWin, bg=colors.TabLineBG, style="none" }, -- its non standard highlight group defined for tabby.nvim
 
 	-----------------------------------------
 	--  end Editor settings
