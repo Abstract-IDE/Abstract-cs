@@ -42,7 +42,7 @@ M.base = {
 	lCursor            = { fg=colors.lCursorFG,      bg=colors.lCursorBG },
 	TermCursor         = { fg=colors.lCursorFG,      bg=colors.lCursorBG },
 	TermCursorNC       = { fg=colors.lCursorFG,      bg=colors.lCursorBG },
-	StatusLine         = { fg=colors.StatusLineFG,   bg=colors.StatusLineBG },
+	StatusLine         = { fg=colors.StatusLine,     bg=colors.StatusLine},
 	StatusLineNC       = { fg=colors.StatusLineNCFG, bg=colors.StatusLineNCBG },
 	Delimiter          = { fg=colors.Delimiter },
 	DiffAdd            = { fg=colors.DiffAdd },
