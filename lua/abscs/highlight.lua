@@ -281,14 +281,6 @@ M.plugins = {
 	IblScope        = { fg=colors.IblScope },
 	IblContextChar  = { fg=colors.IblContextChar },-- current Curosr Highlighted function
 	IblSpaceChar    = { fg=colors.IblSpaceChar }, -- cursor color on indent space
-	IblIndent1      = { fg=colors.IblIndent1 },
-	IblIndent2      = { fg=colors.IblIndent2 },
-	IblIndent3      = { fg=colors.IblIndent3 },
-	IblIndent4      = { fg=colors.IblIndent4 },
-	IblIndent5      = { fg=colors.IblIndent5 },
-	IblIndent6      = { fg=colors.IblIndent6 },
-	IblIndent7      = { fg=colors.IblIndent7 },
-	IblIndent8      = { fg=colors.IblIndent8 },
 	-----------------------------------------
 
 
