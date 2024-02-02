@@ -27,7 +27,7 @@ return {
 	IncSearch            = "#FF0000",
 	LineNr               = "#444444",
 	MoreMsg              = "#E25600",
-	NormalFloat          = "#FFFFFF",
+	NormalFloat          = "#808080",
 	Pmenu                = "#808080",
 	PmenuSbar            = "#21252D",
 	PmenuSelBG           = "#1D918B",
