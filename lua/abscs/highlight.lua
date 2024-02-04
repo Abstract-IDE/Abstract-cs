@@ -451,11 +451,6 @@ M.plugins = {
 	-----------------------------------------
 
 
-	-- which-key: https://github.com/folke/which-key.nvim
-	-----------------------------------------
-	WhichKeyFloat = { bg = colors.StatusLine },
-
-
 	-----------------------------------------
 	-- end PLUGIN SPECIFIC
 	-----------------------------------------
