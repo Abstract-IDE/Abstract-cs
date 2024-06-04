@@ -404,6 +404,7 @@ M.plugins = {
 	TroubleSignWarn  = { fg = colors.TroubleSignWarn, bg = "NONE" }, -- Warn sign color
 	TroubleCode      = { fg = colors.TroubleCode, bg = "NONE" },
 	TroubleSignHint  = { fg = colors.TroubleSignHint, bg = "NONE" },
+	TroubleIndentFoldClosed = { fg = colors.fg, bg = "NONE" },
 	-- TroubleError       = { fg=colors.red, bg=colors.green },
 	-- TroubleWarning     = { fg=colors.red, bg=colors.green },
 	-- TroublePreview     = { fg=colors.red, bg=colors.green },
