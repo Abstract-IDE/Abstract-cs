@@ -374,6 +374,8 @@ return {
 	NavicIconsStruct           = "#8c1717",
 	NavicIconsTypeParameter    = "#4d748f",
 	NavicIconsVariable         = "#008470",
+
+	NoiceCmdlineSearch         = "#E25600",
 	-- end PLUGINS
 }
 

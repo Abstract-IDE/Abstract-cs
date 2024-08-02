@@ -393,17 +393,17 @@ M.plugins = {
 	-- https://github.com/folke/trouble.nvim
 	-----------------------------------------
 	-- TroubleTextInformation = { fg=colors.red, bg=colors.green },
-	TroubleFile      = { fg = colors.TroubleFile, bg = "NONE" }, -- the source file that has error
-	TroubleFoldIcon  = { fg = colors.TroubleFoldIcon, bg = "NONE" }, -- fold icon color
-	TroubleCount     = { fg = colors.TroubleCountFG, bg = colors.TroubleCountBG },
-	TroubleTextError = { fg = colors.TroubleTextError, bg = "NONE" }, -- error info text
-	TroubleNormal    = { fg = colors.TroubleNormal, bg = "NONE" }, -- background color of trouble window
-	TroubleLocation  = { fg = colors.TroubleLocation, bg = "NONE" }, -- location of error
-	TroubleIndent    = { fg = colors.TroubleIndent, bg = "NONE" }, -- indent color
-	TroubleSignError = { fg = colors.TroubleSignError, bg = "NONE" }, -- error sign color
-	TroubleSignWarn  = { fg = colors.TroubleSignWarn, bg = "NONE" }, -- Warn sign color
-	TroubleCode      = { fg = colors.TroubleCode, bg = "NONE" },
-	TroubleSignHint  = { fg = colors.TroubleSignHint, bg = "NONE" },
+	TroubleFile             = { fg = colors.TroubleFile, bg = "NONE" }, -- the source file that has error
+	TroubleFoldIcon         = { fg = colors.TroubleFoldIcon, bg = "NONE" }, -- fold icon color
+	TroubleCount            = { fg = colors.TroubleCountFG, bg = colors.TroubleCountBG },
+	TroubleTextError        = { fg = colors.TroubleTextError, bg = "NONE" }, -- error info text
+	TroubleNormal           = { fg = colors.TroubleNormal, bg = "NONE" }, -- background color of trouble window
+	TroubleLocation         = { fg = colors.TroubleLocation, bg = "NONE" }, -- location of error
+	TroubleIndent           = { fg = colors.TroubleIndent, bg = "NONE" }, -- indent color
+	TroubleSignError        = { fg = colors.TroubleSignError, bg = "NONE" }, -- error sign color
+	TroubleSignWarn         = { fg = colors.TroubleSignWarn, bg = "NONE" }, -- Warn sign color
+	TroubleCode             = { fg = colors.TroubleCode, bg = "NONE" },
+	TroubleSignHint         = { fg = colors.TroubleSignHint, bg = "NONE" },
 	TroubleIndentFoldClosed = { fg = colors.fg, bg = "NONE" },
 	-- TroubleError       = { fg=colors.red, bg=colors.green },
 	-- TroubleWarning     = { fg=colors.red, bg=colors.green },
@@ -450,6 +450,14 @@ M.plugins = {
 	NavicIconsTypeParameter = { fg = colors.NavicIconsTypeParameter, bg = colors.bg, style = "italic" },
 	NavicIconsVariable      = { fg = colors.NavicIconsVariable, bg = colors.bg, style = "italic" },
 	-----------------------------------------
+
+
+	-- https://github.com/folke/noice.nvim
+	-----------------------------------------
+	NoiceCmdlinePopupBorder       = { fg = colors.fg,                 bg = colors.bg },
+	NoiceCmdlineIconCmdline       = { fg = colors.fg,                 bg = colors.bg },
+	NoiceCmdlinePopupBorderSearch = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
+	NoiceCmdlineIconSearch        = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
 
 
 	-----------------------------------------
@@ -503,9 +511,9 @@ M.plugins = {
 	-- CSS / SASS / SCSS
 	-----------------------------------------
 	cssFlexibleBoxAttr  = { fg = colors.FlexibleBoxAttr, style = "italic" }, -- example -> center
-	cssColor            = { fg = colors.Color, style = "italic" },    -- example -> green, red, blue
-	cssUnitDecorators   = { style = "italic" },                       -- exaple -> rem, em, px,
-	cssTagName          = { fg = colors.TagName, style = "NONE" },    -- only changes bold/italic| example -> body, html
+	cssColor            = { fg = colors.Color, style = "italic" },        -- example -> green, red, blue
+	cssUnitDecorators   = { style = "italic" },                           -- exaple -> rem, em, px,
+	cssTagName          = { fg = colors.TagName, style = "NONE" },        -- only changes bold/italic| example -> body, html
 	cssBoxProp          = { fg = colors.BoxProp },
 	cssBraces           = { fg = colors.Braces },
 	cssUIProp           = { fg = colors.UIProp },
@@ -517,8 +525,8 @@ M.plugins = {
 
 	cssTSPunctDelimiter = { fg = colors.PunctDelimiter, style = "NONE" }, -- example -> :
 	cssTSPunctBracket   = { fg = colors.PunctBracket, style = "NONE" }, -- example -> { },()
-	cssTSProperty       = { fg = colors.Property, style = "NONE" }, -- example -> background-color, display, text-align
-	cssTSType           = { fg = colors.Type, style = "NONE" },    -- only changes color | example -> body, html
+	cssTSProperty       = { fg = colors.Property, style = "NONE" },    -- example -> background-color, display, text-align
+	cssTSType           = { fg = colors.Type, style = "NONE" },        -- only changes color | example -> body, html
 
 	scssTSProperty      = { fg = colors.Property },
 	scssTSPunctBracket  = { fg = colors.PunctBracket },
@@ -562,36 +570,36 @@ M.plugins = {
 	-- Identifiers
 	--------------------------------
 	["@variable"]              = { fg = colors.Variable, style = "NONE" }, -- various variable names
-	["@variable.builtin"]      = { fg = colors.VariableBuiltin },    -- built-in variable names (e.g. `this`)
+	["@variable.builtin"]      = { fg = colors.VariableBuiltin },          -- built-in variable names (e.g. `this`)
 	["@variable.parameter"]    = { fg = colors.Parameter, style = "italic" }, -- parameters of a function
-	["@variable.member"]       = { fg = colors.Field },              -- object and struct fields
-	["@constant"]              = { fg = colors.Constant },           -- constant identifiers
-	["@constant.builtin"]      = { fg = colors.ConstBuiltin },       -- built-in constant values
-	["@constant.macro"]        = { fg = colors.ConstMacro },         -- constants defined by the preprocessor
-	["@module"]                = { fg = colors.Namespace },          -- modules or namespaces
+	["@variable.member"]       = { fg = colors.Field },                    -- object and struct fields
+	["@constant"]              = { fg = colors.Constant },                 -- constant identifiers
+	["@constant.builtin"]      = { fg = colors.ConstBuiltin },             -- built-in constant values
+	["@constant.macro"]        = { fg = colors.ConstMacro },               -- constants defined by the preprocessor
+	["@module"]                = { fg = colors.Namespace },                -- modules or namespaces
 	-- ["@module.builtin"]     = {  }, -- built-in modules or namespaces
-	["@label"]                 = { fg = colors.Label },              -- GOTO and other labels (e.g. `label:` in C), including heredoc labels
+	["@label"]                 = { fg = colors.Label },                    -- GOTO and other labels (e.g. `label:` in C), including heredoc labels
 
 	-- Literals
 	--------------------------------
-	["@string"]                = { fg = colors.String },           -- string literals
+	["@string"]                = { fg = colors.String },                -- string literals
 	-- ["@string.documentation"] = {}, -- string documenting code (e.g. Python docstrings)
-	["@string.regexp"]         = { fg = colors.StringRegex },      -- regular expressions
-	["@string.escape"]         = { fg = colors.StringEscape },     -- escape sequences
+	["@string.regexp"]         = { fg = colors.StringRegex },           -- regular expressions
+	["@string.escape"]         = { fg = colors.StringEscape },          -- escape sequences
 	-- ["@string.special"]       = {}, -- other special strings (e.g. dates)
-	["@string.special.symbol"] = { fg = colors.Symbol },           -- symbols or atoms
+	["@string.special.symbol"] = { fg = colors.Symbol },                -- symbols or atoms
 	["@string.special.url"]    = { fg = colors.URI, style = "underline" }, -- URIs (e.g. hyperlinks)
 	-- ["@string.special.path"]  = {}, -- filenames
-	["@character"]             = { fg = colors.Character },        -- character literals
+	["@character"]             = { fg = colors.Character },             -- character literals
 	-- ["@character.special"]    = {}, -- special characters (e.g. wildcards)
-	["@boolean"]               = { fg = colors.Boolean },          -- boolean literals
-	["@number"]                = { fg = colors.Number },           -- numeric literals
-	["@number.float"]          = { fg = colors.Float },            -- floating-point number literals
+	["@boolean"]               = { fg = colors.Boolean },               -- boolean literals
+	["@number"]                = { fg = colors.Number },                -- numeric literals
+	["@number.float"]          = { fg = colors.Float },                 -- floating-point number literals
 
 	-- Types
 	--------------------------------
 	["@type"]                  = { fg = colors.Type, style = "NONE" }, -- type or class definitions and annotations
-	["@type.builtin"]          = { fg = colors.TypeBuiltin }, -- built-in types
+	["@type.builtin"]          = { fg = colors.TypeBuiltin },       -- built-in types
 	-- ["@type.definition"] = {}, -- identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
 	-- ["@type.qualifier"]  = {}, -- type qualifiers (e.g. `const`)
 	["@attribute"]             = { fg = colors.Attribute }, -- attribute annotations (e.g. Python decorators)
@@ -603,23 +611,23 @@ M.plugins = {
 	["@function.builtin"]      = { fg = colors.FuncBuiltin }, -- built-in functions
 	-- ["@function.call"]        = {},-- function calls
 	["@function.macro"]        = { fg = colors.FuncMacro }, -- preprocessor macros
-	["@function.method"]       = { fg = colors.Method }, -- method definitions
+	["@function.method"]       = { fg = colors.Method },   -- method definitions
 	-- ["@function.method.call"] = {},-- method calls
 	["@constructor"]           = { fg = colors.Constructor }, -- constructor calls and definitions
 	["@operator"]              = { fg = colors.Operator }, -- symbolic operators (e.g. `+` / `*`)
 
 	-- Keywords
 	--------------------------------
-	["@keyword"]               = { fg = colors.Keyword, style = "NONE" },        -- keywords not fitting into specific categories
+	["@keyword"]               = { fg = colors.Keyword, style = "NONE" },      -- keywords not fitting into specific categories
 	-- ["@keyword.coroutine"]           = {}, -- keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
 	["@keyword.function"]      = { fg = colors.KeywordFunction, style = "NONE" }, -- keywords that define a function (e.g. `func` in Go, `def` in Python)
-	["@keyword.operator"]      = { fg = colors.KeywordOperator },                -- operators that are English words (e.g. `and` / `or`)
+	["@keyword.operator"]      = { fg = colors.KeywordOperator },              -- operators that are English words (e.g. `and` / `or`)
 	-- ["@keyword.import"]              = {}, -- keywords for including modules (e.g. `import` / `from` in Python)
 	-- ["@keyword.storage"]             = {}, -- modifiers that affect storage in memory or life-time
-	["@keyword.repeat"]        = { fg = colors.Repeat },         -- keywords related to loops (e.g. `for` / `while`)
-	["@keyword.return"]        = { fg = colors.KeywordReturn },  -- keywords like `return` and `yield`
+	["@keyword.repeat"]        = { fg = colors.Repeat },     -- keywords related to loops (e.g. `for` / `while`)
+	["@keyword.return"]        = { fg = colors.KeywordReturn }, -- keywords like `return` and `yield`
 	-- ["@keyword.debug"]               = {}, -- keywords related to debugging
-	["@keyword.exception"]     = { fg = colors.Exception },      -- keywords related to exceptions (e.g. `throw` / `catch`)
+	["@keyword.exception"]     = { fg = colors.Exception },  -- keywords related to exceptions (e.g. `throw` / `catch`)
 	-- ["@keyword.conditional"]         = {}, -- keywords related to conditionals (e.g. `if` / `else`)
 	-- ["@keyword.conditional.ternary"] = {}, -- ternary operator (e.g. `?` / `:`)
 	-- ["@keyword.directive"]           = {}, -- various preprocessor directives & shebangs
@@ -635,20 +643,20 @@ M.plugins = {
 	--------------------------------
 	["@comment"]               = { fg = colors.Comment, style = "italic" }, -- line and block comments
 	-- ["@comment.documentation"] = {}, -- comments documenting code
-	["@comment.error"]         = { fg = colors.Error, tyle = "bold" }, -- error-type comments (e.g., `DEPRECATED:`)
-	["@comment.warning"]       = { fg = colors.Warning, tyle = "bold" }, -- warning-type comments (e.g., `WARNING:`, `FIX:`)
-	["@comment.hint"]          = { fg = colors.Note },                 -- note-type comments (e.g., `NOTE:`)
+	["@comment.error"]         = { fg = colors.Error, tyle = "bold" },    -- error-type comments (e.g., `DEPRECATED:`)
+	["@comment.warning"]       = { fg = colors.Warning, tyle = "bold" },  -- warning-type comments (e.g., `WARNING:`, `FIX:`)
+	["@comment.hint"]          = { fg = colors.Note },                    -- note-type comments (e.g., `NOTE:`)
 	-- ["@comment.info"]          = {}, -- info-type comments
 	["@comment.todo"]          = { fg = colors.TodoFG, bg = colors.TodoBG }, -- todo-type comments (e.g-, `TODO:`, `WIP:`)
 
 	-- Markup
 	--------------------------------
-	["@markup.strong"]         = { fg = colors.Strong },                  -- bold text
+	["@markup.strong"]         = { fg = colors.Strong },                    -- bold text
 	["@markup.italic"]         = { fg = colors.markItalic, style = "italic" }, -- text with emphasis
 	-- ["@markup.strikethrough"]  = {}, -- strikethrough text
-	["@markup.underline"]      = { style = "underline" },                 -- underlined text (only for literal underline markup!)
-	["@markup.heading"]        = { fg = colors.Title, style = "NONE" },   -- headings, titles (including markers)
-	["@markup.quote"]          = { fg = colors.markQuote },               -- block quotes
+	["@markup.underline"]      = { style = "underline" },                   -- underlined text (only for literal underline markup!)
+	["@markup.heading"]        = { fg = colors.Title, style = "NONE" },     -- headings, titles (including markers)
+	["@markup.quote"]          = { fg = colors.markQuote },                 -- block quotes
 	-- ["@markup.math"]           = {}, -- math environments (e.g. `$ ... $` in LaTeX)
 	-- ["@markup.environment"]    = {}, -- environments (e.g. in LaTeX)
 	["@markup.link"]           = { fg = colors.markLinkText }, -- text references, footnotes, citations, etc.
