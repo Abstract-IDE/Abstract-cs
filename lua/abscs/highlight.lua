@@ -305,6 +305,7 @@ M.plugins = {
 	DiagnosticVirtualTextInfo  = { fg = colors.DiagnosticVirtualTextInfo },
 	DiagnosticVirtualTextWarn  = { fg = colors.DiagnosticVirtualTextWarn },
 	DiagnosticWarn             = { fg = colors.DiagnosticWarn },
+	LspInlayHint               = { fg = colors.LspInlayHint, style = "italic" },
 	-----------------------------------------
 
 

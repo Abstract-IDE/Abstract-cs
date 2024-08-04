@@ -231,6 +231,7 @@ return {
 	DiagnosticError            = "#862727",
 	DiagnosticInfo             = "#FFCC66",
 	DiagnosticWarn             = "#FF8800",
+	LspInlayHint               = "#5C4D4D",
 	DiagnosticUnderlineError   = "#840000",
 	DiagnosticUnderlineHint    = "#07454b",
 	DiagnosticUnderlineInfo    = "#265478",
