@@ -25,6 +25,7 @@ local set_highlight = require("abstract_cs.util").set_highlight
 --- @type SetupOptions
 _G.ABSTRACT_CS_USER_OPTS = _G.ABSTRACT_CS_USER_OPTS or {}
 
+--- @param theme 'aqua'
 M.apply_colorscheme = function(theme)
 	vim.cmd("hi clear")
 	vim.g.colors_name = "abstract_" .. theme
