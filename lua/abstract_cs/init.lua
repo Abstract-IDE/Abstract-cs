@@ -27,7 +27,7 @@ _G.ABSTRACT_CS_USER_OPTS = _G.ABSTRACT_CS_USER_OPTS or {}
 
 --- @param theme 'aqua'
 M.apply_colorscheme = function(theme)
-	vim.cmd("hi clear")
+	vim.cmd.highlight('clear')
 	vim.g.colors_name = "abstract_" .. theme
 
 	--- @type COLORS
