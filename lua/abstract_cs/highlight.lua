@@ -442,9 +442,9 @@ M.highlights = function(colors)
 
 		-- gitgutter: github.com/airblade/vim-gitgutter
 
-		GitGutterAdd               = { fg = colors.GitGutterAddFG, bg = colors.GitGutterAddBG },
-		GitGutterChange            = { fg = colors.GitGutterChangeFG, bg = colors.GitGutterChangeBG },
-		GitGutterDelete            = { fg = colors.GitGutterDeleteFG, bg = colors.GitGutterDeleteBG },
+		GitGutterAdd               = { fg = colors.GitGutterAddFG, bg = colors.GitGutterBG },
+		GitGutterChange            = { fg = colors.GitGutterChangeFG, bg = colors.GitGutterBG },
+		GitGutterDelete            = { fg = colors.GitGutterDeleteFG, bg = colors.GitGutterBG },
 
 		-- Indent-blankline: github.com/lukas-reineke/indent-blankline.nvim
 
@@ -539,9 +539,9 @@ M.highlights = function(colors)
 		NvimTreeGitRenamed            = { fg = colors.NvimTreeGitRenamed },
 		NvimTreeGitStaged             = { fg = colors.NvimTreeGitStaged },
 		NvimTreeImageFile             = { fg = colors.NvimTreeImageFile },
-		NvimTreeIndentMarker          = { fg = colors.NvimTreeIndentMarker },
 		NvimTreeNormal                = { fg = colors.NvimTreeNormal, bg = colors.bg },
-		NvimTreeRootFolder            = { fg = colors.NvimTreeRootFolder, bold = true },
+		NvimTreeIndentMarker          = { fg = colors.NvimTreeIndentMarker },
+		NvimTreeRootFolder            = { fg = colors.NvimTreeIndentMarker, bold = true },
 		NvimTreeSpecialFile           = { fg = colors.NvimTreeSpecialFile },
 		NvimTreeSymlink               = { fg = colors.NvimTreeSymlink },
 		NvimTreeVertSplit             = { fg = colors.NvimTreeVertSplit, bg = colors.bg },
@@ -584,17 +584,17 @@ M.highlights = function(colors)
 
 		-- TroubleTextInformation = { fg=colors.red, bg=colors.green },
 		TroubleFile                   = { fg = colors.TroubleFile, bg = "NONE" }, -- the source file that has error
-		TroubleFoldIcon               = { fg = colors.TroubleFoldIcon, bg = "NONE" }, -- fold icon color
-		TroubleCount                  = { fg = colors.TroubleCountFG, bg = colors.TroubleCountBG },
+		TroubleCount                  = { fg = colors.TroubleFile, bg = colors.TroubleSignHint },
 		TroubleTextError              = { fg = colors.TroubleTextError, bg = "NONE" }, -- error info text
 		TroubleNormal                 = { fg = colors.TroubleNormal, bg = "NONE" }, -- background color of trouble window
-		TroubleLocation               = { fg = colors.TroubleLocation, bg = "NONE" }, -- location of error
-		TroubleIndent                 = { fg = colors.TroubleIndent, bg = "NONE" }, -- indent color
 		TroubleSignError              = { fg = colors.TroubleSignError, bg = "NONE" }, -- error sign color
 		TroubleSignWarn               = { fg = colors.TroubleSignWarn, bg = "NONE" }, -- Warn sign color
-		TroubleCode                   = { fg = colors.TroubleCode, bg = "NONE" },
 		TroubleSignHint               = { fg = colors.TroubleSignHint, bg = "NONE" },
 		TroubleIndentFoldClosed       = { fg = colors.fg, bg = "NONE" },
+		TroubleFoldIcon               = { link = "TroubleSignError" }, -- fold icon color
+		TroubleLocation               = { link = "TroubleSignHint" }, -- location of error
+		TroubleIndent                 = { link = "TroubleFile" }, -- indent color
+		TroubleCode                   = { link = "TroubleSignWarn" },
 		-- TroubleError       = { fg=colors.red, bg=colors.green },
 		-- TroubleWarning     = { fg=colors.red, bg=colors.green },
 		-- TroublePreview     = { fg=colors.red, bg=colors.green },
@@ -609,41 +609,41 @@ M.highlights = function(colors)
 
 		-- https://github.com/SmiteshP/nvim-navic
 
-		NavicSeparator                = { fg = colors.NavicSeparator, bg = colors.bg, italic = true },
 		NavicText                     = { fg = colors.NavicText, bg = colors.bg, italic = true },
-		NavicIconsArray               = { fg = colors.NavicIconsArray, bg = colors.bg, italic = true },
 		NavicIconsBoolean             = { fg = colors.NavicIconsBoolean, bg = colors.bg, italic = true },
-		NavicIconsClass               = { fg = colors.NavicIconsClass, bg = colors.bg, italic = true },
-		NavicIconsConstant            = { fg = colors.NavicIconsConstant, bg = colors.bg, italic = true },
-		NavicIconsConstructor         = { fg = colors.NavicIconsConstructor, bg = colors.bg, italic = true },
+		NavicSeparator                = { link = "NavicIconsBoolean" },
+		NavicIconsArray               = { link = "NavicIconsBoolean" },
+		NavicIconsConstructor         = { link = "NavicIconsBoolean" },
+		NavicIconsPackage             = { link = "NavicIconsBoolean" },
+		NavicIconsTypeParameter       = { link = "NavicIconsBoolean" },
 		NavicIconsEnum                = { fg = colors.NavicIconsEnum, bg = colors.bg, italic = true },
-		NavicIconsEnumMember          = { fg = colors.NavicIconsEnumMember, bg = colors.bg, italic = true },
-		NavicIconsEvent               = { fg = colors.NavicIconsEvent, bg = colors.bg, italic = true },
-		NavicIconsField               = { fg = colors.NavicIconsField, bg = colors.bg, italic = true },
+		NavicIconsEnumMember          = { link = "NavicIconsEnum" },
+		NavicIconsField               = { link = "NavicIconsEnum" },
+		NavicIconsProperty            = { link = "NavicIconsEnum" },
+		NavicIconsVariable            = { link = "NavicIconsEnum" },
 		NavicIconsFile                = { fg = colors.NavicIconsFile, bg = colors.bg, italic = true },
-		NavicIconsFunction            = { fg = colors.NavicIconsFunction, bg = colors.bg, italic = true },
-		NavicIconsInterface           = { fg = colors.NavicIconsInterface, bg = colors.bg, italic = true },
-		NavicIconsKey                 = { fg = colors.NavicIconsKey, bg = colors.bg, italic = true },
 		NavicIconsMethod              = { fg = colors.NavicIconsMethod, bg = colors.bg, italic = true },
+		NavicIconsFunction            = { link = "NavicIconsMethod" },
+		NavicIconsEvent               = { link = "NavicIconsMethod" },
+		NavicIconsObject              = { link = "NavicIconsMethod" },
 		NavicIconsModule              = { fg = colors.NavicIconsModule, bg = colors.bg, italic = true },
+		NavicIconsClass               = { link = "NavicIconsModule" },
+		NavicIconsNumber              = { link = "NavicIconsModule" },
 		NavicIconsNamespace           = { fg = colors.NavicIconsNamespace, bg = colors.bg, italic = true },
+		NavicIconsConstant            = { link = "NavicIconsNamespace" },
 		NavicIconsNull                = { fg = colors.NavicIconsNull, bg = colors.bg, italic = true },
-		NavicIconsNumber              = { fg = colors.NavicIconsNumber, bg = colors.bg, italic = true },
-		NavicIconsObject              = { fg = colors.NavicIconsObject, bg = colors.bg, italic = true },
-		NavicIconsOperator            = { fg = colors.NavicIconsOperator, bg = colors.bg, italic = true },
-		NavicIconsPackage             = { fg = colors.NavicIconsPackage, bg = colors.bg, italic = true },
-		NavicIconsProperty            = { fg = colors.NavicIconsProperty, bg = colors.bg, italic = true },
-		NavicIconsString              = { fg = colors.NavicIconsString, bg = colors.bg, italic = true },
-		NavicIconsStruct              = { fg = colors.NavicIconsStruct, bg = colors.bg, italic = true },
-		NavicIconsTypeParameter       = { fg = colors.NavicIconsTypeParameter, bg = colors.bg, italic = true },
-		NavicIconsVariable            = { fg = colors.NavicIconsVariable, bg = colors.bg, italic = true },
+		NavicIconsString              = { link = "NavicIconsNull" },
+		NavicIconsStruct              = { link = "NavicIconsNull" },
+		NavicIconsOperator            = { link = "NavicIconsNull" },
+		NavicIconsInterface           = { link = "NavicIconsNull" },
+		NavicIconsKey                 = { link = "NavicIconsNull" },
 
 		-- https://github.com/folke/noice.nvim
 
-		NoiceCmdlinePopupBorder       = { fg = colors.fg, bg = colors.bg },
 		NoiceCmdlineIconCmdline       = { fg = colors.fg, bg = colors.bg },
-		NoiceCmdlinePopupBorderSearch = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
 		NoiceCmdlineIconSearch        = { fg = colors.NoiceCmdlineSearch, bg = colors.bg },
+		NoiceCmdlinePopupBorder       = { link = "NoiceCmdlineIconCmdline" },
+		NoiceCmdlinePopupBorderSearch = { link = "NoiceCmdlineIconSearch" },
 
 
 
