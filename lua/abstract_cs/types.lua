@@ -3,10 +3,16 @@
 --- @field custom_highlights? table<string, vim.api.keyset.highlight>
 
 ---@class COLORS
---- @field fg string
---- @field bg string
---- @field second_bg string
+---@field fg string
+---@field bg string
+---@field second_bg string
+---@field GhostText string
 --- GUI ---
+---@field Border string
+---@field CmpDoc string
+---@field CmpItemLabel string
+---@field CmpItemLabelDesc string
+---@field CmpMenu string
 ---@field CurSearch string
 ---@field Cursor string
 ---@field CursorLine string
@@ -140,35 +146,7 @@
 ---@field BuffNumbers string
 ---@field BufferSelected string
 -- blink.cmp: github.com/Saghen/blink.cmp
----@field BlinkCmpMenu string
----@field BlinkCmpMenuBorder string
--- ---@field BlinkCmpMenuSelection string
--- ---@field BlinkCmpScrollBarThumb string
--- ---@field BlinkCmpScrollBarGutter string
--- ---@field BlinkCmpLabel string
--- ---@field BlinkCmpLabelDeprecated string
----@field BlinkCmpLabelMatch string
--- ---@field BlinkCmpLabelDetail string
----@field BlinkCmpLabelDescription string
--- ---@field BlinkCmpKind string
--- ---@field BlinkCmpSource string
--- ---@field BlinkCmpGhostText string
--- ---@field BlinkCmpDoc string
--- ---@field BlinkCmpDocBorder string
--- ---@field BlinkCmpDocSeparator string
--- ---@field BlinkCmpDocCursorLine string
--- ---@field BlinkCmpSignatureHelp string
--- ---@field BlinkCmpSignatureHelpBorder string
--- ---@field BlinkCmpSignatureHelpActiveParameter string
--- github.com/hrsh7th/nvim-cmp
----@field CmpDocumentation string
----@field CmpDocumentationBorder string
----@field CmpItemAbbrMatch string
----@field CmpItemMenu string
----@field CmpItemKindClass string
----@field CmpItemKindFunction string
----@field CmpItemKindKeyword string
----@field CmpItemKindText string
+---
 ---@field DashboardCenter string
 ---@field DashboardFooter string
 ---@field DashboardHeader string
@@ -249,7 +227,6 @@
 ---@field TabFG string
 ---@field TabBG string
 -- telescope.nvim: github.com/nvim-telescope/telescope.nvim
----@field TelescopeBorder string
 ---@field TelescopeMatching string
 ---@field TelescopePromptPrefix string
 ---@field TelescopeSelectionFG string

@@ -365,21 +365,21 @@ M.highlights = function(colors)
 		TabBG                      = { bg = colors.TabBG },
 
 		-- Blink.cmp: https://github.com/Saghen/blink.cmp
-		BlinkCmpMenu               = { fg = colors.CmpItemMenu },      --  The completion menu window
-		BlinkCmpMenuBorder         = { fg = colors.CmpDocumentationBorder }, --  The completion menu window border
+		BlinkCmpMenu               = { fg = colors.CmpMenu },    --  The completion menu window
+		BlinkCmpMenuBorder         = { fg = colors.Border },     --  The completion menu window border
+		BlinkCmpLabelMatch         = { fg = colors.CmpItemLabel }, --  (Currently unused) Label of the completion item when it matches the query
+		BlinkCmpLabelDescription   = { fg = colors.CmpItemLabelDesc }, --  NonText	Label description of the completion item
+		BlinkCmpDoc                = { fg = colors.CmpDoc },
+		BlinkCmpDocBorder          = { fg = colors.Border },
+		BlinkCmpGhostText          = { fg = colors.GhostText },     --  NonText	Preview item with ghost text
 		-- BlinkCmpMenuSelection                = { fg = "", bg = "" }, --  PmenuSel	The completion menu window selected item
 		-- BlinkCmpScrollBarThumb               = { fg = "", bg = "" }, --  PmenuThumb	The scrollbar thumb
 		-- BlinkCmpScrollBarGutter              = { fg = "", bg = "" }, --  PmenuSbar	The scrollbar gutter
 		-- BlinkCmpLabel                        = { fg = "", bg = "" }, --  Pmenu Label of the completion item
 		-- BlinkCmpLabelDeprecated              = { fg = "", bg = "" }, --  NonText	Deprecated label of the completion item
-		BlinkCmpLabelMatch         = { fg = colors.CmpItemAbbrMatch },   --  (Currently unused) Label of the completion item when it matches the query
 		-- BlinkCmpLabelDetail                  = { fg = "", bg = "" }, --  NonText	Label description of the completion item
-		BlinkCmpLabelDescription   = { fg = colors.BlinkCmpLabelDescription }, --  NonText	Label description of the completion item
 		-- BlinkCmpKind                         = { fg = "", bg = "" }, --  Special	Kind icon/text of the completion item
 		-- BlinkCmpSource                       = { fg = "", bg = "" }, --  NonText	Source of the completion item
-		-- BlinkCmpGhostText                    = { fg = "", bg = "" }, --  NonText	Preview item with ghost text
-		-- BlinkCmpDoc                          = { fg = "", bg = "" }, --  NormalFloat	The documentation window
-		-- BlinkCmpDocBorder                    = { fg = "", bg = "" }, --  NormalFloat	The documentation window border
 		-- BlinkCmpDocSeparator                 = { fg = "", bg = "" }, --  NormalFloat	The documentation separator between doc and detail
 		-- BlinkCmpDocCursorLine                = { fg = "", bg = "" }, --  Visual	The documentation window cursor line
 		-- BlinkCmpSignatureHelp                = { fg = "", bg = "" }, --  NormalFloat	The signature help window
@@ -388,18 +388,18 @@ M.highlights = function(colors)
 
 		-- Cmp: github.com/hrsh7th/nvim-cmp
 
-		CmpItemMenu                = { fg = colors.CmpItemMenu },
-		CmpDocumentation           = { fg = colors.CmpDocumentation },
-		CmpDocumentationBorder     = { fg = colors.CmpDocumentationBorder },
-		CmpItemAbbrMatch           = { fg = colors.CmpItemAbbrMatch },
+		CmpItemMenu                = { fg = colors.CmpMenu },
+		CmpDocumentation           = { fg = colors.CmpDoc },
+		CmpDocumentationBorder     = { fg = colors.Border },
+		CmpItemAbbrMatch           = { fg = colors.CmpItemLabel },
 		CmpItemAbbr                = { link = "CmpDocumentation" },
 		CmpItemAbbrDeprecated      = { link = "CmpDocumentationBorder" },
 		CmpItemAbbrMatchFuzzy      = { link = "CmpItemAbbrMatch" },
 		-- icon colors
-		CmpItemKindClass           = { fg = colors.CmpItemKindClass },
-		CmpItemKindFunction        = { fg = colors.CmpItemKindFunction },
-		CmpItemKindText            = { fg = colors.CmpItemKindText },
-		CmpItemKindKeyword         = { fg = colors.CmpItemKindKeyword },
+		-- CmpItemKindClass           = { fg = "" },
+		-- CmpItemKindFunction        = { fg = "" },
+		-- CmpItemKindText            = { fg = "" },
+		-- CmpItemKindKeyword         = { fg = "" },
 		CmpItemKind                = { link = "CmpItemMenu" },
 		CmpItemKindMethod          = { link = "CmpItemKindFunction" },
 		CmpItemKindInterface       = { link = "CmpItemKindText" },
@@ -575,7 +575,7 @@ M.highlights = function(colors)
 
 		-- telescope: github.com/nvim-telescope/telescope.nvim
 
-		TelescopeBorder               = { fg = colors.TelescopeBorder, bg = colors.bg },
+		TelescopeBorder               = { fg = colors.Border, bg = colors.bg },
 		TelescopeMatching             = { fg = colors.TelescopeMatching },
 		TelescopePromptPrefix         = { fg = colors.TelescopePromptPrefix },
 		TelescopeSelection            = { fg = colors.TelescopeSelectionFG, bg = colors.TelescopeSelectionBG },
