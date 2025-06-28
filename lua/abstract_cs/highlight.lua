@@ -242,10 +242,10 @@ function M.groups(c)
         -- TelescopeSelection    = { fg = colors.TelescopeSelectionFG, bg = colors.TelescopeSelectionBG },
 
         -- Trouble: https://github.com/folke/trouble.nvim
-        TroubleCode        = { fg = c.error, bg = c.bg_highlight },
+        TroubleCode        = { fg = c.error },
         TroubleCount       = { fg = c.fg, bg = c.bg_highlight },
-        TroubleIndent      = { fg = c.fg },                      -- indent color
-        TroublePos         = { fg = c.fg, bg = c.bg_highlight }, -- background color of unfocused trouble window
+        TroubleIndent      = { fg = c.fg }, -- indent color
+        TroublePos         = { fg = c.fg }, -- background color of unfocused trouble window
         TroubleSignHint    = { fg = c.fg, bg = c.bg_highlight },
 
         -- Others
