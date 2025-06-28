@@ -11,7 +11,6 @@
 ---@field special string
 ---@field warn string
 ---@field border string
----@field ghost string
 ---@field indent string
 ---@field indent_scope string
 ---@field sucess string

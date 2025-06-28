@@ -30,8 +30,8 @@ function M.groups(c)
         LineNrAbove                 = { link = 'LineNr' },
         LineNrBelow                 = { link = 'LineNr' },
         MatchParen                  = { fg = c.match, bg = c.bg_2, bold = true },
-        ModeMsg                     = { fg = c.warn },
-        MoreMsg                     = { fg = c.warn },
+        ModeMsg                     = { fg = c.fg },
+        MoreMsg                     = { fg = c.fg },
         MsgArea                     = { fg = c.fg, bg = c.bg },
         NonText                     = { fg = c.bg_highlight },
         Normal                      = { fg = c.fg, bg = c.bg },
@@ -44,7 +44,7 @@ function M.groups(c)
         PmenuSbar                   = { bg = c.bg },
         PmenuSel                    = { fg = c.bg, bg = c.main },
         PmenuThumb                  = { bg = c.bg_highlight },
-        Question                    = { fg = c.warn },
+        Question                    = { fg = c.error },
         QuickFixLine                = { fg = c.main, bg = c.bg },
         Search                      = { fg = c.bg, bg = c.main },
         SignColumn                  = { fg = c.comment, bg = c.bg },
@@ -73,9 +73,9 @@ function M.groups(c)
         lCursor                     = { link = 'Cursor' },
         -- Generic syntax
         Bold                        = { bold = true },
-        Character                   = { fg = c.warn },
+        Character                   = { fg = c.special },
         Comment                     = { fg = c.comment, italic = true },
-        Constant                    = { fg = c.highlight },
+        Constant                    = { fg = c.fg },
         Debug                       = { fg = c.error },
         Delimiter                   = { fg = c.fg },
         Error                       = { fg = c.error, bg = c.bg },
@@ -87,7 +87,7 @@ function M.groups(c)
         PreProc                     = { fg = c.match },
         Special                     = { fg = c.special },
         Statement                   = { fg = c.match },
-        String                      = { fg = c.highlight },
+        String                      = { fg = c.special },
         Todo                        = { fg = c.match, bg = c.bg },
         Type                        = { fg = c.main },
         Underlined                  = { underline = true },
@@ -97,8 +97,7 @@ function M.groups(c)
         helpCommand                 = { fg = c.main },
         htmlH1                      = { fg = c.main, bold = true },
         htmlH2                      = { fg = c.match, bold = true },
-        qfFileName                  = { fg = c.main },
-        qfLineNr                    = { fg = c.warn },
+        FileName                    = { fg = c.main },
         -- LSP references
         LspCodeLens                 = { fg = c.comment },
         LspInfoBorder               = { link = "Border" },
@@ -130,7 +129,7 @@ function M.groups(c)
         diffChanged                 = { fg = c.match },
         diffFile                    = { fg = c.main },
         diffIndexLine               = { fg = c.main },
-        diffLine                    = { fg = c.warn },
+        diffLine                    = { fg = c.highlight },
         diffNewFile                 = { fg = c.sucess },
         diffOldFile                 = { fg = c.error },
         diffRemoved                 = { fg = c.error },
@@ -231,28 +230,32 @@ function M.groups(c)
         -- BlinkCmpLabelDescription = { fg = colors.CmpItemLabelDesc }, --  NonText	Label description of the completion item
         -- BlinkCmpDoc              = { fg = colors.CmpDoc },
 
+
+        -- Nvim-tree: github.com/nvim-neo-tree/neo-tree.nvim
+        NeoTreeIndentMarker = { link = "Indent" },
+
         -- Snacks.nvim: github.com/folke/snacks.nvim
-        SnacksIndent       = { link = "Indent" },
-        SnacksIndentScope  = { link = "IndentScope" },
+        SnacksIndent        = { link = "Indent" },
+        SnacksIndentScope   = { link = "IndentScope" },
 
         -- Telescope: github.com/nvim-telescope/telescope.nvim
-        TelescopeBorder    = { link = "Border" },
-        TelescopeMatching  = { fg = c.match },
+        TelescopeBorder     = { link = "Border" },
+        TelescopeMatching   = { fg = c.match },
         -- TelescopePromptPrefix = { fg = colors.TelescopePromptPrefix },
         -- TelescopeSelection    = { fg = colors.TelescopeSelectionFG, bg = colors.TelescopeSelectionBG },
 
         -- Trouble: https://github.com/folke/trouble.nvim
-        TroubleCode        = { fg = c.error },
-        TroubleCount       = { fg = c.fg, bg = c.bg_highlight },
-        TroubleIndent      = { fg = c.fg }, -- indent color
-        TroublePos         = { fg = c.fg }, -- background color of unfocused trouble window
-        TroubleSignHint    = { fg = c.fg, bg = c.bg_highlight },
+        TroubleCode         = { fg = c.error },
+        TroubleCount        = { fg = c.fg, bg = c.bg_highlight },
+        TroubleIndent       = { fg = c.fg }, -- indent color
+        TroublePos          = { fg = c.fg }, -- background color of unfocused trouble window
+        TroubleSignHint     = { fg = c.fg, bg = c.bg_highlight },
 
         -- Others
-        GitSignsAdd        = { fg = c.sucess },
-        GitSignsChange     = { fg = c.warn },
-        GitSignsDelete     = { fg = c.error },
-        GitSignsUntracked  = { fg = c.fg },
+        GitSignsAdd         = { fg = c.sucess },
+        GitSignsChange      = { fg = c.warn },
+        GitSignsDelete      = { fg = c.error },
+        GitSignsUntracked   = { fg = c.fg },
     }
 end
 
