@@ -1,7 +1,5 @@
-local M = {}
-
 ---@type AbstractCsPalette
-M.palette = {
+return {
     main         = "#7aa2f7",
     bg           = "#1a1b26",
     bg_2         = "#232433",
@@ -19,5 +17,3 @@ M.palette = {
     sucess       = "#2a6d45",
     error        = "#f7768E",
 }
-
-return M

@@ -10,7 +10,7 @@ function M.groups(c)
         NormalNC                    = { link = "Normal" },
         NormalSB                    = { link = "Normal" },
         NormalFloat                 = { link = "Normal" },
-        FloatBorder                 = { fg = c.comment, bg = c.bg },
+        FloatBorder                 = { link = "Border" },
         FloatTitle                  = { fg = c.main, bg = c.bg },
         ColorColumn                 = { bg = c.bg },
         Conceal                     = { fg = c.comment },

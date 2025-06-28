@@ -17,8 +17,13 @@
 ---@field sucess string
 ---@field error string
 
----Setup options
----@class AbstractCsOptions
----@field theme? string  -- name of the theme to use
+---@alias AbstractCsTheme "bluish"|"dark"
+
+--- @class ColorGroup
 ---@field highlights? table<string, vim.api.keyset.highlight> -- highlight overrides
 ---@field colors? AbstractCsPalette -- highlight's color overrides
+
+---@class AbstractCsOptions
+--- @field theme?  AbstractCsTheme
+--- @field global? ColorGroup
+--- @field bluish? ColorGroup
