@@ -23,6 +23,7 @@ function M.setup(opts)
     palette, highlights = config_overide("dirtish", theme, opts, palette, highlights)
     palette, highlights = config_overide("redish", theme, opts, palette, highlights)
     palette, highlights = config_overide("nightish", theme, opts, palette, highlights)
+    palette, highlights = config_overide("midnight", theme, opts, palette, highlights)
 
     vim.o.termguicolors = true
     vim.cmd("highlight clear")

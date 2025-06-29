@@ -30,7 +30,7 @@
 ---@field sntx_type string
 ---@field sntx_variable string
 
----@alias AbstractCsTheme "code"|"bluish"|"nightish"|"redish"|"dirtish"|"aqua"
+---@alias AbstractCsTheme "code"|"bluish"|"nightish"|"redish"|"dirtish"|"aqua"|"midnight"
 
 --- @class ColorGroup
 ---@field highlights? table<string, vim.api.keyset.highlight> -- highlight overrides
