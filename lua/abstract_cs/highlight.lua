@@ -234,8 +234,8 @@ function M.groups(c)
         -- Telescope: github.com/nvim-telescope/telescope.nvim
         TelescopeBorder     = { link = "Border" },
         TelescopeMatching   = { fg = c.match },
-        -- TelescopePromptPrefix = { fg = colors.TelescopePromptPrefix },
-        -- TelescopeSelection    = { fg = colors.TelescopeSelectionFG, bg = colors.TelescopeSelectionBG },
+        TelescopeSelection  = { bg = c.bg_2 },
+        -- TelescopePromptPrefix = {},
 
         -- Trouble: https://github.com/folke/trouble.nvim
         TroubleCode         = { fg = c.error },
