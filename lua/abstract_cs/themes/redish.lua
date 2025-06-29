@@ -1,0 +1,33 @@
+---@type AbstractCsPalette
+return {
+    main            = "#f7768e",
+    bg              = "#2a1d23",
+    bg_2            = "#33252b",
+    bg_highlight    = "#3b2e33",
+    fg              = "#f2e6e9",
+    comment         = "#a0888d",
+    match           = "#ff99ad",
+    special         = "#ffb3be",
+    warn            = "#e0a070",
+    border          = "#e8a0a8",
+    highlight       = "#ffcad3",
+    indent          = "#2b1e23",
+    indent_scope    = "#775f68",
+    sucess          = "#5a8d67",
+    error           = "#ff5555",
+
+    -- Language Syntax
+    sntx_comment    = "#a0888d",
+    sntx_delimiter  = "#f2e6e9",
+    sntx_variable   = "#f2e6e9",
+    sntx_function   = "#f7768e",
+    sntx_identifier = "#f7768e",
+    sntx_keyword    = "#ff99ad",
+    sntx_statement  = "#ff99ad",
+    sntx_operator   = "#ffb3be",
+    sntx_preproc    = "#e0a070",
+    sntx_special    = "#ffcad3",
+    sntx_constant   = "#ffcad3",
+    sntx_string     = "#ffb3be",
+    sntx_type       = "#5a8d67",
+}

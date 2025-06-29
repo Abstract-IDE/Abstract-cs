@@ -3,9 +3,9 @@
 ---@field main string         -- main colour
 ---@field fg string           -- main foreground
 ---@field bg string           -- main background
----@field bg_2 string      -- darker background used for sidebars
+---@field bg_2 string         -- darker background used for sidebars
 ---@field bg_highlight string -- highlight background
----@field highlight string     -- lighter foreground
+---@field highlight string    -- lighter foreground
 ---@field comment string      -- comments and secondary text
 ---@field match string
 ---@field special string
@@ -15,8 +15,22 @@
 ---@field indent_scope string
 ---@field sucess string
 ---@field error string
+-- language syntax
+---@field sntx_comment string
+---@field sntx_constant string
+---@field sntx_delimiter string
+---@field sntx_function string
+---@field sntx_identifier string
+---@field sntx_keyword string
+---@field sntx_operator string
+---@field sntx_preproc string
+---@field sntx_special string
+---@field sntx_statement string
+---@field sntx_string string
+---@field sntx_type string
+---@field sntx_variable string
 
----@alias AbstractCsTheme "bluish"|"dark"
+---@alias AbstractCsTheme "code"|"bluish"|"nightish"|"redish"|"dirtish"|"aqua"
 
 --- @class ColorGroup
 ---@field highlights? table<string, vim.api.keyset.highlight> -- highlight overrides
