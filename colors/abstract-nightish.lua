@@ -1,2 +1,2 @@
 package.loaded['abstract_cs'] = nil
-require('abstract_cs.init').setup{ theme = 'nightish' }
+require('abstract_cs.init').setup { name = 'nightish', theme_switched = true }

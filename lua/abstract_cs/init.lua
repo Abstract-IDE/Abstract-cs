@@ -1,13 +1,32 @@
 local M = {}
-local config_overide = require("abstract_cs.utils").config_overide
+
+function M.init_global()
+    _G.ABSTRACT_CS = {
+        ---@type AbstractCsOptions
+        opts = {}
+    }
+end
 
 ---Public setup entry
 ---@param opts? AbstractCsOptions
 function M.setup(opts)
     opts = opts or {}
+    local theme_name = opts.name or "code" -- code is fallback/default theme
+
+    if opts.theme_switched then
+        _G.ABSTRACT_CS.opts.name = theme_name
+        opts = _G.ABSTRACT_CS.opts
+    else
+        -- We need to initialize the global variable before accessing or modifying it; otherwise, it will throw an error.
+        -- If we initialize the global variable elsewhere, its value will be overridden by the initialized default.
+        M.init_global()
+        _G.ABSTRACT_CS.opts = opts
+    end
+
+    ---@type table<string, vim.api.keyset.highlight>
     local highlights = {}
-    local theme = opts.theme or "bluish" -- bluish is fallback/default theme
-    local palette = require("abstract_cs.themes." .. theme)
+    ---@type AbstractCsPalette
+    local palette = require("abstract_cs.themes." .. theme_name)
 
     ---Overiding Plugin's options with user's one
     if opts.global ~= nil then
@@ -18,18 +37,18 @@ function M.setup(opts)
             highlights = vim.tbl_extend("force", highlights, opts.global.highlights)
         end
     end
-    palette, highlights = config_overide("bluish", theme, opts, palette, highlights)
-    palette, highlights = config_overide("aqua", theme, opts, palette, highlights)
-    palette, highlights = config_overide("dirtish", theme, opts, palette, highlights)
-    palette, highlights = config_overide("redish", theme, opts, palette, highlights)
-    palette, highlights = config_overide("nightish", theme, opts, palette, highlights)
-    palette, highlights = config_overide("midnight", theme, opts, palette, highlights)
-    palette, highlights = config_overide("romantic", theme, opts, palette, highlights)
-    palette, highlights = config_overide("cold", theme, opts, palette, highlights)
+    if opts.themes ~= nil and opts.themes[theme_name] ~= nil then
+        if opts.themes[theme_name].colors ~= nil then
+            palette = vim.tbl_extend("force", palette, opts.themes[theme_name].colors)
+        end
+        if opts.themes[theme_name].highlights ~= nil then
+            highlights = vim.tbl_extend("force", highlights, opts.themes[theme_name].highlights)
+        end
+    end
 
     vim.o.termguicolors = true
     vim.cmd("highlight clear")
-    vim.g.colors_name = "abstract-" .. theme
+    vim.g.colors_name = "abstract-" .. theme_name
 
     ---Generate all highlight groups from palette
     local groups = require("abstract_cs.highlight").groups(palette)

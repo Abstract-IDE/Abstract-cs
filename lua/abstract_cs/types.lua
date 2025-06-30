@@ -30,13 +30,24 @@
 ---@field sntx_type string
 ---@field sntx_variable string
 
----@alias AbstractCsTheme "code"|"bluish"|"nightish"|"redish"|"dirtish"|"aqua"|"midnight"|"romantic"|"cold"
-
---- @class ColorGroup
+---@class AbstractCsColorGroup
 ---@field highlights? table<string, vim.api.keyset.highlight> -- highlight overrides
 ---@field colors? AbstractCsPalette -- highlight's color overrides
 
 ---@class AbstractCsOptions
---- @field theme?  AbstractCsTheme
---- @field global? ColorGroup
---- @field bluish? ColorGroup
+---@field name?  AbstractCsName
+---@field global? AbstractCsColorGroup
+---@field themes? table<AbstractCsName, AbstractCsColorGroup>
+---@field theme_switched? boolean
+
+---@alias AbstractCsName
+---| "aqua"
+---| "bluish"
+---| "code"
+---| "cold"
+---| "dirtish"
+---| "friend"
+---| "midnight"
+---| "nightish"
+---| "redish"
+---| "romantic"
