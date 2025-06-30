@@ -15,6 +15,11 @@
 ---@field indent_scope string
 ---@field sucess string
 ---@field error string
+-- virtual texts
+---@field virtual_error string
+---@field virtual_hint string
+---@field virtual_info string
+---@field virtual_warn string
 -- language syntax
 ---@field sntx_comment string
 ---@field sntx_constant string

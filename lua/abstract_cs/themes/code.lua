@@ -3,7 +3,7 @@ return {
     main            = "#4DB5Bd",
     bg              = "#111111",
     bg_2            = "#181818",
-    bg_highlight    = "#444444",
+    bg_highlight    = "#333333",
     fg              = "#E5E5E5",
     comment         = "#5C6370",
     match           = "#9d9acc",
@@ -15,6 +15,11 @@ return {
     indent_scope    = "#3F3F3F",
     sucess          = "#8FD5A5",
     error           = "#E06C75",
+
+    virtual_error   = "#934f55",
+    virtual_hint    = "#706e91",
+    virtual_info    = "#32757a",
+    virtual_warn    = "#707154",
 
     -- Language Syntax
     sntx_comment    = "#5C6370",

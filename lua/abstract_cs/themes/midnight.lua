@@ -16,6 +16,11 @@ return {
     sucess          = "#A6E22E",
     error           = "#ff6666",
 
+    virtual_error   = "#934f55",
+    virtual_hint    = "#706e91",
+    virtual_info    = "#32757a",
+    virtual_warn    = "#707154",
+
     -- Language Syntax
     sntx_comment    = "#75715E",
     sntx_delimiter  = "#F8F8F2",
