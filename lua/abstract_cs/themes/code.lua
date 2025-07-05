@@ -11,7 +11,7 @@ return {
     warn            = "#8e906b",
     border          = "#888888",
     highlight       = "#74adc7",
-    indent          = "#2C2C2C",
+    indent          = "#212121",
     indent_scope    = "#3F3F3F",
     sucess          = "#8FD5A5",
     error           = "#E06C75",
