@@ -216,11 +216,12 @@ function M.groups(c)
 
 
         -- Blink.cmp: https://github.com/Saghen/blink.cmp
-        BlinkCmpMenu       = { bg = c.bg },       --  The completion menu window
-        BlinkCmpDocBorder  = { link = "Border" },
-        BlinkCmpMenuBorder = { link = "Border" }, --  The completion menu window border
-        BlinkCmpLabelMatch = { fg = c.match },    --  Label of the completion item when it matches the query
-        -- BlinkCmpLabelDescription = { fg = colors.CmpItemLabelDesc }, --  NonText	Label description of the completion item
+        BlinkCmpDocBorder        = { link = "Border" },
+        BlinkCmpKind             = { fg = c.sntx_type },
+        BlinkCmpLabelMatch       = { fg = c.match },         --  Label of the completion item when it matches the query
+        BlinkCmpMenu             = { bg = c.bg },            --  The completion menu window
+        BlinkCmpMenuBorder       = { link = "Border" },      --  The completion menu window border
+        BlinkCmpLabelDescription = { fg = c.sntx_constant }, --  Label description of the completion item
         -- BlinkCmpDoc              = { fg = colors.CmpDoc },
 
 
