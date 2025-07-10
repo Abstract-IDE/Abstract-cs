@@ -226,30 +226,33 @@ function M.groups(c)
 
 
         -- Nvim-tree: github.com/nvim-neo-tree/neo-tree.nvim
-        NeoTreeIndentMarker = { link = "Indent" },
+        NeoTreeIndentMarker        = { link = "Indent" },
 
         -- Snacks.nvim: github.com/folke/snacks.nvim
-        SnacksIndent        = { link = "Indent" },
-        SnacksIndentScope   = { link = "IndentScope" },
+        SnacksIndent               = { link = "Indent" },
+        SnacksIndentScope          = { link = "IndentScope" },
+        SnacksPickerDir            = { fg = c.border },
+        SnacksPickerListCursorLine = { bg = c.bg_2 },
+        SnacksPickerSelected       = { fg = c.bg_highlight },
 
         -- Telescope: github.com/nvim-telescope/telescope.nvim
-        TelescopeBorder     = { link = "Border" },
-        TelescopeMatching   = { fg = c.match },
-        TelescopeSelection  = { bg = c.bg_2 },
+        TelescopeBorder            = { link = "Border" },
+        TelescopeMatching          = { fg = c.match },
+        TelescopeSelection         = { bg = c.bg_2 },
         -- TelescopePromptPrefix = {},
 
         -- Trouble: https://github.com/folke/trouble.nvim
-        TroubleCode         = { fg = c.error },
-        TroubleCount        = { fg = c.fg, bg = c.bg_highlight },
-        TroubleIndent       = { fg = c.fg }, -- indent color
-        TroublePos          = { fg = c.fg }, -- background color of unfocused trouble window
-        TroubleSignHint     = { fg = c.fg, bg = c.bg_highlight },
+        TroubleCode                = { fg = c.error },
+        TroubleCount               = { fg = c.fg, bg = c.bg_highlight },
+        TroubleIndent              = { fg = c.fg }, -- indent color
+        TroublePos                 = { fg = c.fg }, -- background color of unfocused trouble window
+        TroubleSignHint            = { fg = c.fg, bg = c.bg_highlight },
 
         -- Others
-        GitSignsAdd         = { fg = c.sucess },
-        GitSignsChange      = { fg = c.warn },
-        GitSignsDelete      = { fg = c.error },
-        GitSignsUntracked   = { fg = c.fg },
+        GitSignsAdd                = { fg = c.sucess },
+        GitSignsChange             = { fg = c.warn },
+        GitSignsDelete             = { fg = c.error },
+        GitSignsUntracked          = { fg = c.fg },
     }
 end
 
