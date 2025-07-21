@@ -61,7 +61,6 @@ function M.groups(c)
         TabLineFill                 = { fg = c.fg, bg = c.bg },
         TabLineSel                  = { fg = c.bg, bg = c.main },
         Title                       = { fg = c.main, bold = true },
-        VertSplit                   = { fg = c.fg },
         Visual                      = { bg = c.bg_highlight },
         VisualNOS                   = { bg = c.bg_highlight },
         WarningMsg                  = { fg = c.warn },
@@ -69,7 +68,7 @@ function M.groups(c)
         WildMenu                    = { fg = c.bg, bg = c.main },
         WinBar                      = { fg = c.comment, bg = c.bg_2 },
         WinBarNC                    = { fg = c.comment, bg = c.bg },
-        WinSeparator                = { fg = c.fg },
+        WinSeparator                = { fg = c.border },
         -- Generic syntax
         Character                   = { fg = c.sntx_string },
         Comment                     = { fg = c.sntx_comment, italic = true },
