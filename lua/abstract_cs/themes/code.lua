@@ -3,7 +3,7 @@ return {
     main            = "#4DB5Bd",
     bg              = "#111111",
     bg_2            = "#1a1a1a",
-    bg_highlight    = "#333333",
+    bg_highlight    = "#242424",
     fg              = "#E5E5E5",
     comment         = "#5C6370",
     match           = "#9d9acc",
