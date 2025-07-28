@@ -218,6 +218,9 @@ function M.groups(c)
         BlinkCmpLabelDescription = { fg = c.sntx_constant }, --  Label description of the completion item
         -- BlinkCmpDoc              = { fg = colors.CmpDoc },
 
+        -- Flutter-tools.nvim: https://github.com/nvim-flutter/flutter-tools.nvim
+        FlutterWidgetGuides      = { link = "IndentScope" },
+
 
         -- Nvim-tree: github.com/nvim-neo-tree/neo-tree.nvim
         NeoTreeIndentMarker        = { link = "Indent" },
