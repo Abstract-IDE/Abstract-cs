@@ -30,6 +30,7 @@ function M.groups(c)
         MoreMsg                     = { fg = c.fg },
         MsgArea                     = { fg = c.fg, bg = c.bg },
         Normal                      = { fg = c.fg, bg = c.bg },
+        NormalFloat                 = { link = "Normal" },
         Pmenu                       = { fg = c.fg, bg = c.bg },
         PmenuMatch                  = { fg = c.main, bg = c.bg },
         PmenuMatchSel               = { fg = c.bg, bg = c.match },
